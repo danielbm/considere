@@ -1,24 +1,47 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import './App.css'
+import PanelComponent from './Components/PanelComponent.js'
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="header"> CONSIDERE A INFLAÇÃO </div>
+      <PanelComponent
+        type="dolar"
+        format="currency"
+        title="Cotação do Dólar"
+      />
+      <PanelComponent
+        type="ibov"
+        format="number"
+        title="IBOVESPA"
+      />
+      <PanelComponent
+        type="minimo"
+        format="currency"
+        title="Salário Mínimo"
+      />
+      <PanelComponent
+        type="onibus"
+        format="currency"
+        title="Passagem de ônibus em São Paulo"
+      />
+      <PanelComponent
+        type="fipezap"
+        format="number"
+        title="Valorização imobiliária (FIPEZAP)"
+      />
+      <PanelComponent
+        type="juros"
+        format="percentage"
+        title="Juros (Taxa SELIC)"
+      />
+      <PanelComponent
+        type="stf"
+        format="currency"
+        title="Salário dos ministros do STF"
+      />
     </div>
   );
 }
