@@ -7,11 +7,9 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
-    "apexcharts": "^3.19.0",
-    "graphql-request": "^1.8.2",
-    "mysql": "^2.18.1",
+    "apexcharts": "danielbm/apexcharts.js",
     "react": "^16.13.1",
-    "react-apexcharts": "danielbm/apexcharts.js",
+    "react-apexcharts": "^1.3.7",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
     "react-spinners": "^0.8.3"

@@ -104,7 +104,7 @@ function ChartComponent(props) {
   const series = generateOptions(title, xTitle, yTitle, lineTitle, ySeries, xSeries, format)
 
   return (
-    <div id="chart">
+    <div>
       <Chart
         options={series.options}
         series={series.series}
