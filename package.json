@@ -11,7 +11,7 @@
     "graphql-request": "^1.8.2",
     "mysql": "^2.18.1",
     "react": "^16.13.1",
-    "react-apexcharts": "^1.3.7",
+    "react-apexcharts": "danielbm/apexcharts.js",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
     "react-spinners": "^0.8.3"
