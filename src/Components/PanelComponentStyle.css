@@ -4,3 +4,10 @@
   box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
   text-align: center;
 }
+
+.obs {
+  font-size: 10px;
+  padding: 5px;
+  overflow-wrap: anywhere;
+  word-wrap: break-word;
+}

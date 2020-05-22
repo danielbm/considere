@@ -11,8 +11,17 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.header h1 {
+  font-size: calc(10px + 3vmin);
+  padding: 5px;
+}
+
+.header p {
+  font-size: calc(10px + 1vmin);
+  padding: 5px;
 }
 
 /* .App {

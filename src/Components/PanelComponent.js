@@ -6,7 +6,7 @@ import ChartComponent from './ChartComponent.js'
 import './PanelComponentStyle.css'
 
 function PanelComponent(props) {
-  let { type, format, title} = props
+  let { type, format, title, obs} = props
 
   const [currentType, setCurrentType] = useState(0)
   const [typeSeries, setTypeSeries] = useState(null)
@@ -33,6 +33,7 @@ function PanelComponent(props) {
         xSeries={typeSeries[0]}
         format={format}
       /> : <PulseLoader />}
+      <div className="obs"> Fonte: {obs} </div>
     </div>
   );
 }
