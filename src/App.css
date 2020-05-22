@@ -25,6 +25,22 @@
   padding-right: 10px;
 }
 
+.footer {
+  background-color: #282c34;
+  min-height: 5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.footer p {
+  font-size: calc(5px + 1vmin);
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 /* .App {
   text-align: center;
 }

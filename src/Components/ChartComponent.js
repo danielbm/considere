@@ -25,9 +25,9 @@ const generateOptions = (title, xTitle, yTitle, line, ySeries, xSeries, format) 
           format: 'MMM / yy'
         }
       },
-      defaultLocale: 'pt-BR',
+      defaultLocale: 'pt',
       locales: [{
-        name: 'pt-BR',
+        name: 'pt',
         options: {
           shortMonths: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'],
           toolbar: {
@@ -70,7 +70,6 @@ const generateOptions = (title, xTitle, yTitle, line, ySeries, xSeries, format) 
         }
       },
       yaxis: {
-        min: 0,
         forceNiceScale: true,
         title: {
           text: yTitle

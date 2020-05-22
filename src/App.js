@@ -26,7 +26,7 @@ function App() {
       <PanelComponent
         type="juros"
         format="percentage"
-        title="Juros (Taxa SELIC)"
+        title="Juros real (Taxa SELIC)"
         obs="http://www.ipeadata.gov.br/ExibeSerie.aspx?serid=38402"
       />
       <PanelComponent
@@ -77,7 +77,9 @@ function App() {
         title="Preço do Big Mac"
         obs="https://www.quandl.com/data/ECONOMIST/BIGMAC_BRA-Big-Mac-Index-Brazil"
       />
-
+      <div className="footer">
+        <p> Dúvidas, sugestões e contribuições em: <a href="https://github.com/danielbm/considere">https://github.com/danielbm/considere</a> </p>
+      </div>
     </div>
   );
 }
