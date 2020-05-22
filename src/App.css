@@ -21,7 +21,8 @@
 
 .header p {
   font-size: calc(10px + 1vmin);
-  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 /* .App {

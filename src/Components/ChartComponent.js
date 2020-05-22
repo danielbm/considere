@@ -22,7 +22,7 @@ const generateOptions = (title, xTitle, yTitle, line, ySeries, xSeries, format) 
       },
       tooltip: {
         x: {
-          format: 'MMM'
+          format: 'MMM / yy'
         }
       },
       defaultLocale: 'pt-BR',
@@ -70,6 +70,8 @@ const generateOptions = (title, xTitle, yTitle, line, ySeries, xSeries, format) 
         }
       },
       yaxis: {
+        min: 0,
+        forceNiceScale: true,
         title: {
           text: yTitle
         },
