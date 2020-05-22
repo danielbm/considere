@@ -15,7 +15,7 @@ function App() {
         type="dolar"
         format="currency"
         title="Cotação do Dólar"
-        obs="http://ipeadata.gov.br/exibeserie.aspx?serid=38389"
+        obs="http://ipeadata.gov.br/exibeserie.aspx?serid=38389 e https://fred.stlouisfed.org/series/CPIAUCSL"
       />
       <PanelComponent
         type="ibov"
