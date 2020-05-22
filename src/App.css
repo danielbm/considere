@@ -33,12 +33,17 @@
   align-items: center;
   justify-content: center;
   color: white;
+  margin-top: 10px;
 }
 
 .footer p {
-  font-size: calc(5px + 1vmin);
+  font-size: 10px;
   padding-left: 10px;
   padding-right: 10px;
+}
+
+.footer a {
+  color: white;
 }
 
 /* .App {
