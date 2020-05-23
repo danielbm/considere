@@ -6,7 +6,7 @@ import ChartComponent from './ChartComponent.js'
 import './PanelComponentStyle.css'
 
 function PanelComponent(props) {
-  let { type, format, title, obs} = props
+  let { type, format, title, src, obs} = props
 
   const [currentType, setCurrentType] = useState(0)
   const [typeSeries, setTypeSeries] = useState(null)
@@ -24,6 +24,7 @@ function PanelComponent(props) {
       <p> Última posição ({typeSeries && getMonthYear(typeSeries[0][typeSeries[0].length-1])}): { currentType !== 0 && formatNumber(currentType, format)} </p>
       <p> Máxima histórica: {maxType !== 0 && formatNumber(maxType[1], format)+" em "+getMonthYear(maxType[0])}</p>
       <p> Mínima histórica: {minType !== 0 && formatNumber(minType[1], format)+" em "+getMonthYear(minType[0])}</p>
+      { obs && (<div className="obs"> Obs: {obs} </div>) }
       {typeSeries ? <ChartComponent
         title=""
         xTitle=""
@@ -33,7 +34,7 @@ function PanelComponent(props) {
         xSeries={typeSeries[0]}
         format={format}
       /> : <PulseLoader />}
-      <div className="obs"> Fonte: {obs} </div>
+      <div className="obs"> Fonte: {src} </div>
     </div>
   );
 }
