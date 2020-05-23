@@ -24,12 +24,6 @@ function App() {
         obs="B3"
       />
       <PanelComponent
-        type="juros"
-        format="percentage"
-        title="Juros real (Taxa SELIC)"
-        obs="http://www.ipeadata.gov.br/ExibeSerie.aspx?serid=38402"
-      />
-      <PanelComponent
         type="minimo"
         format="currency"
         title="Salário Mínimo"
@@ -54,6 +48,12 @@ function App() {
         obs="https://www.fipe.org.br/pt-br/indices/fipezap/#fipezap-historico"
       />
       <PanelComponent
+        type="aluguelsp"
+        format="number"
+        title="Aluguéis em São Paulo (FIPEZAP)"
+        obs="http://www.ipeadata.gov.br/Default.aspx"
+      />
+      <PanelComponent
         type="passagem"
         format="currency"
         title="Preço médio da passagem aérea doméstica"
@@ -76,6 +76,18 @@ function App() {
         format="currency"
         title="Preço do Big Mac"
         obs="https://www.quandl.com/data/ECONOMIST/BIGMAC_BRA-Big-Mac-Index-Brazil"
+      />
+      <PanelComponent
+        type="ipca"
+        format="percentage"
+        title="IPCA mensal"
+        obs="http://www.ipeadata.gov.br/Default.aspx"
+      />
+      <PanelComponent
+        type="juros"
+        format="percentage"
+        title="Juros real (Taxa SELIC)"
+        obs="http://www.ipeadata.gov.br/ExibeSerie.aspx?serid=38402"
       />
       <div className="footer">
         <p> Dúvidas, sugestões e contribuições em: <a href="https://github.com/danielbm/considere">https://github.com/danielbm/considere</a> </p>
