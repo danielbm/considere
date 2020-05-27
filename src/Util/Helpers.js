@@ -35,5 +35,4 @@ export const formatNumber = (text, style) => {
   } else {
     return text
   }
-
 }

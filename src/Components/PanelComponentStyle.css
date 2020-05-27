@@ -1,8 +1,11 @@
 .panelContainer {
-  -webkit-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
+  /* -webkit-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
   -moz-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
-  box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75); */
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
   text-align: center;
+  position: relative;
 }
 
 .obs {
@@ -10,4 +13,16 @@
   padding: 5px;
   overflow-wrap: anywhere;
   word-wrap: break-word;
+}
+
+.share {
+  text-align: right;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+
+.shareText {
+  display: inline;
+  font-size: 12px;
+  vertical-align: super;
 }
