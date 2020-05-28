@@ -6,6 +6,8 @@
   border-bottom-style: solid;
   text-align: center;
   position: relative;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .obs {
