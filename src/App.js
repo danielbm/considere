@@ -42,7 +42,6 @@ function App() {
       {generatePanel("bigmac", "currency", "Preço do Big Mac", "https://www.quandl.com/data/ECONOMIST/BIGMAC_BRA-Big-Mac-Index-Brazil")}
       {generatePanel("gold", "currency", "Preço do ouro (oz)", "https://www.indexmundi.com/pt/pre%C3%A7os-de-mercado/?mercadoria=ouro&meses=240&moeda=brl")}
       {generatePanel("ipca", "percentage", "IPCA mensal", "http://www.ipeadata.gov.br/Default.aspx", "IPCA não está ajustado, por ser a própria inflação")}
-      {generatePanel("juros", "percentage", "Juros real (Taxa SELIC)", "http://www.ipeadata.gov.br/ExibeSerie.aspx?serid=38402", "Valores apenas descontando a inflação do mês")}
 
       <div className="footer">
         <p> Dúvidas, sugestões e contribuições em: <a href="https://github.com/danielbm/considere">https://github.com/danielbm/considere</a> </p>
@@ -50,5 +49,5 @@ function App() {
     </div>
   );
 }
-
+// {generatePanel("juros", "percentage", "Juros real (Taxa SELIC)", "http://www.ipeadata.gov.br/ExibeSerie.aspx?serid=38402", "Valores apenas descontando a inflação do mês")}
 export default App;
