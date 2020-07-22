@@ -32,7 +32,7 @@ function PanelComponent(props) {
   useEffect(() => {
     setCurrentType(getCurrent(type+'_a'))
     setTypeSeries(getHist(type+'_a'))
-  }, []);
+  }, [type]);
 
   return (
     <div className="panelContainer">
