@@ -35,7 +35,7 @@ function App() {
       {generatePanel("gasolina", "currency", "Preço do litro de gasolina", "http://www.anp.gov.br/precos-e-defesa-da-concorrencia/precos/levantamento-de-precos/serie-historica-do-levantamento-de-precos-e-de-margens-de-comercializacao-de-combustiveis")}
       {generatePanel("energia", "currency", "Tarifa média de energia elétrica residencial (kWh)", "https://www.aneel.gov.br/dados/tarifas")}
       {generatePanel("fipezap", "number", "Valorização imobiliária (FIPEZAP)", "https://www.fipe.org.br/pt-br/indices/fipezap/#fipezap-historico")}
-      {generatePanel("aluguelsp", "number", "Aluguéis em São Paulo (FIPEZAP)", "http://www.ipeadata.gov.br/Default.aspx")}
+      {generatePanel("aluguelsp", "number", "Aluguéis em São Paulo (FIPEZAP)", "https://www.fipe.org.br/pt-br/indices/fipezap/#fipezap-historico")}
       {generatePanel("passagem", "currency", "Preço médio da passagem aérea doméstica", "https://www.anac.gov.br/assuntos/setor-regulado/empresas/envio-de-informacoes/tarifas-aereas-domesticas-1/relatorio-de-tarifas-aereas-domesticas-nacional")}
       {generatePanel("plano", "currency", "Preço médio do plano de saúde", "https://sidra.ibge.gov.br/pesquisa/snipc")}
       {generatePanel("stf", "currency", "Salário dos ministros do STF", "http://qualidade.ieprev.com.br/UserFiles/File/tabela%20do%20subsidios%20dos%20ministros%202015(2).pdf")}
