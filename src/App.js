@@ -25,13 +25,12 @@ function App() {
     <div className="App">
       <div className="header">
         <h1> CONSIDERE A INFLAÇÃO </h1>
-        <p> Envie este site sempre que alguém estiver comparando preços sem reajustar pela inflação.</p>
         <p> Todos os valores abaixo estão corrigidos para o valor atual da moeda. </p>
       </div>
       {generatePanel("dolar", "currency", "Cotação do Dólar", "http://ipeadata.gov.br/exibeserie.aspx?serid=38389 e https://fred.stlouisfed.org/series/CPIAUCSL", "Ajustado pela inflação brasileira e americana")}
       {generatePanel("ibov", "number", "IBOVESPA", "B3")}
       {generatePanel("minimo", "currency", "Salário Mínimo", "http://www.ipeadata.gov.br/ExibeSerie.aspx?stub=1&serid1739471028=1739471028")}
-      {generatePanel("onibus", "currency", "Passagem de ônibus em São Paulo", "B3")}
+      {generatePanel("onibus", "currency", "Passagem de ônibus em São Paulo", "http://www.sptrans.com.br/sptrans/tarifas/")}
       {generatePanel("gasolina", "currency", "Preço do litro de gasolina", "http://www.anp.gov.br/precos-e-defesa-da-concorrencia/precos/levantamento-de-precos/serie-historica-do-levantamento-de-precos-e-de-margens-de-comercializacao-de-combustiveis")}
       {generatePanel("energia", "currency", "Tarifa média de energia elétrica residencial (kWh)", "https://www.aneel.gov.br/dados/tarifas")}
       {generatePanel("fipezap", "number", "Valorização imobiliária (FIPEZAP)", "https://www.fipe.org.br/pt-br/indices/fipezap/#fipezap-historico")}
