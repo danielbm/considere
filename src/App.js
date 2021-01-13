@@ -32,7 +32,7 @@ function App() {
       {generatePanel("minimo", "currency", "Salário Mínimo", "http://www.ipeadata.gov.br/ExibeSerie.aspx?stub=1&serid1739471028=1739471028")}
       {generatePanel("onibus", "currency", "Passagem de ônibus em São Paulo", "http://www.sptrans.com.br/sptrans/tarifas/")}
       {generatePanel("gasolina", "currency", "Preço do litro de gasolina", "http://www.anp.gov.br/precos-e-defesa-da-concorrencia/precos/levantamento-de-precos/serie-historica-do-levantamento-de-precos-e-de-margens-de-comercializacao-de-combustiveis")}
-      {generatePanel("energia", "currency", "Tarifa média de energia elétrica residencial (kWh)", "https://www.aneel.gov.br/dados/tarifas")}
+      {generatePanel("energia", "currency", "Tarifa média de energia elétrica residencial (kWh)", "http://relatorios.aneel.gov.br/RelatoriosSAS/Forms/AllItems.aspx")}
       {generatePanel("fipezap", "number", "Valorização imobiliária (FIPEZAP)", "https://www.fipe.org.br/pt-br/indices/fipezap/#fipezap-historico")}
       {generatePanel("aluguelsp", "number", "Aluguéis em São Paulo (FIPEZAP)", "https://www.fipe.org.br/pt-br/indices/fipezap/#fipezap-historico")}
       {generatePanel("passagem", "currency", "Preço médio da passagem aérea doméstica", "https://www.anac.gov.br/assuntos/setor-regulado/empresas/envio-de-informacoes/tarifas-aereas-domesticas-1/relatorio-de-tarifas-aereas-domesticas-nacional")}
