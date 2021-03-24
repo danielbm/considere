@@ -31,7 +31,7 @@ function App() {
       {generatePanel("ibov", "number", "IBOVESPA", "B3")}
       {generatePanel("minimo", "currency", "Salário Mínimo", "http://www.ipeadata.gov.br/ExibeSerie.aspx?stub=1&serid1739471028=1739471028")}
       {generatePanel("onibus", "currency", "Passagem de ônibus em São Paulo", "http://www.sptrans.com.br/sptrans/tarifas/")}
-      {generatePanel("gasolina", "currency", "Preço do litro de gasolina", "http://www.anp.gov.br/precos-e-defesa-da-concorrencia/precos/levantamento-de-precos/serie-historica-do-levantamento-de-precos-e-de-margens-de-comercializacao-de-combustiveis")}
+      {generatePanel("gasolina", "currency", "Preço do litro de gasolina", "https://preco.anp.gov.br/include/Resumo_Mensal_Index.asp")}
       {generatePanel("energia", "currency", "Tarifa média de energia elétrica residencial (kWh)", "http://relatorios.aneel.gov.br/RelatoriosSAS/Forms/AllItems.aspx")}
       {generatePanel("fipezap", "number", "Valorização imobiliária (FIPEZAP)", "https://www.fipe.org.br/pt-br/indices/fipezap/#fipezap-historico")}
       {generatePanel("aluguelsp", "number", "Aluguéis em São Paulo (FIPEZAP)", "https://www.fipe.org.br/pt-br/indices/fipezap/#fipezap-historico")}
