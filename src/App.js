@@ -33,7 +33,7 @@ function App() {
       {generatePanel("onibus", "currency", "Passagem de ônibus em São Paulo", "http://www.sptrans.com.br/sptrans/tarifas/")}
       {generatePanel("gasolina", "currency", "Preço do litro de gasolina", "https://preco.anp.gov.br/include/Resumo_Mensal_Index.asp")}
       {generatePanel("energia", "currency", "Tarifa média de energia elétrica residencial (kWh)", "http://relatorios.aneel.gov.br/RelatoriosSAS/Forms/AllItems.aspx")}
-      {generatePanel("fipezap", "number", "Valorização imobiliária (FIPEZAP)", "https://www.fipe.org.br/pt-br/indices/fipezap/#fipezap-historico")}
+      {generatePanel("fipezap", "number", "Valor de imóveis em São Paulo (FIPEZAP)", "https://www.fipe.org.br/pt-br/indices/fipezap/#fipezap-historico")}
       {generatePanel("aluguelsp", "number", "Aluguéis em São Paulo (FIPEZAP)", "https://www.fipe.org.br/pt-br/indices/fipezap/#fipezap-historico")}
       {generatePanel("passagem", "currency", "Preço médio da passagem aérea doméstica", "https://www.anac.gov.br/assuntos/setor-regulado/empresas/envio-de-informacoes/tarifas-aereas-domesticas-1/relatorio-de-tarifas-aereas-domesticas-nacional")}
       {generatePanel("plano", "currency", "Preço médio do plano de saúde", "https://sidra.ibge.gov.br/pesquisa/snipc")}
