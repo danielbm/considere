@@ -2,7 +2,8 @@ import React from 'react'
 import ScrollableAnchor from 'react-scrollable-anchor'
 import './App.css'
 import PanelComponent from './Components/PanelComponent.js'
-
+import ResultsImg from './Util/results.png'
+import useMediaQuery from '@material-ui/core/useMediaQuery';
 
 const generatePanel = (type, format, title, src, obs) => {
   return (
@@ -21,11 +22,13 @@ const generatePanel = (type, format, title, src, obs) => {
 }
 function App() {
 
+  const isMobile = useMediaQuery('(max-width:600px)');
+
   return (
     <div className="App">
       <div className="header">
         <h1> CONSIDERE A INFLAÇÃO </h1>
-        <p> Todos os valores abaixo estão corrigidos para o valor atual da moeda. </p>
+        <p> Todos os valores abaixo estão corrigidos pelo IPCA. </p>
       </div>
       {generatePanel("dolar", "currency", "Cotação do Dólar", "http://ipeadata.gov.br/exibeserie.aspx?serid=38389 e https://fred.stlouisfed.org/series/CPIAUCSL", "Ajustado pela inflação brasileira e americana")}
       {generatePanel("ibov", "number", "IBOVESPA", "B3")}
@@ -42,7 +45,13 @@ function App() {
       {generatePanel("gold", "currency", "Preço do ouro (oz)", "https://pt.bullion-rates.com/gold/BRL-history.htm")}
       {generatePanel("ipca", "percentage", "IPCA mensal", "http://www.ipeadata.gov.br/ExibeSerie.aspx?serid=36482&module=M", "IPCA não está ajustado, por ser a própria inflação")}
       {generatePanel("ipca12", "percentage", "IPCA acumulado (12 meses)", "http://www.ipeadata.gov.br/ExibeSerie.aspx?serid=36482&module=M", "IPCA não está ajustado, por ser a própria inflação")}
-
+      <ScrollableAnchor id={"ipcaGrupo"}>
+        <div className="resultsImg">
+          <h2> Aumento real por componente da inflação </h2>
+          <img src={ResultsImg} alt="Inflação acumulada por grupo" width={isMobile ? "400px" : "800px"}/>
+        </div>
+      </ScrollableAnchor>
+      
       <div className="footer">
         <p> Dúvidas, sugestões e contribuições em: <a href="https://github.com/danielbm/considere">https://github.com/danielbm/considere</a> </p>
       </div>

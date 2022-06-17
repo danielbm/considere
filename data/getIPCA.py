@@ -1,22 +1,144 @@
 #! /usr/local/bin/python3
-import csv
-import datetime
-import mysql.connector
 
-cnx = mysql.connector.connect(user='ipca', password='inflacao',
-                              host='127.0.0.1',
-                              database='inflacao')
-mycursor = cnx.cursor()
+import sidrapy
+import pandas as pd
+import sys
+import matplotlib.pyplot as plt
+# pd.set_option('display.max_columns', 1000)
+# pd.set_option('display.width', 1000)
 
-dadosHist = []
-with open('dadosHist.csv', newline='') as csvfile:
-    reader = csv.reader(csvfile, delimiter=';')
-    for row in reader:
-        if row[0] != 'year':
-            dadosHist.append((int(row[0]), int(row[1]), float(row[2]), float(row[3]), float(row[4]), float(row[5])))
-            sql = "INSERT INTO quotes (year, month, minimo, ipca, dolar, ibov) VALUES (" + row[0] +","+ row[1] +","+ row[2] +","+ row[3] +","+ row[4] +","+ row[5] + ")"
-            print(sql)
-            mycursor.execute(sql)
+def get_pivot_table(table_code, classification):
+    data = sidrapy.get_table(
+            table_code=table_code, 
+            territorial_level="1", 
+            variable="63",
+            classifications={classification: "all"},
+            ibge_territorial_code="all", 
+            period="all",
+            header="n",
+            verify_ssl=False)
 
-cnx.commit()
-cnx.close()
+    data = data.rename(columns={"D2C": "YearMo", "D4C": "CodItem", "D4N": "DescItem", "V": "InflacaoMensal"})
+    ptable = data[['InflacaoMensal','YearMo', 'CodItem']].pivot(values=['InflacaoMensal'], index=['YearMo'], columns=['CodItem'])
+    ptable = ptable.droplevel(level=0, axis=1)
+
+    return ptable
+
+def main():
+    if sys.argv[1] == 'old':
+        print("Fetching data from IBGE...")
+        mapping = {'1991': ('58', '72'),
+                   '1999': ('655', '315'), 
+                   '2006': ('2938', '315'), 
+                   '2012': ('1419', '315')}
+        for code in mapping:
+            print("Fetching "+code+"...")
+            data = get_pivot_table(mapping[code][0], mapping[code][1])
+            data.to_csv('ipca'+code+'.csv')
+        
+
+    elif sys.argv[1] == 'fetch':
+
+        print("Fetching current from IBGE...")
+        data = get_pivot_table('7060', '315')
+        
+        print("Writing to csv...")
+        data.to_csv('ipca2020.csv')
+        print("Done.")
+
+
+    elif sys.argv[1] == 'categories':
+
+        print("Fetching data from IBGE...")
+        data = sidrapy.get_table(
+            table_code="7060", 
+            territorial_level="1", 
+            variable="63",
+            classifications={"315": "all"},
+            ibge_territorial_code="all", 
+            period="202205",
+            header="n",
+            verify_ssl=False)
+
+        data = data.rename(columns={"D2C": "YearMo", "D4C": "CodItem", "D4N": "DescItem", "V": "InflacaoMensal"})
+        categories = data[['CodItem', 'DescItem']]
+        categories.to_csv('categories.csv', index=False)
+        print(categories)
+
+    elif sys.argv[1] == 'generate':
+        data1999 = pd.read_csv('ipca1999.csv', index_col='YearMo')
+        data2006 = pd.read_csv('ipca2006.csv', index_col='YearMo')
+        data2012 = pd.read_csv('ipca2012.csv', index_col='YearMo')
+        data2020 = pd.read_csv('ipca2020.csv', index_col='YearMo')
+
+        data = pd.concat((data1999, data2006, data2012, data2020), axis=0)
+        data = data.sort_index()
+
+        for column in data.columns:
+            acc = []
+            cnt = 0
+            for row in data[column]:
+                prev = 1.0 if (cnt == 0 or not acc[-1]) else acc[-1]
+                if (row == '...' or pd.isna(row)):
+                    value = None
+                else:
+                    value = prev*(1+float(row)/100)
+                acc.append(value)
+                cnt +=1
+            data = pd.concat((data, pd.DataFrame({column+'_acc': acc}, index=data.index)), axis=1)
+
+        curr_inf = data['7169_acc'].iat[-1]
+        
+        for column in data:
+            if not column.endswith('_acc'):
+                data[column+'_real'] = data.apply(lambda row : curr_inf/row['7169_acc']*row[column+'_acc'], axis=1)
+
+        data.to_csv('ipca.csv', sep=';', float_format='%.3f', decimal=',')
+
+    else:
+        try:
+            str(sys.argv[1])
+            items = sys.argv[1].split(",")
+        except:
+            print("Wrong parameters\n./getIPCA <fetch|categories|number>\n")
+            return
+
+        print("Reading CSV...")
+        data = pd.read_csv('ipca.csv', sep=';', decimal=',', index_col='YearMo')
+        categories = pd.read_csv('categories.csv', index_col='CodItem')
+
+        print("Applying formats...")
+        items = list(map(lambda x: x+'_real', items))
+        data = data[items]
+        if len(sys.argv) > 2:
+            data = data[data.index > int(sys.argv[2])] 
+        data['YearMo'] = data.index
+        names = {}
+
+
+        for column in data.columns:
+            if column != 'YearMo':
+                first_value = float(data[column][data[column].first_valid_index()])
+                names[column] = categories.loc[int(column[:-5])]['DescItem']
+                data[column] = data.apply(lambda row : (row[column]/first_value-1)*100, axis=1)
+
+        print("Writing CSV...")
+        data = data.rename(columns=names)
+        data['YearMo'] = data.apply(lambda row : pd.to_datetime(str(row['YearMo'])[:4]+'-'+str(row['YearMo'])[4:6]), axis=1)
+        data.to_csv('results.csv', sep=';', float_format='%.3f', decimal=',', encoding='iso-8859-1', index=False )
+
+        print("Writing Graph...")
+        data.index = data['YearMo']
+        data = data.drop(columns=['YearMo'])
+        ax = data.plot(figsize=(15,8), grid=True, xlabel="Ano", ylabel="Variação (%)")
+        for line, name in zip(ax.lines, data.columns):
+            y = line.get_ydata()[-1]
+            ax.annotate(name, xy=(1, y), xytext=(6, 0),
+                        color=line.get_color(), xycoords=ax.get_yaxis_transform(),
+                        textcoords="offset points", size=8, va="center")
+        ax.get_legend().remove()
+        plt.savefig('results.png')
+
+
+if __name__ == "__main__":
+    main()
