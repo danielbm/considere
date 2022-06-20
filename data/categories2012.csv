@@ -1,0 +1,465 @@
+CodItem,DescItem
+7169,Índice geral
+7170,1.Alimentação e bebidas
+7171,11.Alimentação no domicílio
+7172,"1101.Cereais, leguminosas e oleaginosas"
+7173,1101002.Arroz
+7175,1101051.Feijão - mulatinho
+7176,1101052.Feijão - preto
+7177,1101053.Feijão - macassar (fradinho)
+12222,1101073.Feijão - carioca (rajado)
+41128,1101075.Feijão - branco
+7184,"1102.Farinhas, féculas e massas"
+7185,1102001.Farinha de arroz
+7187,1102006.Macarrão
+7188,1102008.Fubá de milho
+7189,1102009.Amido de milho
+7190,1102010.Flocos de milho
+7191,1102012.Farinha de trigo
+7192,1102013.Farinha vitaminada
+7195,1102023.Farinha de mandioca
+107608,1102029.Massa semipreparada
+7200,"1103.Tubérculos, raízes e legumes"
+7202,1103003.Batata-inglesa
+7203,1103004.Inhame
+7204,1103005.Mandioca (aipim)
+7205,1103017.Abóbora
+7210,1103026.Pimentão
+7211,1103027.Quiabo
+7212,1103028.Tomate
+7215,1103043.Cebola
+7216,1103044.Cenoura
+12223,1103046.Mandioquinha (batata-baroa)
+7219,1104.Açúcares e derivados
+7220,1104003.Açúcar refinado
+7221,1104004.Açúcar cristal
+12224,1104018.Balas
+107609,1104023.Chocolate em barra e bombom
+7230,1104032.Sorvete
+107611,1104052.Chocolate e achocolatado em pó
+7233,1104060.Doce de frutas em pasta
+7241,1105.Hortaliças e verduras
+7242,1105001.Alface
+7244,1105004.Coentro
+7245,1105005.Couve
+7246,1105006.Couve-flor
+7248,1105010.Repolho
+7249,1105012.Cheiro-verde
+7250,1105013.Agrião
+7253,1105019.Brócolis
+7254,1106.Frutas
+7255,1106001.Banana-da-terra
+7256,1106003.Abacaxi
+7257,1106004.Abacate
+7258,1106005.Banana - d'água
+7259,1106006.Banana - maçã
+7260,1106008.Banana - prata
+7262,1106011.Laranja - baía
+7265,1106015.Limão
+7266,1106017.Maçã
+7267,1106018.Mamão
+7268,1106019.Manga
+7269,1106020.Maracujá
+7270,1106021.Melancia
+7272,1106023.Pera
+7275,1106027.Tangerina
+7276,1106028.Uva
+7279,1106039.Laranja - pera
+7280,1106051.Morango
+7281,1106084.Goiaba
+7283,1107.Carnes
+7285,1107009.Fígado
+7287,1107018.Carne de porco
+7288,1107031.Carne de carneiro
+7291,1107084.Contrafilé
+7292,1107085.Filé-mignon
+7293,1107087.Chã de dentro
+7294,1107088.Alcatra
+7295,1107089.Patinho
+7296,1107090.Lagarto redondo
+12294,1107091.Lagarto comum
+7298,1107093.Músculo
+7299,1107094.Pá
+7300,1107095.Acém
+7301,1107096.Peito
+101448,1107097.Capa de filé
+7302,1107099.Costela
+7303,1108.Pescados
+7305,1108002.Peixe - anchova
+101699,1108003.Peixe - badejo
+7306,1108004.Peixe - corvina
+7307,1108005.Peixe - cavalinha
+107613,1108006.Peixe
+7308,1108009.Peixe - pescadinha
+7309,1108011.Peixe - tainha
+7310,1108012.Peixe - sardinha
+7311,1108013.Camarão
+7312,1108015.Peixe - vermelho
+7313,1108019.Peixe - cavala
+8873,1108024.Peixe - pacu
+7316,1108028.Peixe - dourado
+107615,1108029.Peixe - cação
+107616,1108031.Peixe - merluza
+7317,1108032.Peixe - serra
+7320,1108038.Peixe - pescada
+7323,1108045.Caranguejo
+12300,1108049.Peixe - castanha
+101461,1108054.Peixe - piau
+7328,1108057.Peixe - surubim
+41130,1108067.Sururu
+101466,1108072.Peixe - curimatã
+12431,1108075.Peixe - salmão
+12302,1108080.Peixe - tilápia
+12432,1108083.Peixe - tucunaré
+41129,1108087.Peixe - tambaqui
+7333,1108088.Peixe - dourada
+8874,1108096.Peixe - peroá
+31694,1108112.Peixe - pintado
+41131,1108170.Peixe - mandi
+7335,1109.Carnes e peixes industrializados
+7336,1109002.Presunto
+12304,1109007.Salsicha
+7339,1109008.Linguiça
+7341,1109010.Mortadela
+12305,1109012.Salame
+12379,1109056.Carne-seca e de sol
+7347,1109058.Carne de porco salgada e defumada
+12380,1109088.Hambúrger
+7349,1110.Aves e ovos
+107617,1110009.Frango inteiro
+107618,1110010.Frango em pedaços
+7355,1110044.Ovo de galinha
+7356,1111.Leites e derivados
+12393,1111004.Leite longa vida
+7358,1111008.Leite condensado
+7359,1111009.Leite em pó
+107619,1111011.Queijo
+7360,1111012.Creme de leite
+12394,1111019.Iogurte e bebidas lácteas
+7367,1111031.Manteiga
+7372,1112.Panificados
+7373,1112003.Biscoito
+7375,1112015.Pão francês
+7376,1112017.Pão doce
+7377,1112018.Pão de forma
+7378,1112019.Bolo
+7380,1112025.Pão de queijo
+7384,1113.Óleos e gorduras
+7385,1113013.Óleo de soja
+7386,1113014.Azeite de oliva
+12395,1113040.Margarina
+7389,1114.Bebidas e infusões
+7390,1114001.Suco de frutas
+12396,1114004.Açaí (emulsão)
+7392,1114022.Café moído
+7393,1114023.Café solúvel
+107620,1114029.Chá
+107621,1114083.Refrigerante e água mineral
+7396,1114084.Cerveja
+7397,1114085.Outras bebidas alcoólicas
+7401,1115.Enlatados e conservas
+7402,1115004.Coco ralado
+107622,1115006.Ervilha em conserva
+7406,1115016.Palmito em conserva
+7407,1115017.Pepino em conserva
+107624,1115039.Sardinha em conserva
+107625,1115050.Salsicha em conserva
+107626,1115051.Carne em conserva
+107627,1115053.Patê
+7411,1115056.Sopa desidratada
+7412,1115057.Azeitona
+107628,1115058.Milho-verde em conserva
+107630,1115075.Atum em conserva
+7415,1116.Sal e condimentos
+7416,1116001.Leite de coco
+109463,1116005.Atomatado
+7418,1116010.Alho
+12397,1116013.Sal
+7422,1116026.Fermento
+7423,1116033.Maionese
+7424,1116041.Vinagre
+7425,1116048.Caldo concentrado
+7428,1116071.Tempero misto
+7432,12.Alimentação fora do domicílio
+7433,1201.Alimentação fora do domicílio
+7434,1201001.Refeição
+7435,1201003.Lanche
+7436,1201005.Café da manhã
+107633,1201007.Refrigerante e água mineral
+7438,1201009.Cafezinho
+7440,1201048.Cerveja
+7443,1201051.Outras bebidas alcoólicas
+7444,1201061.Doces
+7445,2.Habitação
+7446,21.Encargos e manutenção
+7447,2101.Aluguel e taxas
+7448,2101001.Aluguel residencial
+7449,2101002.Condomínio
+7451,2101004.Taxa de água e esgoto
+7453,2101012.Mudança
+7454,2103.Reparos
+7455,2103005.Ferragens
+7456,2103008.Material de eletricidade
+7457,2103009.Material de pintura
+12433,2103012.Vidro
+7459,2103014.Tinta
+12398,2103032.Revestimento de piso e parede
+107638,2103039.Cimento
+107639,2103040.Tijolo
+107640,2103041.Material hidráulico
+107641,2103042.Mão de obra
+107642,2103048.Areia
+12399,2103055.Telha
+7461,2104.Artigos de limpeza
+7464,2104005.Água sanitária
+7465,2104008.Detergente
+7466,2104009.Sabão em pó
+7467,2104012.Desinfetante
+7468,2104013.Inseticida
+7470,2104015.Sabão em barra
+7471,2104016.Esponja de limpeza
+12400,2104032.Amaciante
+7479,22.Combustíveis e energia
+7480,2201.Combustíveis (domésticos)
+7481,2201003.Carvão vegetal
+7482,2201004.Gás de botijão
+7483,2201005.Gás encanado
+7484,2202.Energia elétrica residencial
+7485,2202003.Energia elétrica residencial
+7486,3.Artigos de residência
+7487,31.Móveis e utensílios
+7488,3101.Mobiliário
+7489,3101002.Móvel para sala
+7490,3101003.Móvel para quarto
+7492,3101015.Móvel para copa e cozinha
+12401,3101016.Móvel infantil
+7493,3101017.Colchão
+7495,3102.Utensílios e enfeites
+7497,3102005.Tapete
+7498,3102006.Cortina
+12402,3102007.Utensílios de metal
+12403,3102009.Utensílios de vidro e louça
+107645,3102010.Utensílios de plástico
+7508,3102035.Flores naturais
+107646,3102040.Utensílios diversos
+7517,"3103.Cama, mesa e banho"
+7518,3103001.Roupa de cama
+7520,3103003.Roupa de banho
+7521,32.Aparelhos eletroeletrônicos
+7522,3201.Eletrodomésticos e equipamentos
+7523,3201001.Refrigerador
+12434,3201002.Ar-condicionado
+7526,3201006.Máquina de lavar roupa
+7529,3201012.Liquidificador
+7530,3201013.Ventilador
+7531,3201021.Fogão
+7539,3201050.Chuveiro elétrico
+7540,3201065.Forno de micro-ondas
+7541,"3202.Tv, som e informática"
+7542,3202001.Televisor
+7543,3202003.Aparelho de som
+107647,3202005.Aparelho de DVD
+12404,3202013.Antena
+7547,3202028.Microcomputador
+7548,33.Consertos e manutenção
+7549,3301.Consertos e manutenção
+12405,3301002.Conserto de refrigerador
+107648,3301006.Conserto de televisor
+7551,3301009.Conserto de aparelho de som
+12406,3301015.Conserto de máquina de lavar roupa
+7555,3301022.Reforma de estofado
+12407,3301044.Manutenção de microcomputador
+7558,4.Vestuário
+7559,41.Roupas
+7560,4101.Roupa masculina
+7561,4101002.Calça comprida masculina
+7562,4101004.Terno
+7563,4101005.Agasalho masculino
+7564,4101006.Short e bermuda masculina
+7565,4101008.Cueca
+107649,4101009.Camisa/camiseta masculina
+7572,4102.Roupa feminina
+7573,4102002.Calça comprida feminina
+7574,4102003.Agasalho feminino
+7575,4102004.Saia
+7576,4102005.Vestido
+7577,4102008.Blusa
+7579,4102010.Lingerie
+7582,4102013.Bermuda e short feminino
+7587,4103.Roupa infantil
+12408,4103001.Uniforme escolar
+7589,4103002.Calça comprida infantil
+7590,4103005.Agasalho infantil
+7591,4103007.Vestido infantil
+7592,4103008.Bermuda e short infantil
+107650,4103011.Camisa/camiseta infantil
+12409,4103031.Conjunto infantil
+7604,42.Calçados e acessórios
+7605,4201.Calçados e acessórios
+7606,4201002.Sapato masculino
+7607,4201003.Sapato feminino
+7608,4201004.Sapato infantil
+7609,4201006.Sandália / chinelo masculino
+7610,4201007.Sandália / chinelo feminino
+7611,4201008.Sandália / chinelo infantil
+107652,4201015.Bolsa
+7614,4201063.Tênis
+7615,43.Joias e bijuterias
+7616,4301.Joias e bijuterias
+7617,4301001.Bijuteria
+7618,4301002.Joia
+7619,4301004.Relógio de pulso
+7620,44.Tecidos e armarinho
+7621,4401.Tecidos e armarinho
+7622,4401001.Tecido
+7623,4401002.Artigos de armarinho
+7624,4401005.Acortinado (mosquiteiro)
+7625,5.Transportes
+7626,51.Transportes
+7627,5101.Transporte público
+7628,5101001.Ônibus urbano
+7629,5101002.Táxi
+7630,5101004.Trem
+7631,5101006.Ônibus intermunicipal
+7632,5101007.Ônibus interestadual
+7634,5101010.Passagem aérea
+7635,5101011.Metrô
+12410,5101022.Transporte hidroviário
+7639,5101026.Transporte escolar
+7640,5102.Veículo próprio
+7641,5102001.Automóvel novo
+7642,5102004.Emplacamento e licença
+7643,5102005.Seguro voluntário de veículo
+107653,5102006.Multa
+7644,5102007.Óleo lubrificante
+7645,5102009.Acessórios e peças
+12411,5102010.Pneu
+7647,5102011.Conserto de automóvel
+7648,5102013.Estacionamento
+7649,5102015.Pedágio
+7650,5102019.Lubrificação e lavagem
+107654,5102020.Automóvel usado
+7653,5102037.Pintura de veículo
+107656,5102051.Aluguel de veículo
+7654,5102053.Motocicleta
+7656,5104.Combustíveis (veículos)
+7657,5104001.Gasolina
+7658,5104002.Etanol
+7659,5104003.Óleo diesel
+107657,5104005.Gás veicular
+7660,6.Saúde e cuidados pessoais
+7661,61.Produtos farmacêuticos e óticos
+7662,6101.Produtos farmacêuticos
+7663,6101001.Anti-infeccioso e antibiótico
+7664,6101002.Analgésico e antitérmico
+7665,6101003.Anti-inflamatório e antirreumático
+7666,6101004.Antigripal e antitussígeno
+12412,6101006.Dermatológico
+7669,6101007.Antialérgico e broncodilatador
+7670,6101009.Gastroprotetor
+7671,6101010.Vitamina e fortificante
+107658,6101011.Hormônio
+7673,6101013.Psicotrópico e anorexígeno
+7674,6101014.Hipotensor e hipocolesterolêmico
+107659,6101051.Oftalmológico
+109464,6102.Produtos óticos
+7680,6102002.Armação de óculos
+7681,6102003.Óculos sem grau
+12413,6102011.Lentes de óculos e de contato
+7683,62.Serviços de saúde
+7684,6201.Serviços médicos e dentários
+7685,6201002.Médico
+7686,6201003.Dentista
+12414,6201005.Aparelho ortodôntico
+7688,6201006.Artigos ortopédicos
+12435,6201007.Fisioterapeuta
+12436,6201010.Psicólogo
+7690,6202.Serviços laboratoriais e hospitalares
+7691,6202003.Exame de laboratório
+7692,6202004.Hospitalização e cirurgia
+12416,6202006.Exame de imagem
+7695,6203.Plano de saúde
+7696,6203001.Plano de saúde
+7697,63.Cuidados pessoais
+7698,6301.Higiene pessoal
+7699,6301001.Produto para cabelo
+12420,6301002.Fralda descartável
+101642,6301004.Produto para barba
+101644,6301006.Produto para pele
+107661,6301007.Produto para higiene bucal
+7703,6301010.Produto para unha
+7704,6301011.Perfume
+7707,6301014.Desodorante
+7708,6301015.Absorvente higiênico
+7709,6301016.Sabonete
+7710,6301017.Papel higiênico
+7711,6301020.Artigos de maquiagem
+7712,7.Despesas pessoais
+7713,71.Serviços pessoais
+7714,7101.Serviços pessoais
+7715,7101001.Costureira
+12421,7101005.Manicure
+7719,7101009.Cabeleireiro
+7720,7101010.Empregado doméstico
+7721,7101014.Depilação
+7724,7101036.Despachante
+7727,7101076.Serviço bancário
+7728,7101090.Conselho de classe
+12422,"72.Recreação, fumo e fotografia"
+7730,7201.Recreação
+7731,7201001.Cinema
+12423,7201002.CD e DVD
+7732,7201003.Ingresso para jogo
+7733,7201006.Clube
+7735,7201010.Instrumento musical
+12424,7201018.Tratamento de animais
+7736,7201019.Bicicleta
+107666,7201020.Alimento para animais
+7738,7201023.Brinquedo
+12425,7201052.Locação de DVD
+12426,7201054.Boate e danceteria
+107668,7201063.Jogos de azar
+7747,7201068.Motel
+7753,7201090.Hotel
+7756,7201095.Excursão
+7758,7202.Fumo
+7759,7202041.Cigarro
+7760,7203.Fotografia e filmagem
+7761,7203001.Máquina fotográfica
+7763,7203003.Revelação e cópia
+7766,8.Educação
+7767,"81.Cursos, leitura e papelaria"
+12427,8101.Cursos regulares
+7769,8101001.Creche
+107670,8101002.Educação infantil
+107671,8101003.Ensino fundamental
+107672,8101004.Ensino médio
+107673,8101005.Ensino superior
+107674,8101006.Pós-graduação
+7777,8102.Leitura
+7778,8102001.Jornal diário
+7779,8102002.Assinatura de jornal
+107676,8102004.Revista
+107677,8102005.Livro
+7782,8103.Papelaria
+7783,8103001.Caderno
+7784,8103002.Fotocópia
+7785,8103014.Artigos de papelaria
+107678,8104.Cursos diversos
+107679,8104001.Curso preparatório
+107680,8104002.Curso técnico
+107681,8104003.Curso de idioma
+107682,8104004.Curso de informática
+107683,8104005.Autoescola
+12428,8104006.Atividades físicas
+7786,9.Comunicação
+7787,91.Comunicação
+7788,9101.Comunicação
+7789,9101001.Correio
+7790,9101002.Telefone fixo
+7791,9101003.Telefone público
+7792,9101008.Telefone celular
+107688,9101018.Acesso à internet
+7794,9101019.Aparelho telefônico
+12429,9101021.Telefone com internet - pacote
+12430,9101022.TV por assinatura com internet

@@ -43,6 +43,7 @@ function App() {
       {generatePanel("stf", "currency", "Salário dos ministros do STF", "http://qualidade.ieprev.com.br/UserFiles/File/tabela%20do%20subsidios%20dos%20ministros%202015(2).pdf")}
       {generatePanel("bigmac", "currency", "Preço do Big Mac", "https://www.quandl.com/data/ECONOMIST/BIGMAC_BRA-Big-Mac-Index-Brazil")}
       {generatePanel("gold", "currency", "Preço do ouro (oz)", "https://pt.bullion-rates.com/gold/BRL-history.htm")}
+      {generatePanel("cesta", "currency", "Custo da cesta básica", "https://www.dieese.org.br/analisecestabasica/salarioMinimo.html")}      
       {generatePanel("ipca", "percentage", "IPCA mensal", "http://www.ipeadata.gov.br/ExibeSerie.aspx?serid=36482&module=M", "IPCA não está ajustado, por ser a própria inflação")}
       {generatePanel("ipca12", "percentage", "IPCA acumulado (12 meses)", "http://www.ipeadata.gov.br/ExibeSerie.aspx?serid=36482&module=M", "IPCA não está ajustado, por ser a própria inflação")}
       <ScrollableAnchor id={"ipcaGrupo"}>
