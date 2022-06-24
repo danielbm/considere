@@ -2,8 +2,7 @@ import React from 'react'
 import ScrollableAnchor from 'react-scrollable-anchor'
 import './App.css'
 import PanelComponent from './Components/PanelComponent.js'
-import ResultsImg from './Util/results.png'
-import useMediaQuery from '@material-ui/core/useMediaQuery';
+import IBGEComponent from './Components/IBGEComponent.js'
 
 const generatePanel = (type, format, title, src, obs) => {
   return (
@@ -21,21 +20,20 @@ const generatePanel = (type, format, title, src, obs) => {
   )
 }
 function App() {
-
-  const isMobile = useMediaQuery('(max-width:600px)');
-
   return (
     <div className="App">
       <div className="header">
         <h1> CONSIDERE A INFLAÇÃO </h1>
         <p> Todos os valores abaixo estão corrigidos pelo IPCA. </p>
       </div>
+      <IBGEComponent />
       {generatePanel("dolar", "currency", "Cotação do Dólar", "http://ipeadata.gov.br/exibeserie.aspx?serid=38389 e https://fred.stlouisfed.org/series/CPIAUCSL", "Ajustado pela inflação brasileira e americana")}
       {generatePanel("ibov", "number", "IBOVESPA", "B3")}
       {generatePanel("minimo", "currency", "Salário Mínimo", "http://www.ipeadata.gov.br/ExibeSerie.aspx?stub=1&serid1739471028=1739471028")}
       {generatePanel("onibus", "currency", "Passagem de ônibus em São Paulo", "http://www.sptrans.com.br/sptrans/tarifas/")}
       {generatePanel("gasolina", "currency", "Preço do litro de gasolina", "https://preco.anp.gov.br/include/Resumo_Mensal_Index.asp")}
       {generatePanel("energia", "currency", "Tarifa média de energia elétrica residencial (R$/MWh)", "https://portalrelatorios.aneel.gov.br/mercado/cativo#!")}
+      {generatePanel("cesta", "currency", "Custo da cesta básica", "https://www.dieese.org.br/cesta/")}      
       {generatePanel("fipezap", "number", "Imóveis em São Paulo (FIPEZAP)", "https://www.fipe.org.br/pt-br/indices/fipezap/#fipezap-historico")}
       {generatePanel("aluguelsp", "number", "Aluguéis em São Paulo (FIPEZAP)", "https://www.fipe.org.br/pt-br/indices/fipezap/#fipezap-historico")}
       {generatePanel("passagem", "currency", "Preço médio da passagem aérea doméstica", "https://sistemas.anac.gov.br/sas/downloads/view/frmDownload.aspx")}
@@ -43,16 +41,8 @@ function App() {
       {generatePanel("stf", "currency", "Salário dos ministros do STF", "http://qualidade.ieprev.com.br/UserFiles/File/tabela%20do%20subsidios%20dos%20ministros%202015(2).pdf")}
       {generatePanel("bigmac", "currency", "Preço do Big Mac", "https://www.quandl.com/data/ECONOMIST/BIGMAC_BRA-Big-Mac-Index-Brazil")}
       {generatePanel("gold", "currency", "Preço do ouro (oz)", "https://pt.bullion-rates.com/gold/BRL-history.htm")}
-      {generatePanel("cesta", "currency", "Custo da cesta básica", "https://www.dieese.org.br/analisecestabasica/salarioMinimo.html")}      
       {generatePanel("ipca", "percentage", "IPCA mensal", "http://www.ipeadata.gov.br/ExibeSerie.aspx?serid=36482&module=M", "IPCA não está ajustado, por ser a própria inflação")}
       {generatePanel("ipca12", "percentage", "IPCA acumulado (12 meses)", "http://www.ipeadata.gov.br/ExibeSerie.aspx?serid=36482&module=M", "IPCA não está ajustado, por ser a própria inflação")}
-      <ScrollableAnchor id={"ipcaGrupo"}>
-        <div className="resultsImg">
-          <h2> Aumento real por componente da inflação </h2>
-          <img src={ResultsImg} alt="Inflação acumulada por grupo" width={isMobile ? "400px" : "800px"}/>
-        </div>
-      </ScrollableAnchor>
-      
       <div className="footer">
         <p> Dúvidas, sugestões e contribuições em: <a href="https://github.com/danielbm/considere">https://github.com/danielbm/considere</a> </p>
       </div>

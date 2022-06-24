@@ -1,6 +1,8 @@
 
 import dadosHist from './dadosHist.js'
 
+// let host="localhost:5000"
+
 export const getCurrent = (type) => {
   if (type in dadosHist) {
     return dadosHist[type][dadosHist[type].length-1].value
@@ -21,7 +23,18 @@ export const getHist = (type) => {
     return null
   }
 }
-// let host="192.168.0.101"
+
+// export const getChart = (items, cut, type) => {
+//   return new Promise( (resolve,reject) => {
+//     request('http://'+host+'/'+items)
+//     .then(data => {
+//       if (!data)
+//         reject("No data for "+type)
+//       resolve(data)
+//     })
+//   })
+// }
+
 // export const getCurrent = (type) => {
 //   return new Promise( (resolve,reject) => {
 //     request('http://'+host+':4000/graphql', `{ current(type: "${type}") }`)

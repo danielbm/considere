@@ -83,7 +83,10 @@ def main():
         data = pd.concat([data[~data.index.isin(data2012.index)], data2012])
         data = pd.concat([data[~data.index.isin(data2020.index)], data2020])
 
-        data.to_csv('categories.csv', index=True)
+        data = data.sort_values(by='DescItem')
+
+        data.to_csv('categories.csv', sep=';', float_format='%.3f', decimal=',', encoding='iso-8859-1', index=True )
+
 
     elif sys.argv[1] == 'generate':
         data1999 = pd.read_csv('ipca1999.csv', index_col='YearMo')
