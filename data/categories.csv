@@ -1,790 +1,790 @@
-CodItem;DescItem
-7170;1.Alimentação e bebidas
-7171;11.Alimentação no domicílio
-7172;1101.Cereais, leguminosas e oleaginosas
-7173;1101002.Arroz
-7175;1101051.Feijão - mulatinho
-7176;1101052.Feijão - preto
-7177;1101053.Feijão - macassar (fradinho)
-47617;1101053.Feijão - macáçar (fradinho)
-7178;1101064.Feijão - jalo (enxofrão)
-7179;1101068.Feijão - roxo
-12222;1101073.Feijão - carioca (rajado)
-7180;1101073.Feijão - carioca (rajado))
-41128;1101075.Feijão - branco
-47618;1101079.Milho (em grão)
-7181;1101079.Milho em grão
-7182;1101080.Milho em espiga
-107607;1101084.Fava
-7184;1102.Farinhas, féculas e massas
-7185;1102001.Farinha de arroz
-7186;1102002.Aveia em flocos
-7187;1102006.Macarrão
-7188;1102008.Fubá de milho
-7189;1102009.Amido de milho
-7190;1102010.Flocos de milho
-7191;1102012.Farinha de trigo
-7192;1102013.Farinha vitaminada
-7193;1102016.Flocos de cereais
-7194;1102022.Fécula de mandioca
-7195;1102023.Farinha de mandioca
-7196;1102028.Cremogema
-107608;1102029.Massa semipreparada
-7197;1102038.Massa para pizza
-7198;1102040.Massa para pastel
-7199;1102043.Massa para lasanha
-47619;1102061.Macarrão instantâneo
-7200;1103.Tubérculos, raízes e legumes
-7201;1103002.Batata-doce
-7202;1103003.Batata-inglesa
-7203;1103004.Inhame
-7204;1103005.Mandioca (aipim)
-7205;1103017.Abóbora
-7206;1103020.Abobrinha
-7207;1103021.Chuchu
-7208;1103022.Jiló
-7209;1103025.Pepino
-7210;1103026.Pimentão
-7211;1103027.Quiabo
-7212;1103028.Tomate
-7213;1103029.Vagem
-7214;1103042.Beterraba
-7215;1103043.Cebola
-7216;1103044.Cenoura
-7217;1103046.Batata-baroa
-12223;1103046.Mandioquinha (batata-baroa)
-7218;1103048.Mandioquinha (batata-aipo)
-7219;1104.Açúcares e derivados
-7220;1104003.Açúcar refinado
-7221;1104004.Açúcar cristal
-7222;1104014.Rapadura
-12224;1104018.Balas
-7223;1104018.Balas, chicletes, etc.
-7224;1104023.Chocolate em barra
-107609;1104023.Chocolate em barra e bombom
-7225;1104024.Bombom
-7226;1104027.Geléia de frutas
-107610;1104028.Gelatina
-7227;1104028.Gelatina de frutas em pó
-7228;1104029.Geléia de mocotó
-7229;1104031.Mel de abelha
-7230;1104032.Sorvete
-7231;1104052.Achocolatado em pó
-107611;1104052.Chocolate e achocolatado em pó
-7232;1104059.Doce de frutas em calda
-7233;1104060.Doce de frutas em pasta
-7234;1104064.Pamonha
-7235;1104066.Doce de leite
-47620;1104067.Açúcar demerara
-7236;1104069.Adoçante artificial
-7237;1104075.Fruta seca
-7239;1104095.Beiju
-7240;1104096.Schimier de frutas
-7241;1105.Hortaliças e verduras
-7242;1105001.Alface
-7243;1105003.Chicória
-7244;1105004.Coentro
-7245;1105005.Couve
-7246;1105006.Couve-flor
-7248;1105010.Repolho
-7249;1105012.Cheiro-verde
-7250;1105013.Agrião
-7251;1105017.Almeirão
-7252;1105018.Cebolinha
-7253;1105019.Brócolis
-7254;1106.Frutas
-7255;1106001.Banana-da-terra
-7256;1106003.Abacaxi
-7257;1106004.Abacate
-7258;1106005.Banana - d'água
-7259;1106006.Banana - maçã
-7260;1106008.Banana - prata
-7262;1106011.Laranja - baía
-7263;1106012.Laranja - lima
-7264;1106013.Laranja - seleta
-7265;1106015.Limão
-7266;1106017.Maçã
-7267;1106018.Mamão
-7268;1106019.Manga
-7269;1106020.Maracujá
-7270;1106021.Melancia
-7271;1106022.Melão
-7272;1106023.Pera
-7273;1106024.Pêssego
-7274;1106026.Acerola
-7275;1106027.Tangerina
-7276;1106028.Uva
-7278;1106034.Ameixa
-7279;1106039.Laranja - pera
-7280;1106051.Morango
-7281;1106084.Goiaba
-7282;1106097.Cupuaçú
-7283;1107.Carnes
-7284;1107008.Tripa e bucho
-7285;1107009.Fígado
-107612;1107010.Outras vísceras
-7287;1107018.Carne de porco
-7288;1107031.Carne de carneiro
-7290;1107081.Cupim
-7291;1107084.Contrafilé
-7292;1107085.Filé-mignon
-7293;1107087.Chã de dentro
-7294;1107088.Alcatra
-7295;1107089.Patinho
-7296;1107090.Lagarto redondo
-12294;1107091.Lagarto comum
-7297;1107091.Lagarto plano
-7298;1107093.Músculo
-7299;1107094.Pá
-7300;1107095.Acém
-7301;1107096.Peito
-101448;1107097.Capa de filé
-7302;1107099.Costela
-47621;1107208.Picanha
-7303;1108.Pescados
-7304;1108001.Filé de peixe
-7305;1108002.Peixe - anchova
-101699;1108003.Peixe - badejo
-7306;1108004.Peixe - corvina
-7307;1108005.Peixe - cavalinha
-107613;1108006.Peixe
-7308;1108009.Peixe - pescadinha
-7309;1108011.Peixe - tainha
-7310;1108012.Peixe - sardinha
-7311;1108013.Camarão
-7312;1108015.Peixe - vermelho
-7313;1108019.Peixe - cavala
-7314;1108020.Peixe - cocoroca
-8873;1108024.Peixe - pacu
-107614;1108025.Peixe - linguado
-7316;1108028.Peixe - dourado
-107615;1108029.Peixe - cação
-107616;1108031.Peixe - merluza
-7317;1108032.Peixe - serra
-7318;1108033.Peixe - pargo
-7319;1108035.Peixe - pampo
-7320;1108038.Peixe - pescada
-7322;1108044.Peixe - cioba
-7323;1108045.Caranguejo
-7324;1108047.Peixe - arraia
-7325;1108048.Peixe - xerelete
-12300;1108049.Peixe - castanha
-12301;1108052.Peixe - palombeta
-7327;1108053.Peixe - piramutaba
-101461;1108054.Peixe - piau
-7328;1108057.Peixe - surubim
-7329;1108058.Peixe - albacora
-7330;1108064.Siri
-41130;1108067.Sururu
-101466;1108072.Peixe - curimatã
-12431;1108075.Peixe - salmão
-7332;1108076.Peixe - acará
-12302;1108080.Peixe - tilápia
-12432;1108083.Peixe - tucunaré
-41129;1108087.Peixe - tambaqui
-7333;1108088.Peixe - dourada
-47623;1108092.Peixe - filhote
-7334;1108092.Peixe - fillhote
-8874;1108096.Peixe - peroá
-31694;1108112.Peixe - pintado
-47624;1108125.Peixe - aruanã
-41131;1108170.Peixe - mandi
-7335;1109.Carnes e peixes industrializados
-7336;1109002.Presunto
-7337;1109004.Bacon
-12304;1109007.Salsicha
-7338;1109007.Salsicha e salsichão
-7339;1109008.Linguiça
-7341;1109010.Mortadela
-12305;1109012.Salame
-7342;1109012.Salame e salaminho
-7343;1109023.Bacalhau
-7344;1109024.Camarão seco salgado
-7345;1109027.Peixe - pirarucu - salgado
-7346;1109056.Carne seca
-12379;1109056.Carne-seca e de sol
-7347;1109058.Carne de porco salgada e defumada
-7348;1109088.Carne de hambúrguer
-12380;1109088.Hambúrger
-7349;1110.Aves e ovos
-7351;1110009.Frango
-107617;1110009.Frango inteiro
-107618;1110010.Frango em pedaços
-7352;1110011.Peito de frango
-7353;1110012.Coxa de frango
-7354;1110014.Asa de frango
-7355;1110044.Ovo de galinha
-7356;1111.Leites e derivados
-12393;1111004.Leite longa vida
-7357;1111004.Leite pasteurizado
-7358;1111008.Leite condensado
-7359;1111009.Leite em pó
-107619;1111011.Queijo
-7360;1111012.Creme de leite
-7361;1111019.Iogurte
-12394;1111019.Iogurte e bebidas lácteas
-7362;1111021.Queijo cremoso
-47627;1111021.Requeijão
-7363;1111023.Queijo-de-minas
-7364;1111024.Queijo prato
-7365;1111025.Queijo parmesão
-7366;1111026.Queijo muzzarella
-7367;1111031.Manteiga
-7368;1111038.Leite fermentado
-7369;1111040.Queijo reino
-7370;1111046.Nata
-7371;1111051.Leite com sabor
-7372;1112.Panificados
-7373;1112003.Biscoito
-7374;1112012.Pão de milho
-7375;1112015.Pão francês
-7376;1112017.Pão doce
-7377;1112018.Pão de forma
-7378;1112019.Bolo
-7379;1112021.Massa para pão de queijo
-7380;1112025.Pão de queijo
-7381;1112034.Rosca doce
-7382;1112040.Torta doce
-7384;1113.Óleos e gorduras
-7385;1113013.Óleo de soja
-7386;1113014.Azeite de oliva
-12395;1113040.Margarina
-7387;1113040.Margarina vegetal
-7389;1114.Bebidas e infusões
-7390;1114001.Suco de frutas
-47628;1114003.Polpa de fruta (congelada)
-12396;1114004.Açaí (emulsão)
-7391;1114004.Polpa de açaí
-7392;1114022.Café moído
-7393;1114023.Café solúvel
-107620;1114029.Chá
-7394;1114029.Mate
-7395;1114083.Refrigerante
-107621;1114083.Refrigerante e água mineral
-7396;1114084.Cerveja
-7397;1114085.Outras bebidas alcoólicas
-7399;1114087.Vinho
-47630;1114090.Suco em pó
-47631;1114091.Chá mate (erva mate)
-7400;1114096.Água mineral
-7401;1115.Enlatados e conservas
-7402;1115004.Coco ralado
-107622;1115006.Ervilha em conserva
-7403;1115006.Ervilha em lata
-107623;1115008.Feijoada em conserva
-7404;1115008.Feijoada em lata
-107702;1115013.Alimento infantil
-7405;1115013.Sopa infantil
-7406;1115016.Palmito em conserva
-7407;1115017.Pepino em conserva
-107624;1115039.Sardinha em conserva
-7408;1115039.Sardinha em lata
-107625;1115050.Salsicha em conserva
-7409;1115050.Salsicha em lata
-7410;1115051.Carne de boi em lata
-107626;1115051.Carne em conserva
-107627;1115053.Patê
-7411;1115056.Sopa desidratada
-7412;1115057.Azeitona
-107628;1115058.Milho-verde em conserva
-7413;1115058.Milho-verde em lata
-107629;1115059.Cogumelo em conserva
-107630;1115075.Atum em conserva
-7414;1115075.Atum em lata
-7415;1116.Sal e condimentos
-7416;1116001.Leite de coco
-109463;1116005.Atomatado
-7417;1116005.Massa de tomate
-7418;1116010.Alho
-12397;1116013.Sal
-7419;1116013.Sal refinado
-7420;1116022.Colorau
-7421;1116023.Caldo de tucupi
-7422;1116026.Fermento
-7423;1116033.Maionese
-7424;1116041.Vinagre
-7425;1116048.Caldo concentrado
-7426;1116055.Cominho
-7427;1116062.Pimenta do reino
-7428;1116071.Tempero misto
-107632;1116095.Molho de soja
-7429;1117.Alimentos prontos
-7430;1117001.Refeição pronta
-7431;1117012.Lanche para viagem
-7432;12.Alimentação fora do domicílio
-7433;1201.Alimentação fora do domicílio
-7434;1201001.Refeição
-7435;1201003.Lanche
-7436;1201005.Café da manhã
-7437;1201007.Refrigerante
-107633;1201007.Refrigerante e água mineral
-7438;1201009.Cafezinho
-7439;1201032.Caldos
-7440;1201048.Cerveja
-7441;1201049.Chopp
-7442;1201050.Aguardente
-7443;1201051.Outras bebidas alcoólicas
-47632;1201052.Vinho
-7444;1201061.Doces
-47633;1201088.Sorvete
-7445;2.Habitação
-7446;21.Encargos e manutenção
-7447;2101.Aluguel e taxas
-7448;2101001.Aluguel residencial
-7449;2101002.Condomínio
-7450;2101003.Imposto predial
-7451;2101004.Taxa de água e esgoto
-7452;2101008.Compra de água
-7453;2101012.Mudança
-7454;2103.Reparos
-7455;2103005.Ferragens
-7456;2103008.Material de eletricidade
-7457;2103009.Material de pintura
-7458;2103012.Material de vidro
-12433;2103012.Vidro
-7459;2103014.Tinta
-7460;2103031.Ferramentas
-107637;2103032.Azulejo e piso
-12398;2103032.Revestimento de piso e parede
-47634;2103038.Madeira e taco
-107638;2103039.Cimento
-107639;2103040.Tijolo
-107640;2103041.Material hidráulico
-107641;2103042.Mão de obra
-107642;2103048.Areia
-107643;2103049.Pedras
-12399;2103055.Telha
-7461;2104.Artigos de limpeza
-7462;2104002.Vassoura
-7463;2104003.Saco para lixo
-7464;2104005.Água sanitária
-7465;2104008.Detergente
-7466;2104009.Sabão em pó
-7467;2104012.Desinfetante
-7468;2104013.Inseticida
-7469;2104014.Cera para assoalho
-7470;2104015.Sabão em barra
-7471;2104016.Esponja de limpeza
-7472;2104018.Desodorante ambiental
-47635;2104019.Sabão líquido
-7473;2104020.Limpador com amoníaco
-47636;2104020.Limpador multiuso
-12400;2104032.Amaciante
-7475;2104032.Amaciante, alvejante
-7476;2104035.Polidor de metais
-7477;2104041.Papel toalha
-7478;2104056.Lustra móveis
-47637;2104085.Amaciante e alvejante
-7479;22.Combustíveis e energia
-7480;2201.Combustíveis (domésticos)
-7481;2201003.Carvão vegetal
-7482;2201004.Gás de botijão
-7483;2201005.Gás encanado
-7484;2202.Energia elétrica residencial
-7485;2202003.Energia elétrica residencial
-7486;3.Artigos de residência
-7487;31.Móveis e utensílios
-7488;3101.Mobiliário
-7489;3101002.Móvel para sala
-7490;3101003.Móvel para quarto
-7492;3101015.Móvel para copa e cozinha
-12401;3101016.Móvel infantil
-7493;3101017.Colchão
-7494;3101060.Rede
-7495;3102.Utensílios e enfeites
-47638;3102001.Artigos de iluminação
-7496;3102004.Relógio despertador
-7497;3102005.Tapete
-7498;3102006.Cortina
-12402;3102007.Utensílios de metal
-7499;3102007.Utensílios para copa e cozinha de metal
-12403;3102009.Utensílios de vidro e louça
-7500;3102009.Utensílios para copa e cozinha de louça
-107644;3102009.Utensílios para copa e cozinha de vidro e louça
-7501;3102010.Artigos de plástico
-107645;3102010.Utensílios de plástico
-7502;3102012.Garrafa térmica
-7503;3102014.Copo de vidro
-7504;3102015.Mamadeira
-7505;3102016.Bujão de gás vazio
-7506;3102032.Chupeta e bico
-7507;3102034.Filtro de água
-7508;3102035.Flores naturais
-7509;3102036.Artigos de jardinagem
-7510;3102037.Fósforos
-7511;3102039.Vela para iluminação
-107646;3102040.Utensílios diversos
-7512;3102070.Espelho
-7513;3102072.Persiana
-7514;3102088.Filtro de papel
-7515;3102089.Guardanapo de papel
-7516;3102090.Papel alumínio
-47639;3102337.Utensílios para bebê
-7517;3103.Cama, mesa e banho
-7518;3103001.Roupa de cama
-7519;3103002.Roupa de mesa
-7520;3103003.Roupa de banho
-7521;32.Aparelhos eletroeletrônicos
-7522;3201.Eletrodomésticos e equipamentos
-7523;3201001.Refrigerador
-12434;3201002.Ar-condicionado
-7524;3201002.Condicionador de ar
-7525;3201003.Máquina de costura
-7526;3201006.Máquina de lavar roupa
-7527;3201007.Ferro elétrico
-7528;3201008.Máquina de secar roupa
-7529;3201012.Liquidificador
-7530;3201013.Ventilador
-7531;3201021.Fogão
-7532;3201027.Lâmpada
-7533;3201029.Pilha
-7534;3201033.Freezer
-7535;3201034.Máquina de lavar louça
-7536;3201036.Batedeira
-7537;3201042.Ozonizador
-7538;3201044.Aspirador de pó
-7539;3201050.Chuveiro elétrico
-7540;3201065.Forno de micro-ondas
-7541;3202.Tv, som e informática
-7542;3202001.Televisor
-7543;3202003.Aparelho de som
-107647;3202005.Aparelho de DVD
-7544;3202005.Vídeo-cassete
-47640;3202008.Videogame (console)
-7545;3202008.Vídeo-game
-12404;3202013.Antena
-47641;3202028.Computador pessoal
-7547;3202028.Microcomputador
-7548;33.Consertos e manutenção
-7549;3301.Consertos e manutenção
-12405;3301002.Conserto de refrigerador
-7550;3301002.Conserto de refrigerador e freezer
-107648;3301006.Conserto de televisor
-7551;3301009.Conserto de aparelho de som
-7552;3301012.Conserto de vídeo-cassete
-12406;3301015.Conserto de máquina de lavar roupa
-7553;3301015.Conserto de máquina de lavar/secar roupa
-7554;3301021.Conserto de condicionador de ar
-7555;3301022.Reforma de estofado
-7556;3301023.Conserto de bomba d'água
-7557;3301024.Manutenção de caixa d'água, fossa, etc.
-12407;3301044.Manutenção de microcomputador
-47642;3301088.Conserto de aparelho celular
-47643;3301130.Conserto de bicicleta
-7558;4.Vestuário
-7559;41.Roupas
-7560;4101.Roupa masculina
-7561;4101002.Calça comprida masculina
-7562;4101004.Terno
-7563;4101005.Agasalho masculino
-47644;4101006.Bermuda/short masculino
-7564;4101006.Short e bermuda masculina
-7565;4101008.Cueca
-7566;4101009.Camisa masculina
-107649;4101009.Camisa/camiseta masculina
-7567;4101010.Camiseta masculina
-7568;4101011.Meia masculina
-7570;4101015.Conjunto esportivo masculino
-7571;4101021.Aluguel de roupa masculina
-7572;4102.Roupa feminina
-7573;4102002.Calça comprida feminina
-7574;4102003.Agasalho feminino
-7575;4102004.Saia
-7576;4102005.Vestido
-7577;4102008.Blusa
-7578;4102009.Meia feminina
-7579;4102010.Lingerie
-7580;4102011.Roupa de dormir feminina
-7581;4102012.Roupa de banho feminina
-7582;4102013.Bermuda e short feminino
-47645;4102013.Bermuda/short feminino
-7583;4102014.Conjunto esportivo feminino
-7586;4102050.Camiseta feminina
-7587;4103.Roupa infantil
-7588;4103001.Uniforme
-12408;4103001.Uniforme escolar
-7589;4103002.Calça comprida infantil
-7590;4103005.Agasalho infantil
-7591;4103007.Vestido infantil
-7592;4103008.Bermuda e short infantil
-47646;4103008.Bermuda/short infantil
-7593;4103011.Camisa infantil
-107650;4103011.Camisa/camiseta infantil
-7594;4103012.Camiseta infantil
-7595;4103013.Meia infantil
-7596;4103014.Lingerie infantil
-7597;4103017.Fralda
-7598;4103020.Conjunto esportivo infantil
-7599;4103021.Cueca infantil
-7600;4103022.Macacão infantil
-7601;4103031.Conjunto de short e camiseta infantil
-12409;4103031.Conjunto infantil
-7602;4103040.Conjunto de saia e blusa infantil
-7603;4103051.Roupa de banho infantil
-7604;42.Calçados e acessórios
-7605;4201.Calçados e acessórios
-7606;4201002.Sapato masculino
-7607;4201003.Sapato feminino
-7608;4201004.Sapato infantil
-7609;4201006.Sandália / chinelo masculino
-7610;4201007.Sandália / chinelo feminino
-7611;4201008.Sandália / chinelo infantil
-107652;4201015.Bolsa
-7612;4201015.Bolsa e carteira feminina
-7613;4201029.Bolsa e carteira masculina
-47647;4201040.Mochila
-7614;4201063.Tênis
-47648;4201098.Sandália/chinelo
-7615;43.Joias e bijuterias
-7616;4301.Joias e bijuterias
-7617;4301001.Bijuteria
-7618;4301002.Joia
-7619;4301004.Relógio de pulso
-7620;44.Tecidos e armarinho
-7621;4401.Tecidos e armarinho
-7622;4401001.Tecido
-7623;4401002.Artigos de armarinho
-7624;4401005.Acortinado (mosquiteiro)
-7625;5.Transportes
-7626;51.Transportes
-7627;5101.Transporte público
-7628;5101001.Ônibus urbano
-7629;5101002.Táxi
-7630;5101004.Trem
-7631;5101006.Ônibus intermunicipal
-7632;5101007.Ônibus interestadual
-7633;5101009.Ferry-boat
-7634;5101010.Passagem aérea
-7635;5101011.Metrô
-7637;5101020.Navio
-7638;5101022.Barco
-12410;5101022.Transporte hidroviário
-7639;5101026.Transporte escolar
-47649;5101051.Transporte por aplicativo
-47650;5101053.Integração transporte público
-7640;5102.Veículo próprio
-7641;5102001.Automóvel novo
-7642;5102004.Emplacamento e licença
-7643;5102005.Seguro voluntário de veículo
-107653;5102006.Multa
-7644;5102007.Óleo lubrificante
-7645;5102009.Acessórios e peças
-12411;5102010.Pneu
-7646;5102010.Pneu e câmara-de-ar
-7647;5102011.Conserto de automóvel
-7648;5102013.Estacionamento
-7649;5102015.Pedágio
-7650;5102019.Lubrificação e lavagem
-107654;5102020.Automóvel usado
-7651;5102020.Compra de automóvel usado
-107655;5102033.Reboque
-7653;5102037.Pintura de veículo
-107656;5102051.Aluguel de veículo
-7654;5102053.Motocicleta
-7655;5102054.Camioneta
-7656;5104.Combustíveis (veículos)
-7657;5104001.Gasolina
-7658;5104002.Etanol
-7659;5104003.Óleo diesel
-107657;5104005.Gás veicular
-7660;6.Saúde e cuidados pessoais
-7661;61.Produtos farmacêuticos e óticos
-7662;6101.Produtos farmacêuticos
-7663;6101001.Anti-infeccioso e antibiótico
-7664;6101002.Analgésico e antitérmico
-7665;6101003.Anti-inflamatório e antirreumático
-7666;6101004.Antigripal e antitussígeno
-7667;6101005.Hepatoprotetor
-7668;6101006.Antimicótico e parasiticida
-12412;6101006.Dermatológico
-7669;6101007.Antialérgico e broncodilatador
-7670;6101009.Gastroprotetor
-7671;6101010.Vitamina e fortificante
-7672;6101011.Anticoncepcional e hormônio
-47651;6101011.Hormonal
-107658;6101011.Hormônio
-7673;6101013.Psicotrópico e anorexígeno
-7674;6101014.Hipotensor e hipocolesterolêmico
-7675;6101016.Material para curativo
-107659;6101051.Oftalmológico
-7677;6101064.Antidiabético
-47652;6101148.Neurológico
-109464;6102.Produtos óticos
-7678;6102.Óculos e lentes
-7679;6102001.Lente de grau
-7680;6102002.Armação de óculos
-7681;6102003.Óculos sem grau
-7682;6102008.Lente de contato
-12413;6102011.Lentes de óculos e de contato
-47653;6102012.Óculos de grau
-7683;62.Serviços de saúde
-7684;6201.Serviços médicos e dentários
-7685;6201002.Médico
-7686;6201003.Dentista
-7687;6201005.Aparelho dentário
-12414;6201005.Aparelho ortodôntico
-7688;6201006.Artigos ortopédicos
-12435;6201007.Fisioterapeuta
-7689;6201008.Tratamento psicológico e fisioterápico
-12436;6201010.Psicólogo
-7690;6202.Serviços laboratoriais e hospitalares
-7691;6202003.Exame de laboratório
-7692;6202004.Hospitalização e cirurgia
-7693;6202006.Eletrodiagnóstico
-12416;6202006.Exame de imagem
-107660;6202008.Asilo
-7694;6202013.Radiografia
-7695;6203.Plano de saúde
-7696;6203001.Plano de saúde
-7697;63.Cuidados pessoais
-7698;6301.Higiene pessoal
-7699;6301001.Produto para cabelo
-12420;6301002.Fralda descartável
-7700;6301004.Lâmina de barbear
-101642;6301004.Produto para barba
-7701;6301006.Creme para pele e bronzeador
-101644;6301006.Produto para pele
-7702;6301007.Creme e fio dental
-107661;6301007.Produto para higiene bucal
-7703;6301010.Produto para unha
-7704;6301011.Perfume
-7706;6301013.Produto para limpeza de pele
-7707;6301014.Desodorante
-7708;6301015.Absorvente higiênico
-7709;6301016.Sabonete
-7710;6301017.Papel higiênico
-7711;6301020.Artigos de maquiagem
-7712;7.Despesas pessoais
-7713;71.Serviços pessoais
-7714;7101.Serviços pessoais
-7715;7101001.Costureira
-7716;7101004.Tinturaria e lavanderia
-12421;7101005.Manicure
-7717;7101005.Manicure e pedicure
-7718;7101008.Barbeiro
-7719;7101009.Cabeleireiro
-7720;7101010.Empregado doméstico
-47654;7101011.Cabeleireiro e barbeiro
-7721;7101014.Depilação
-7722;7101018.Massagem e sauna
-7723;7101034.Cartório
-7724;7101036.Despachante
-7725;7101038.Serviço funerário
-7726;7101051.Alfaiate
-7727;7101076.Serviço bancário
-7728;7101090.Conselho de classe
-47655;7101144.Sobrancelha
-47656;72.Recreação e fumo
-7729;72.Recreação, fumo e filmes
-12422;72.Recreação, fumo e fotografia
-7730;7201.Recreação
-7731;7201001.Cinema
-12423;7201002.CD e DVD
-7732;7201003.Ingresso para jogo
-7733;7201006.Clube
-7734;7201008.Disco
-107664;7201008.Disco laser
-7735;7201010.Instrumento musical
-47657;7201015.Tratamento de animais (clínica)
-107665;7201018.Compra e tratamento de animais
-12424;7201018.Tratamento de animais
-7736;7201019.Bicicleta
-107666;7201020.Alimento para animais
-7737;7201020.Alimento para cães
-7738;7201023.Brinquedo
-7739;7201051.Teatro
-107667;7201052.Aluguel de DVD e fita de videocassete
-7740;7201052.Aluguel de fita de videocassete
-12425;7201052.Locação de DVD
-12426;7201054.Boate e danceteria
-7742;7201054.Boate, danceteria e discoteca
-47658;7201054.Casa noturna
-107668;7201063.Jogos de azar
-7744;7201063.Jogos lotéricos
-7745;7201066.Aluguel de fita de vídeo-game
-7746;7201067.Material de caça e pesca
-7747;7201068.Motel
-7748;7201069.Bicicleta ergométrica
-7749;7201083.Material esportivo
-7750;7201084.Telesena
-7751;7201085.Fita de vídeo gravada
-7752;7201088.Bingo
-47659;7201090.Hospedagem
-7753;7201090.Hotel
-7754;7201091.Arma de fogo
-7756;7201095.Excursão
-47660;7201095.Pacote turístico
-7757;7201097.Alimento para animais (exceto cães)
-47661;7201256.Serviço de higiene para animais
-47662;7201266.Cinema, teatro e concertos
-7758;7202.Fumo
-7759;7202041.Cigarro
-7760;7203.Fotografia e filmagem
-7761;7203001.Máquina fotográfica
-7762;7203002.Filme e flash descartável
-7763;7203003.Revelação e cópia
-7764;7203004.Filmadora
-7765;7203006.Fita de vídeo virgem
-7766;8.Educação
-7767;81.Cursos, leitura e papelaria
-7768;8101.Cursos
-12427;8101.Cursos regulares
-7769;8101001.Creche
-7770;8101002.Curso pré-escolar
-107670;8101002.Educação infantil
-47663;8101002.Pré-escola
-7771;8101003.Curso primeiro grau
-107671;8101003.Ensino fundamental
-7772;8101004.Curso segundo grau
-107672;8101004.Ensino médio
-7773;8101005.Curso terceiro grau
-107673;8101005.Ensino superior
-107674;8101006.Pós-graduação
-107675;8101008.Curso supletivo
-47664;8101008.Educação de jovens e adultos
-7774;8101014.Cursos diversos
-7775;8101018.Livro didático
-7776;8101024.Livro e revista técnica
-47665;8101045.Curso técnico
-7777;8102.Leitura
-7778;8102001.Jornal diário
-7779;8102002.Assinatura de jornal
-107676;8102004.Revista
-7780;8102004.Revista não técnica
-107677;8102005.Livro
-7781;8102005.Livro não didático
-47666;8102007.Livro didático
-47667;8102008.Livro não didático
-7782;8103.Papelaria
-7783;8103001.Caderno
-7784;8103002.Fotocópia
-7785;8103014.Artigos de papelaria
-107678;8104.Cursos diversos
-107679;8104001.Curso preparatório
-107680;8104002.Curso técnico
-107681;8104003.Curso de idioma
-107682;8104004.Curso de informática
-107683;8104005.Autoescola
-12428;8104006.Atividades físicas
-107684;8104006.Ginástica
-107685;8104007.Natação
-107686;8104008.Balé
-107687;8104009.Escolinha de esporte
-7786;9.Comunicação
-7787;91.Comunicação
-7788;9101.Comunicação
-7789;9101001.Correio
-47668;9101002.Plano de telefonia fixa
-7790;9101002.Telefone fixo
-7791;9101003.Telefone público
-47669;9101008.Plano de telefonia móvel
-7792;9101008.Telefone celular
-7793;9101010.TV a cabo
-47670;9101010.Tv por assinatura
-107688;9101018.Acesso à internet
-7794;9101019.Aparelho telefônico
-12429;9101021.Telefone com internet - pacote
-12430;9101022.TV por assinatura com internet
-47671;9101115.Serviços de streaming
-47672;9101116.Combo de telefonia, internet e tv por assinatura
-7169;Índice geral
+CodItem;DescItem;Ano
+7170;1.Alimentação e bebidas;2020
+7171;11.Alimentação no domicílio;2020
+7172;1101.Cereais, leguminosas e oleaginosas;2020
+7173;1101002.Arroz;2020
+7175;1101051.Feijão - mulatinho;2020
+7176;1101052.Feijão - preto;2020
+7177;1101053.Feijão - macassar (fradinho);2012
+47617;1101053.Feijão - macáçar (fradinho);2020
+7178;1101064.Feijão - jalo (enxofrão);1999
+7179;1101068.Feijão - roxo;1999
+12222;1101073.Feijão - carioca (rajado);2020
+7180;1101073.Feijão - carioca (rajado));2006
+41128;1101075.Feijão - branco;2012
+47618;1101079.Milho (em grão);2020
+7181;1101079.Milho em grão;1999
+7182;1101080.Milho em espiga;1999
+107607;1101084.Fava;2006
+7184;1102.Farinhas, féculas e massas;2020
+7185;1102001.Farinha de arroz;2020
+7186;1102002.Aveia em flocos;1999
+7187;1102006.Macarrão;2020
+7188;1102008.Fubá de milho;2020
+7189;1102009.Amido de milho;2012
+7190;1102010.Flocos de milho;2020
+7191;1102012.Farinha de trigo;2020
+7192;1102013.Farinha vitaminada;2012
+7193;1102016.Flocos de cereais;1999
+7194;1102022.Fécula de mandioca;1999
+7195;1102023.Farinha de mandioca;2020
+7196;1102028.Cremogema;1999
+107608;1102029.Massa semipreparada;2020
+7197;1102038.Massa para pizza;1999
+7198;1102040.Massa para pastel;1999
+7199;1102043.Massa para lasanha;1999
+47619;1102061.Macarrão instantâneo;2020
+7200;1103.Tubérculos, raízes e legumes;2020
+7201;1103002.Batata-doce;2020
+7202;1103003.Batata-inglesa;2020
+7203;1103004.Inhame;2020
+7204;1103005.Mandioca (aipim);2020
+7205;1103017.Abóbora;2012
+7206;1103020.Abobrinha;2020
+7207;1103021.Chuchu;2006
+7208;1103022.Jiló;1999
+7209;1103025.Pepino;2020
+7210;1103026.Pimentão;2020
+7211;1103027.Quiabo;2012
+7212;1103028.Tomate;2020
+7213;1103029.Vagem;1999
+7214;1103042.Beterraba;1999
+7215;1103043.Cebola;2020
+7216;1103044.Cenoura;2020
+7217;1103046.Batata-baroa;1999
+12223;1103046.Mandioquinha (batata-baroa);2012
+7218;1103048.Mandioquinha (batata-aipo);1999
+7219;1104.Açúcares e derivados;2020
+7220;1104003.Açúcar refinado;2020
+7221;1104004.Açúcar cristal;2020
+7222;1104014.Rapadura;1999
+12224;1104018.Balas;2020
+7223;1104018.Balas, chicletes, etc.;1999
+7224;1104023.Chocolate em barra;1999
+107609;1104023.Chocolate em barra e bombom;2020
+7225;1104024.Bombom;1999
+7226;1104027.Geléia de frutas;1999
+107610;1104028.Gelatina;2006
+7227;1104028.Gelatina de frutas em pó;1999
+7228;1104029.Geléia de mocotó;1999
+7229;1104031.Mel de abelha;1999
+7230;1104032.Sorvete;2020
+7231;1104052.Achocolatado em pó;1999
+107611;1104052.Chocolate e achocolatado em pó;2020
+7232;1104059.Doce de frutas em calda;1999
+7233;1104060.Doce de frutas em pasta;2020
+7234;1104064.Pamonha;1999
+7235;1104066.Doce de leite;2006
+47620;1104067.Açúcar demerara;2020
+7236;1104069.Adoçante artificial;1999
+7237;1104075.Fruta seca;1999
+7239;1104095.Beiju;1999
+7240;1104096.Schimier de frutas;1999
+7241;1105.Hortaliças e verduras;2020
+7242;1105001.Alface;2020
+7243;1105003.Chicória;1999
+7244;1105004.Coentro;2020
+7245;1105005.Couve;2020
+7246;1105006.Couve-flor;2020
+7248;1105010.Repolho;2020
+7249;1105012.Cheiro-verde;2020
+7250;1105013.Agrião;2012
+7251;1105017.Almeirão;1999
+7252;1105018.Cebolinha;1999
+7253;1105019.Brócolis;2020
+7254;1106.Frutas;2020
+7255;1106001.Banana-da-terra;2020
+7256;1106003.Abacaxi;2020
+7257;1106004.Abacate;2020
+7258;1106005.Banana - d'água;2020
+7259;1106006.Banana - maçã;2020
+7260;1106008.Banana - prata;2020
+7262;1106011.Laranja - baía;2020
+7263;1106012.Laranja - lima;2020
+7264;1106013.Laranja - seleta;1999
+7265;1106015.Limão;2020
+7266;1106017.Maçã;2020
+7267;1106018.Mamão;2020
+7268;1106019.Manga;2020
+7269;1106020.Maracujá;2020
+7270;1106021.Melancia;2020
+7271;1106022.Melão;2020
+7272;1106023.Pera;2020
+7273;1106024.Pêssego;1999
+7274;1106026.Acerola;1999
+7275;1106027.Tangerina;2020
+7276;1106028.Uva;2020
+7278;1106034.Ameixa;2006
+7279;1106039.Laranja - pera;2020
+7280;1106051.Morango;2020
+7281;1106084.Goiaba;2020
+7282;1106097.Cupuaçú;1999
+7283;1107.Carnes;2020
+7284;1107008.Tripa e bucho;1999
+7285;1107009.Fígado;2020
+107612;1107010.Outras vísceras;2006
+7287;1107018.Carne de porco;2020
+7288;1107031.Carne de carneiro;2020
+7290;1107081.Cupim;2020
+7291;1107084.Contrafilé;2020
+7292;1107085.Filé-mignon;2020
+7293;1107087.Chã de dentro;2020
+7294;1107088.Alcatra;2020
+7295;1107089.Patinho;2020
+7296;1107090.Lagarto redondo;2020
+12294;1107091.Lagarto comum;2020
+7297;1107091.Lagarto plano;2006
+7298;1107093.Músculo;2020
+7299;1107094.Pá;2020
+7300;1107095.Acém;2020
+7301;1107096.Peito;2020
+101448;1107097.Capa de filé;2020
+7302;1107099.Costela;2020
+47621;1107208.Picanha;2020
+7303;1108.Pescados;2020
+7304;1108001.Filé de peixe;1999
+7305;1108002.Peixe - anchova;2020
+101699;1108003.Peixe - badejo;2012
+7306;1108004.Peixe - corvina;2020
+7307;1108005.Peixe - cavalinha;2012
+107613;1108006.Peixe;2012
+7308;1108009.Peixe - pescadinha;2012
+7309;1108011.Peixe - tainha;2020
+7310;1108012.Peixe - sardinha;2020
+7311;1108013.Camarão;2020
+7312;1108015.Peixe - vermelho;2012
+7313;1108019.Peixe - cavala;2020
+7314;1108020.Peixe - cocoroca;1999
+8873;1108024.Peixe - pacu;2012
+107614;1108025.Peixe - linguado;2006
+7316;1108028.Peixe - dourado;2012
+107615;1108029.Peixe - cação;2020
+107616;1108031.Peixe - merluza;2020
+7317;1108032.Peixe - serra;2020
+7318;1108033.Peixe - pargo;2006
+7319;1108035.Peixe - pampo;1999
+7320;1108038.Peixe - pescada;2020
+7322;1108044.Peixe - cioba;1999
+7323;1108045.Caranguejo;2020
+7324;1108047.Peixe - arraia;1999
+7325;1108048.Peixe - xerelete;1999
+12300;1108049.Peixe - castanha;2020
+12301;1108052.Peixe - palombeta;2020
+7327;1108053.Peixe - piramutaba;2006
+101461;1108054.Peixe - piau;2012
+7328;1108057.Peixe - surubim;2012
+7329;1108058.Peixe - albacora;1999
+7330;1108064.Siri;1999
+41130;1108067.Sururu;2012
+101466;1108072.Peixe - curimatã;2020
+12431;1108075.Peixe - salmão;2020
+7332;1108076.Peixe - acará;2006
+12302;1108080.Peixe - tilápia;2020
+12432;1108083.Peixe - tucunaré;2012
+41129;1108087.Peixe - tambaqui;2020
+7333;1108088.Peixe - dourada;2020
+47623;1108092.Peixe - filhote;2020
+7334;1108092.Peixe - fillhote;1999
+8874;1108096.Peixe - peroá;2020
+31694;1108112.Peixe - pintado;2020
+47624;1108125.Peixe - aruanã;2020
+41131;1108170.Peixe - mandi;2012
+7335;1109.Carnes e peixes industrializados;2020
+7336;1109002.Presunto;2020
+7337;1109004.Bacon;1999
+12304;1109007.Salsicha;2020
+7338;1109007.Salsicha e salsichão;2006
+7339;1109008.Linguiça;2020
+7341;1109010.Mortadela;2020
+12305;1109012.Salame;2020
+7342;1109012.Salame e salaminho;1999
+7343;1109023.Bacalhau;2020
+7344;1109024.Camarão seco salgado;1999
+7345;1109027.Peixe - pirarucu - salgado;1999
+7346;1109056.Carne seca;2006
+12379;1109056.Carne-seca e de sol;2020
+7347;1109058.Carne de porco salgada e defumada;2020
+7348;1109088.Carne de hambúrguer;2006
+12380;1109088.Hambúrger;2012
+7349;1110.Aves e ovos;2020
+7351;1110009.Frango;1999
+107617;1110009.Frango inteiro;2020
+107618;1110010.Frango em pedaços;2020
+7352;1110011.Peito de frango;1999
+7353;1110012.Coxa de frango;1999
+7354;1110014.Asa de frango;1999
+7355;1110044.Ovo de galinha;2020
+7356;1111.Leites e derivados;2020
+12393;1111004.Leite longa vida;2020
+7357;1111004.Leite pasteurizado;2006
+7358;1111008.Leite condensado;2020
+7359;1111009.Leite em pó;2020
+107619;1111011.Queijo;2020
+7360;1111012.Creme de leite;2012
+7361;1111019.Iogurte;2006
+12394;1111019.Iogurte e bebidas lácteas;2020
+7362;1111021.Queijo cremoso;1999
+47627;1111021.Requeijão;2020
+7363;1111023.Queijo-de-minas;1999
+7364;1111024.Queijo prato;1999
+7365;1111025.Queijo parmesão;1999
+7366;1111026.Queijo muzzarella;1999
+7367;1111031.Manteiga;2020
+7368;1111038.Leite fermentado;2020
+7369;1111040.Queijo reino;1999
+7370;1111046.Nata;1999
+7371;1111051.Leite com sabor;2006
+7372;1112.Panificados;2020
+7373;1112003.Biscoito;2020
+7374;1112012.Pão de milho;1999
+7375;1112015.Pão francês;2020
+7376;1112017.Pão doce;2020
+7377;1112018.Pão de forma;2020
+7378;1112019.Bolo;2020
+7379;1112021.Massa para pão de queijo;1999
+7380;1112025.Pão de queijo;2020
+7381;1112034.Rosca doce;1999
+7382;1112040.Torta doce;1999
+7384;1113.Óleos e gorduras;2020
+7385;1113013.Óleo de soja;2020
+7386;1113014.Azeite de oliva;2020
+12395;1113040.Margarina;2020
+7387;1113040.Margarina vegetal;2006
+7389;1114.Bebidas e infusões;2020
+7390;1114001.Suco de frutas;2020
+47628;1114003.Polpa de fruta (congelada);2020
+12396;1114004.Açaí (emulsão);2020
+7391;1114004.Polpa de açaí;2006
+7392;1114022.Café moído;2020
+7393;1114023.Café solúvel;2020
+107620;1114029.Chá;2012
+7394;1114029.Mate;1999
+7395;1114083.Refrigerante;1999
+107621;1114083.Refrigerante e água mineral;2020
+7396;1114084.Cerveja;2020
+7397;1114085.Outras bebidas alcoólicas;2020
+7399;1114087.Vinho;2020
+47630;1114090.Suco em pó;2020
+47631;1114091.Chá mate (erva mate);2020
+7400;1114096.Água mineral;1999
+7401;1115.Enlatados e conservas;2020
+7402;1115004.Coco ralado;2012
+107622;1115006.Ervilha em conserva;2012
+7403;1115006.Ervilha em lata;1999
+107623;1115008.Feijoada em conserva;2006
+7404;1115008.Feijoada em lata;1999
+107702;1115013.Alimento infantil;2020
+7405;1115013.Sopa infantil;1999
+7406;1115016.Palmito em conserva;2020
+7407;1115017.Pepino em conserva;2020
+107624;1115039.Sardinha em conserva;2020
+7408;1115039.Sardinha em lata;1999
+107625;1115050.Salsicha em conserva;2020
+7409;1115050.Salsicha em lata;1999
+7410;1115051.Carne de boi em lata;1999
+107626;1115051.Carne em conserva;2012
+107627;1115053.Patê;2012
+7411;1115056.Sopa desidratada;2020
+7412;1115057.Azeitona;2020
+107628;1115058.Milho-verde em conserva;2020
+7413;1115058.Milho-verde em lata;1999
+107629;1115059.Cogumelo em conserva;2006
+107630;1115075.Atum em conserva;2020
+7414;1115075.Atum em lata;1999
+7415;1116.Sal e condimentos;2020
+7416;1116001.Leite de coco;2020
+109463;1116005.Atomatado;2020
+7417;1116005.Massa de tomate;1999
+7418;1116010.Alho;2020
+12397;1116013.Sal;2020
+7419;1116013.Sal refinado;2006
+7420;1116022.Colorau;2020
+7421;1116023.Caldo de tucupi;2020
+7422;1116026.Fermento;2020
+7423;1116033.Maionese;2020
+7424;1116041.Vinagre;2020
+7425;1116048.Caldo concentrado;2020
+7426;1116055.Cominho;1999
+7427;1116062.Pimenta do reino;1999
+7428;1116071.Tempero misto;2020
+107632;1116095.Molho de soja;2006
+7429;1117.Alimentos prontos;1999
+7430;1117001.Refeição pronta;1999
+7431;1117012.Lanche para viagem;1999
+7432;12.Alimentação fora do domicílio;2020
+7433;1201.Alimentação fora do domicílio;2020
+7434;1201001.Refeição;2020
+7435;1201003.Lanche;2020
+7436;1201005.Café da manhã;2012
+7437;1201007.Refrigerante;1999
+107633;1201007.Refrigerante e água mineral;2020
+7438;1201009.Cafezinho;2020
+7439;1201032.Caldos;1999
+7440;1201048.Cerveja;2020
+7441;1201049.Chopp;2006
+7442;1201050.Aguardente;1999
+7443;1201051.Outras bebidas alcoólicas;2020
+47632;1201052.Vinho;2020
+7444;1201061.Doces;2020
+47633;1201088.Sorvete;2020
+7445;2.Habitação;2020
+7446;21.Encargos e manutenção;2020
+7447;2101.Aluguel e taxas;2020
+7448;2101001.Aluguel residencial;2020
+7449;2101002.Condomínio;2020
+7450;2101003.Imposto predial;1999
+7451;2101004.Taxa de água e esgoto;2020
+7452;2101008.Compra de água;1999
+7453;2101012.Mudança;2020
+7454;2103.Reparos;2020
+7455;2103005.Ferragens;2020
+7456;2103008.Material de eletricidade;2020
+7457;2103009.Material de pintura;2012
+7458;2103012.Material de vidro;1999
+12433;2103012.Vidro;2020
+7459;2103014.Tinta;2020
+7460;2103031.Ferramentas;2006
+107637;2103032.Azulejo e piso;2006
+12398;2103032.Revestimento de piso e parede;2020
+47634;2103038.Madeira e taco;2020
+107638;2103039.Cimento;2020
+107639;2103040.Tijolo;2020
+107640;2103041.Material hidráulico;2020
+107641;2103042.Mão de obra;2020
+107642;2103048.Areia;2020
+107643;2103049.Pedras;2020
+12399;2103055.Telha;2020
+7461;2104.Artigos de limpeza;2020
+7462;2104002.Vassoura;2006
+7463;2104003.Saco para lixo;2020
+7464;2104005.Água sanitária;2020
+7465;2104008.Detergente;2020
+7466;2104009.Sabão em pó;2020
+7467;2104012.Desinfetante;2020
+7468;2104013.Inseticida;2012
+7469;2104014.Cera para assoalho;2006
+7470;2104015.Sabão em barra;2020
+7471;2104016.Esponja de limpeza;2020
+7472;2104018.Desodorante ambiental;1999
+47635;2104019.Sabão líquido;2020
+7473;2104020.Limpador com amoníaco;2006
+47636;2104020.Limpador multiuso;2020
+12400;2104032.Amaciante;2012
+7475;2104032.Amaciante, alvejante;2006
+7476;2104035.Polidor de metais;1999
+7477;2104041.Papel toalha;2020
+7478;2104056.Lustra móveis;1999
+47637;2104085.Amaciante e alvejante;2020
+7479;22.Combustíveis e energia;2020
+7480;2201.Combustíveis (domésticos);2020
+7481;2201003.Carvão vegetal;2020
+7482;2201004.Gás de botijão;2020
+7483;2201005.Gás encanado;2020
+7484;2202.Energia elétrica residencial;2020
+7485;2202003.Energia elétrica residencial;2020
+7486;3.Artigos de residência;2020
+7487;31.Móveis e utensílios;2020
+7488;3101.Mobiliário;2020
+7489;3101002.Móvel para sala;2020
+7490;3101003.Móvel para quarto;2020
+7492;3101015.Móvel para copa e cozinha;2020
+12401;3101016.Móvel infantil;2020
+7493;3101017.Colchão;2020
+7494;3101060.Rede;1999
+7495;3102.Utensílios e enfeites;2020
+47638;3102001.Artigos de iluminação;2020
+7496;3102004.Relógio despertador;1999
+7497;3102005.Tapete;2020
+7498;3102006.Cortina;2020
+12402;3102007.Utensílios de metal;2020
+7499;3102007.Utensílios para copa e cozinha de metal;2006
+12403;3102009.Utensílios de vidro e louça;2020
+7500;3102009.Utensílios para copa e cozinha de louça;1999
+107644;3102009.Utensílios para copa e cozinha de vidro e louça;2006
+7501;3102010.Artigos de plástico;1999
+107645;3102010.Utensílios de plástico;2020
+7502;3102012.Garrafa térmica;1999
+7503;3102014.Copo de vidro;1999
+7504;3102015.Mamadeira;1999
+7505;3102016.Bujão de gás vazio;1999
+7506;3102032.Chupeta e bico;1999
+7507;3102034.Filtro de água;1999
+7508;3102035.Flores naturais;2020
+7509;3102036.Artigos de jardinagem;1999
+7510;3102037.Fósforos;1999
+7511;3102039.Vela para iluminação;1999
+107646;3102040.Utensílios diversos;2012
+7512;3102070.Espelho;1999
+7513;3102072.Persiana;1999
+7514;3102088.Filtro de papel;1999
+7515;3102089.Guardanapo de papel;1999
+7516;3102090.Papel alumínio;1999
+47639;3102337.Utensílios para bebê;2020
+7517;3103.Cama, mesa e banho;2020
+7518;3103001.Roupa de cama;2020
+7519;3103002.Roupa de mesa;1999
+7520;3103003.Roupa de banho;2020
+7521;32.Aparelhos eletroeletrônicos;2020
+7522;3201.Eletrodomésticos e equipamentos;2020
+7523;3201001.Refrigerador;2020
+12434;3201002.Ar-condicionado;2020
+7524;3201002.Condicionador de ar;2006
+7525;3201003.Máquina de costura;2006
+7526;3201006.Máquina de lavar roupa;2020
+7527;3201007.Ferro elétrico;1999
+7528;3201008.Máquina de secar roupa;1999
+7529;3201012.Liquidificador;2012
+7530;3201013.Ventilador;2020
+7531;3201021.Fogão;2020
+7532;3201027.Lâmpada;2006
+7533;3201029.Pilha;1999
+7534;3201033.Freezer;1999
+7535;3201034.Máquina de lavar louça;1999
+7536;3201036.Batedeira;1999
+7537;3201042.Ozonizador;1999
+7538;3201044.Aspirador de pó;1999
+7539;3201050.Chuveiro elétrico;2020
+7540;3201065.Forno de micro-ondas;2012
+7541;3202.Tv, som e informática;2020
+7542;3202001.Televisor;2020
+7543;3202003.Aparelho de som;2020
+107647;3202005.Aparelho de DVD;2012
+7544;3202005.Vídeo-cassete;1999
+47640;3202008.Videogame (console);2020
+7545;3202008.Vídeo-game;1999
+12404;3202013.Antena;2012
+47641;3202028.Computador pessoal;2020
+7547;3202028.Microcomputador;2012
+7548;33.Consertos e manutenção;2020
+7549;3301.Consertos e manutenção;2020
+12405;3301002.Conserto de refrigerador;2020
+7550;3301002.Conserto de refrigerador e freezer;2006
+107648;3301006.Conserto de televisor;2020
+7551;3301009.Conserto de aparelho de som;2012
+7552;3301012.Conserto de vídeo-cassete;1999
+12406;3301015.Conserto de máquina de lavar roupa;2020
+7553;3301015.Conserto de máquina de lavar/secar roupa;2006
+7554;3301021.Conserto de condicionador de ar;1999
+7555;3301022.Reforma de estofado;2020
+7556;3301023.Conserto de bomba d'água;2006
+7557;3301024.Manutenção de caixa d'água, fossa, etc.;1999
+12407;3301044.Manutenção de microcomputador;2012
+47642;3301088.Conserto de aparelho celular;2020
+47643;3301130.Conserto de bicicleta;2020
+7558;4.Vestuário;2020
+7559;41.Roupas;2020
+7560;4101.Roupa masculina;2020
+7561;4101002.Calça comprida masculina;2020
+7562;4101004.Terno;2012
+7563;4101005.Agasalho masculino;2020
+47644;4101006.Bermuda/short masculino;2020
+7564;4101006.Short e bermuda masculina;2012
+7565;4101008.Cueca;2020
+7566;4101009.Camisa masculina;1999
+107649;4101009.Camisa/camiseta masculina;2020
+7567;4101010.Camiseta masculina;1999
+7568;4101011.Meia masculina;1999
+7570;4101015.Conjunto esportivo masculino;1999
+7571;4101021.Aluguel de roupa masculina;1999
+7572;4102.Roupa feminina;2020
+7573;4102002.Calça comprida feminina;2020
+7574;4102003.Agasalho feminino;2020
+7575;4102004.Saia;2020
+7576;4102005.Vestido;2020
+7577;4102008.Blusa;2020
+7578;4102009.Meia feminina;1999
+7579;4102010.Lingerie;2020
+7580;4102011.Roupa de dormir feminina;1999
+7581;4102012.Roupa de banho feminina;2006
+7582;4102013.Bermuda e short feminino;2012
+47645;4102013.Bermuda/short feminino;2020
+7583;4102014.Conjunto esportivo feminino;1999
+7586;4102050.Camiseta feminina;1999
+7587;4103.Roupa infantil;2020
+7588;4103001.Uniforme;2006
+12408;4103001.Uniforme escolar;2020
+7589;4103002.Calça comprida infantil;2020
+7590;4103005.Agasalho infantil;2020
+7591;4103007.Vestido infantil;2020
+7592;4103008.Bermuda e short infantil;2012
+47646;4103008.Bermuda/short infantil;2020
+7593;4103011.Camisa infantil;1999
+107650;4103011.Camisa/camiseta infantil;2020
+7594;4103012.Camiseta infantil;1999
+7595;4103013.Meia infantil;1999
+7596;4103014.Lingerie infantil;1999
+7597;4103017.Fralda;2006
+7598;4103020.Conjunto esportivo infantil;1999
+7599;4103021.Cueca infantil;1999
+7600;4103022.Macacão infantil;1999
+7601;4103031.Conjunto de short e camiseta infantil;1999
+12409;4103031.Conjunto infantil;2020
+7602;4103040.Conjunto de saia e blusa infantil;1999
+7603;4103051.Roupa de banho infantil;1999
+7604;42.Calçados e acessórios;2020
+7605;4201.Calçados e acessórios;2020
+7606;4201002.Sapato masculino;2020
+7607;4201003.Sapato feminino;2020
+7608;4201004.Sapato infantil;2020
+7609;4201006.Sandália / chinelo masculino;2012
+7610;4201007.Sandália / chinelo feminino;2012
+7611;4201008.Sandália / chinelo infantil;2012
+107652;4201015.Bolsa;2020
+7612;4201015.Bolsa e carteira feminina;1999
+7613;4201029.Bolsa e carteira masculina;1999
+47647;4201040.Mochila;2020
+7614;4201063.Tênis;2020
+47648;4201098.Sandália/chinelo;2020
+7615;43.Joias e bijuterias;2020
+7616;4301.Joias e bijuterias;2020
+7617;4301001.Bijuteria;2020
+7618;4301002.Joia;2020
+7619;4301004.Relógio de pulso;2020
+7620;44.Tecidos e armarinho;2020
+7621;4401.Tecidos e armarinho;2020
+7622;4401001.Tecido;2020
+7623;4401002.Artigos de armarinho;2020
+7624;4401005.Acortinado (mosquiteiro);2012
+7625;5.Transportes;2020
+7626;51.Transportes;2020
+7627;5101.Transporte público;2020
+7628;5101001.Ônibus urbano;2020
+7629;5101002.Táxi;2020
+7630;5101004.Trem;2020
+7631;5101006.Ônibus intermunicipal;2020
+7632;5101007.Ônibus interestadual;2020
+7633;5101009.Ferry-boat;2006
+7634;5101010.Passagem aérea;2020
+7635;5101011.Metrô;2020
+7637;5101020.Navio;1999
+7638;5101022.Barco;2006
+12410;5101022.Transporte hidroviário;2012
+7639;5101026.Transporte escolar;2020
+47649;5101051.Transporte por aplicativo;2020
+47650;5101053.Integração transporte público;2020
+7640;5102.Veículo próprio;2020
+7641;5102001.Automóvel novo;2020
+7642;5102004.Emplacamento e licença;2020
+7643;5102005.Seguro voluntário de veículo;2020
+107653;5102006.Multa;2020
+7644;5102007.Óleo lubrificante;2020
+7645;5102009.Acessórios e peças;2020
+12411;5102010.Pneu;2020
+7646;5102010.Pneu e câmara-de-ar;2006
+7647;5102011.Conserto de automóvel;2020
+7648;5102013.Estacionamento;2020
+7649;5102015.Pedágio;2020
+7650;5102019.Lubrificação e lavagem;2012
+107654;5102020.Automóvel usado;2020
+7651;5102020.Compra de automóvel usado;1999
+107655;5102033.Reboque;2006
+7653;5102037.Pintura de veículo;2020
+107656;5102051.Aluguel de veículo;2020
+7654;5102053.Motocicleta;2020
+7655;5102054.Camioneta;1999
+7656;5104.Combustíveis (veículos);2020
+7657;5104001.Gasolina;2020
+7658;5104002.Etanol;2020
+7659;5104003.Óleo diesel;2020
+107657;5104005.Gás veicular;2020
+7660;6.Saúde e cuidados pessoais;2020
+7661;61.Produtos farmacêuticos e óticos;2020
+7662;6101.Produtos farmacêuticos;2020
+7663;6101001.Anti-infeccioso e antibiótico;2020
+7664;6101002.Analgésico e antitérmico;2020
+7665;6101003.Anti-inflamatório e antirreumático;2020
+7666;6101004.Antigripal e antitussígeno;2020
+7667;6101005.Hepatoprotetor;1999
+7668;6101006.Antimicótico e parasiticida;2006
+12412;6101006.Dermatológico;2020
+7669;6101007.Antialérgico e broncodilatador;2020
+7670;6101009.Gastroprotetor;2020
+7671;6101010.Vitamina e fortificante;2020
+7672;6101011.Anticoncepcional e hormônio;1999
+47651;6101011.Hormonal;2020
+107658;6101011.Hormônio;2012
+7673;6101013.Psicotrópico e anorexígeno;2020
+7674;6101014.Hipotensor e hipocolesterolêmico;2020
+7675;6101016.Material para curativo;1999
+107659;6101051.Oftalmológico;2020
+7677;6101064.Antidiabético;2020
+47652;6101148.Neurológico;2020
+109464;6102.Produtos óticos;2020
+7678;6102.Óculos e lentes;1999
+7679;6102001.Lente de grau;2006
+7680;6102002.Armação de óculos;2012
+7681;6102003.Óculos sem grau;2012
+7682;6102008.Lente de contato;2006
+12413;6102011.Lentes de óculos e de contato;2012
+47653;6102012.Óculos de grau;2020
+7683;62.Serviços de saúde;2020
+7684;6201.Serviços médicos e dentários;2020
+7685;6201002.Médico;2020
+7686;6201003.Dentista;2020
+7687;6201005.Aparelho dentário;2006
+12414;6201005.Aparelho ortodôntico;2020
+7688;6201006.Artigos ortopédicos;2012
+12435;6201007.Fisioterapeuta;2020
+7689;6201008.Tratamento psicológico e fisioterápico;2006
+12436;6201010.Psicólogo;2020
+7690;6202.Serviços laboratoriais e hospitalares;2020
+7691;6202003.Exame de laboratório;2020
+7692;6202004.Hospitalização e cirurgia;2020
+7693;6202006.Eletrodiagnóstico;2006
+12416;6202006.Exame de imagem;2020
+107660;6202008.Asilo;2006
+7694;6202013.Radiografia;2006
+7695;6203.Plano de saúde;2020
+7696;6203001.Plano de saúde;2020
+7697;63.Cuidados pessoais;2020
+7698;6301.Higiene pessoal;2020
+7699;6301001.Produto para cabelo;2020
+12420;6301002.Fralda descartável;2020
+7700;6301004.Lâmina de barbear;1999
+101642;6301004.Produto para barba;2020
+7701;6301006.Creme para pele e bronzeador;1999
+101644;6301006.Produto para pele;2020
+7702;6301007.Creme e fio dental;1999
+107661;6301007.Produto para higiene bucal;2020
+7703;6301010.Produto para unha;2020
+7704;6301011.Perfume;2020
+7706;6301013.Produto para limpeza de pele;1999
+7707;6301014.Desodorante;2020
+7708;6301015.Absorvente higiênico;2020
+7709;6301016.Sabonete;2020
+7710;6301017.Papel higiênico;2020
+7711;6301020.Artigos de maquiagem;2020
+7712;7.Despesas pessoais;2020
+7713;71.Serviços pessoais;2020
+7714;7101.Serviços pessoais;2020
+7715;7101001.Costureira;2020
+7716;7101004.Tinturaria e lavanderia;1999
+12421;7101005.Manicure;2020
+7717;7101005.Manicure e pedicure;2006
+7718;7101008.Barbeiro;2006
+7719;7101009.Cabeleireiro;2012
+7720;7101010.Empregado doméstico;2020
+47654;7101011.Cabeleireiro e barbeiro;2020
+7721;7101014.Depilação;2020
+7722;7101018.Massagem e sauna;1999
+7723;7101034.Cartório;2020
+7724;7101036.Despachante;2020
+7725;7101038.Serviço funerário;1999
+7726;7101051.Alfaiate;1999
+7727;7101076.Serviço bancário;2020
+7728;7101090.Conselho de classe;2020
+47655;7101144.Sobrancelha;2020
+47656;72.Recreação e fumo;2020
+7729;72.Recreação, fumo e filmes;2006
+12422;72.Recreação, fumo e fotografia;2012
+7730;7201.Recreação;2020
+7731;7201001.Cinema;2012
+12423;7201002.CD e DVD;2012
+7732;7201003.Ingresso para jogo;2012
+7733;7201006.Clube;2020
+7734;7201008.Disco;1999
+107664;7201008.Disco laser;2006
+7735;7201010.Instrumento musical;2020
+47657;7201015.Tratamento de animais (clínica);2020
+107665;7201018.Compra e tratamento de animais;2006
+12424;7201018.Tratamento de animais;2012
+7736;7201019.Bicicleta;2020
+107666;7201020.Alimento para animais;2020
+7737;7201020.Alimento para cães;1999
+7738;7201023.Brinquedo;2020
+7739;7201051.Teatro;1999
+107667;7201052.Aluguel de DVD e fita de videocassete;2006
+7740;7201052.Aluguel de fita de videocassete;1999
+12425;7201052.Locação de DVD;2012
+12426;7201054.Boate e danceteria;2012
+7742;7201054.Boate, danceteria e discoteca;2006
+47658;7201054.Casa noturna;2020
+107668;7201063.Jogos de azar;2020
+7744;7201063.Jogos lotéricos;1999
+7745;7201066.Aluguel de fita de vídeo-game;1999
+7746;7201067.Material de caça e pesca;2020
+7747;7201068.Motel;2012
+7748;7201069.Bicicleta ergométrica;1999
+7749;7201083.Material esportivo;2006
+7750;7201084.Telesena;1999
+7751;7201085.Fita de vídeo gravada;1999
+7752;7201088.Bingo;1999
+47659;7201090.Hospedagem;2020
+7753;7201090.Hotel;2012
+7754;7201091.Arma de fogo;1999
+7756;7201095.Excursão;2012
+47660;7201095.Pacote turístico;2020
+7757;7201097.Alimento para animais (exceto cães);1999
+47661;7201256.Serviço de higiene para animais;2020
+47662;7201266.Cinema, teatro e concertos;2020
+7758;7202.Fumo;2020
+7759;7202041.Cigarro;2020
+7760;7203.Fotografia e filmagem;2012
+7761;7203001.Máquina fotográfica;2012
+7762;7203002.Filme e flash descartável;2006
+7763;7203003.Revelação e cópia;2012
+7764;7203004.Filmadora;1999
+7765;7203006.Fita de vídeo virgem;1999
+7766;8.Educação;2020
+7767;81.Cursos, leitura e papelaria;2020
+7768;8101.Cursos;2006
+12427;8101.Cursos regulares;2020
+7769;8101001.Creche;2020
+7770;8101002.Curso pré-escolar;1999
+107670;8101002.Educação infantil;2012
+47663;8101002.Pré-escola;2020
+7771;8101003.Curso primeiro grau;1999
+107671;8101003.Ensino fundamental;2020
+7772;8101004.Curso segundo grau;1999
+107672;8101004.Ensino médio;2020
+7773;8101005.Curso terceiro grau;1999
+107673;8101005.Ensino superior;2020
+107674;8101006.Pós-graduação;2020
+107675;8101008.Curso supletivo;2006
+47664;8101008.Educação de jovens e adultos;2020
+7774;8101014.Cursos diversos;1999
+7775;8101018.Livro didático;1999
+7776;8101024.Livro e revista técnica;1999
+47665;8101045.Curso técnico;2020
+7777;8102.Leitura;2020
+7778;8102001.Jornal diário;2020
+7779;8102002.Assinatura de jornal;2012
+107676;8102004.Revista;2020
+7780;8102004.Revista não técnica;1999
+107677;8102005.Livro;2012
+7781;8102005.Livro não didático;1999
+47666;8102007.Livro didático;2020
+47667;8102008.Livro não didático;2020
+7782;8103.Papelaria;2020
+7783;8103001.Caderno;2020
+7784;8103002.Fotocópia;2012
+7785;8103014.Artigos de papelaria;2020
+107678;8104.Cursos diversos;2020
+107679;8104001.Curso preparatório;2020
+107680;8104002.Curso técnico;2012
+107681;8104003.Curso de idioma;2020
+107682;8104004.Curso de informática;2020
+107683;8104005.Autoescola;2020
+12428;8104006.Atividades físicas;2020
+107684;8104006.Ginástica;2006
+107685;8104007.Natação;2006
+107686;8104008.Balé;2006
+107687;8104009.Escolinha de esporte;2006
+7786;9.Comunicação;2020
+7787;91.Comunicação;2020
+7788;9101.Comunicação;2020
+7789;9101001.Correio;2020
+47668;9101002.Plano de telefonia fixa;2020
+7790;9101002.Telefone fixo;2012
+7791;9101003.Telefone público;2012
+47669;9101008.Plano de telefonia móvel;2020
+7792;9101008.Telefone celular;2012
+7793;9101010.TV a cabo;2006
+47670;9101010.Tv por assinatura;2020
+107688;9101018.Acesso à internet;2020
+7794;9101019.Aparelho telefônico;2020
+12429;9101021.Telefone com internet - pacote;2012
+12430;9101022.TV por assinatura com internet;2012
+47671;9101115.Serviços de streaming;2020
+47672;9101116.Combo de telefonia, internet e tv por assinatura;2020
+7169;Índice geral;2020

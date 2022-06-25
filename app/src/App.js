@@ -3,6 +3,7 @@ import ScrollableAnchor from 'react-scrollable-anchor'
 import './App.css'
 import PanelComponent from './Components/PanelComponent.js'
 import IBGEComponent from './Components/IBGEComponent.js'
+import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 const generatePanel = (type, format, title, src, obs) => {
   return (
@@ -19,6 +20,18 @@ const generatePanel = (type, format, title, src, obs) => {
     </ScrollableAnchor>
   )
 }
+
+const theme = createTheme({
+  palette: {
+    custom: {
+      light: '#282c34',
+      main: '#282c34',
+      dark: 'black',
+      contrastText: '#fff',
+    }
+  },
+});
+
 function App() {
   return (
     <div className="App">
@@ -26,7 +39,9 @@ function App() {
         <h1> CONSIDERE A INFLAÇÃO </h1>
         <p> Todos os valores abaixo estão corrigidos pelo IPCA. </p>
       </div>
-      <IBGEComponent />
+      <ThemeProvider theme={theme}>
+        <IBGEComponent />
+      </ThemeProvider>
       {generatePanel("dolar", "currency", "Cotação do Dólar", "http://ipeadata.gov.br/exibeserie.aspx?serid=38389 e https://fred.stlouisfed.org/series/CPIAUCSL", "Ajustado pela inflação brasileira e americana")}
       {generatePanel("ibov", "number", "IBOVESPA", "B3")}
       {generatePanel("minimo", "currency", "Salário Mínimo", "http://www.ipeadata.gov.br/ExibeSerie.aspx?stub=1&serid1739471028=1739471028")}

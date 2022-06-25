@@ -48,30 +48,31 @@ def main():
 
 
     elif sys.argv[1] == 'categories':
-        # mapping = {'1999': ('655', '315'), 
-        #            '2006': ('2938', '315'), 
-        #            '2012': ('1419', '315'),
-        #            '2020': ('7060', '315')}
+        mapping = {'1999': ('655', '315'), 
+                   '2006': ('2938', '315'), 
+                   '2012': ('1419', '315'),
+                   '2020': ('7060', '315')}
 
-        # print("Fetching data from IBGE...")
+        print("Fetching data from IBGE...")
 
-        # categories = pd.DataFrame()
-        # for code in mapping:
-        #     print("Fetching "+code+"...")
-        #     data = sidrapy.get_table(
-        #         table_code=mapping[code][0], 
-        #         territorial_level="1", 
-        #         variable="63",
-        #         classifications={"315": "all"},
-        #         ibge_territorial_code="all", 
-        #         period="last",
-        #         header="n",
-        #         verify_ssl=False)
+        categories = pd.DataFrame()
+        for code in mapping:
+            print("Fetching "+code+"...")
+            data = sidrapy.get_table(
+                table_code=mapping[code][0], 
+                territorial_level="1", 
+                variable="63",
+                classifications={"315": "all"},
+                ibge_territorial_code="all", 
+                period="last",
+                header="n",
+                verify_ssl=False)
 
-        #     data = data.rename(columns={"D2C": "YearMo", "D4C": "CodItem", "D4N": "DescItem", "V": "InflacaoMensal"})
-        #     data = data[['CodItem', 'DescItem']]
-        #     data.to_csv('categories'+code+'.csv', index=False)
-        #     categories = categories.combine_first(data)
+            data = data.rename(columns={"D2C": "YearMo", "D4C": "CodItem", "D4N": "DescItem", "V": "InflacaoMensal"})
+            data = data[['CodItem', 'DescItem']]
+            data['Ano'] = code
+            data.to_csv('categories'+code+'.csv', index=False)
+            categories = categories.combine_first(data)
         
         data1999 = pd.read_csv('categories1999.csv', index_col='CodItem')
         data2006 = pd.read_csv('categories2006.csv', index_col='CodItem')

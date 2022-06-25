@@ -1,7 +1,7 @@
 import React from "react"
 import Chart from 'react-apexcharts'
 import { formatNumber } from '../Util/Helpers.js'
-import useMediaQuery from '@material-ui/core/useMediaQuery';
+import useMediaQuery from '@mui/material/useMediaQuery';
 import './ChartComponentStyle.css'
 
 const generateOptions = (title, xTitle, yTitle, line, ySeries, xSeries, format) => {

@@ -1,5 +1,5 @@
 from flask import Flask, send_from_directory
-from flask import request, send_file, Response
+from flask import request, send_file, Response, make_response
 import pandas as pd
 from flask_cors import CORS
 import matplotlib.pyplot as plt
@@ -14,13 +14,16 @@ def get_data(items, cut, graphType):
 
     items = list(map(lambda x: x+'_'+graphType, items))
     data = data[items]
-    data = data[data.index > cut] 
+    data = data[data.index > cut]
     data['YearMo'] = data.index
     names = {}
 
     for column in data.columns:
         if column != 'YearMo':
-            first_value = float(data[column][data[column].first_valid_index()])
+            if not data[column].first_valid_index():
+                first_value = 1.0
+            else:
+                first_value = float(data[column][data[column].first_valid_index()])
             names[column] = categories.loc[int(column.partition("_")[0])]['DescItem']
             data[column] = data.apply(lambda row : (row[column]/first_value-1)*100, axis=1)
 
@@ -37,15 +40,17 @@ def generate_graph():
     items = request.args.get('items').split(",") if 'items' in request.args else '7169,7170,7445,7486,7558,7625,7660,7712,7766,7786'.split(",")
     cut = int(request.args.get('cut')) if 'cut' in request.args else 199908
     graphType = request.args.get('type') if 'type' in request.args else 'real'
+    size = request.args.get('size') if 'size' in request.args else 'mobile'
 
     data = get_data(items, cut, graphType)
 
+    fontsize = 40 if size == 'mobile' else 16
     data.index = data['YearMo']
     data = data.drop(columns=['YearMo'])
-    ax = data.plot(figsize=(15,8), grid=True, fontsize=14)
-    ax.set_xlabel(xlabel="Ano", fontsize=14)
-    ax.set_ylabel(ylabel="Variação (%)", fontsize=14)
-    ax.legend(fontsize=12, loc="lower left")
+    ax = data.plot(figsize=(15,12), grid=True, fontsize=fontsize)
+    ax.set_xlabel(xlabel="Ano", fontsize=fontsize)
+    ax.set_ylabel(ylabel="Variação (%)", fontsize=fontsize)
+    ax.legend(fontsize=int(fontsize*0.75), loc="best")
     bytes = io.BytesIO()
     plt.savefig(bytes, format='png')
     bytes.seek(0)

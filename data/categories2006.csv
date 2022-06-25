@@ -1,466 +1,466 @@
-CodItem,DescItem
-7169,Índice geral
-7170,1.Alimentação e bebidas
-7171,11.Alimentação no domicílio
-7172,"1101.Cereais, leguminosas e oleaginosas"
-7173,1101002.Arroz
-7175,1101051.Feijão - mulatinho
-7176,1101052.Feijão - preto
-7177,1101053.Feijão - macassar (fradinho)
-7180,1101073.Feijão - carioca (rajado))
-107607,1101084.Fava
-7184,"1102.Farinhas, féculas e massas"
-7185,1102001.Farinha de arroz
-7187,1102006.Macarrão
-7188,1102008.Fubá de milho
-7191,1102012.Farinha de trigo
-7192,1102013.Farinha vitaminada
-7195,1102023.Farinha de mandioca
-107608,1102029.Massa semipreparada
-7200,"1103.Tubérculos, raízes e legumes"
-7202,1103003.Batata-inglesa
-7203,1103004.Inhame
-7204,1103005.Mandioca (aipim)
-7205,1103017.Abóbora
-7207,1103021.Chuchu
-7210,1103026.Pimentão
-7211,1103027.Quiabo
-7212,1103028.Tomate
-7215,1103043.Cebola
-7216,1103044.Cenoura
-7219,1104.Açúcares e derivados
-7220,1104003.Açúcar refinado
-7221,1104004.Açúcar cristal
-107609,1104023.Chocolate em barra e bombom
-107610,1104028.Gelatina
-7230,1104032.Sorvete
-107611,1104052.Chocolate e achocolatado em pó
-7233,1104060.Doce de frutas em pasta
-7235,1104066.Doce de leite
-7241,1105.Hortaliças e verduras
-7242,1105001.Alface
-7244,1105004.Coentro
-7245,1105005.Couve
-7246,1105006.Couve-flor
-7248,1105010.Repolho
-7249,1105012.Cheiro-verde
-7253,1105019.Brócolis
-7254,1106.Frutas
-7255,1106001.Banana-da-terra
-7256,1106003.Abacaxi
-7258,1106005.Banana - d'água
-7259,1106006.Banana - maçã
-7260,1106008.Banana - prata
-7265,1106015.Limão
-7266,1106017.Maçã
-7267,1106018.Mamão
-7268,1106019.Manga
-7269,1106020.Maracujá
-7270,1106021.Melancia
-7271,1106022.Melão
-7272,1106023.Pera
-7275,1106027.Tangerina
-7276,1106028.Uva
-7278,1106034.Ameixa
-7279,1106039.Laranja - pera
-7281,1106084.Goiaba
-7283,1107.Carnes
-7285,1107009.Fígado
-107612,1107010.Outras vísceras
-7287,1107018.Carne de porco
-7291,1107084.Contrafilé
-7292,1107085.Filé-mignon
-7293,1107087.Chã de dentro
-7294,1107088.Alcatra
-7295,1107089.Patinho
-7296,1107090.Lagarto redondo
-7297,1107091.Lagarto plano
-7298,1107093.Músculo
-7299,1107094.Pá
-7300,1107095.Acém
-7301,1107096.Peito
-101448,1107097.Capa de filé
-7302,1107099.Costela
-7303,1108.Pescados
-7305,1108002.Peixe - anchova
-7306,1108004.Peixe - corvina
-107613,1108006.Peixe
-7308,1108009.Peixe - pescadinha
-7309,1108011.Peixe - tainha
-7310,1108012.Peixe - sardinha
-7311,1108013.Camarão
-7312,1108015.Peixe - vermelho
-7313,1108019.Peixe - cavala
-107614,1108025.Peixe - linguado
-107615,1108029.Peixe - cação
-107616,1108031.Peixe - merluza
-7317,1108032.Peixe - serra
-7318,1108033.Peixe - pargo
-7320,1108038.Peixe - pescada
-7323,1108045.Caranguejo
-7327,1108053.Peixe - piramutaba
-7332,1108076.Peixe - acará
-7333,1108088.Peixe - dourada
-7335,1109.Carnes e peixes industrializados
-7336,1109002.Presunto
-7338,1109007.Salsicha e salsichão
-7339,1109008.Linguiça
-7341,1109010.Mortadela
-7343,1109023.Bacalhau
-7346,1109056.Carne seca
-7348,1109088.Carne de hambúrguer
-7349,1110.Aves e ovos
-107617,1110009.Frango inteiro
-107618,1110010.Frango em pedaços
-7355,1110044.Ovo de galinha
-7356,1111.Leites e derivados
-7357,1111004.Leite pasteurizado
-7358,1111008.Leite condensado
-7359,1111009.Leite em pó
-107619,1111011.Queijo
-7360,1111012.Creme de leite
-7361,1111019.Iogurte
-7367,1111031.Manteiga
-7368,1111038.Leite fermentado
-7371,1111051.Leite com sabor
-7372,1112.Panificados
-7373,1112003.Biscoito
-7375,1112015.Pão francês
-7376,1112017.Pão doce
-7377,1112018.Pão de forma
-7378,1112019.Bolo
-7380,1112025.Pão de queijo
-7384,1113.Óleos e gorduras
-7385,1113013.Óleo de soja
-7386,1113014.Azeite de oliva
-7387,1113040.Margarina vegetal
-7389,1114.Bebidas e infusões
-7390,1114001.Suco de frutas
-7391,1114004.Polpa de açaí
-7392,1114022.Café moído
-7393,1114023.Café solúvel
-107620,1114029.Chá
-107621,1114083.Refrigerante e água mineral
-7396,1114084.Cerveja
-7397,1114085.Outras bebidas alcoólicas
-7401,1115.Enlatados e conservas
-107622,1115006.Ervilha em conserva
-107623,1115008.Feijoada em conserva
-7406,1115016.Palmito em conserva
-107624,1115039.Sardinha em conserva
-107625,1115050.Salsicha em conserva
-107626,1115051.Carne em conserva
-107627,1115053.Patê
-7411,1115056.Sopa desidratada
-7412,1115057.Azeitona
-107628,1115058.Milho-verde em conserva
-107629,1115059.Cogumelo em conserva
-107630,1115075.Atum em conserva
-7415,1116.Sal e condimentos
-7416,1116001.Leite de coco
-109463,1116005.Atomatado
-7418,1116010.Alho
-7419,1116013.Sal refinado
-7420,1116022.Colorau
-7422,1116026.Fermento
-7423,1116033.Maionese
-7424,1116041.Vinagre
-7425,1116048.Caldo concentrado
-7428,1116071.Tempero misto
-107632,1116095.Molho de soja
-7432,12.Alimentação fora do domicílio
-7433,1201.Alimentação fora do domicílio
-7434,1201001.Refeição
-7435,1201003.Lanche
-7436,1201005.Café da manhã
-107633,1201007.Refrigerante e água mineral
-7438,1201009.Cafezinho
-7440,1201048.Cerveja
-7441,1201049.Chopp
-7443,1201051.Outras bebidas alcoólicas
-7444,1201061.Doces
-7445,2.Habitação
-7446,21.Encargos e manutenção
-7447,2101.Aluguel e taxas
-7448,2101001.Aluguel residencial
-7449,2101002.Condomínio
-7451,2101004.Taxa de água e esgoto
-7453,2101012.Mudança
-7454,2103.Reparos
-7455,2103005.Ferragens
-7456,2103008.Material de eletricidade
-7457,2103009.Material de pintura
-7459,2103014.Tinta
-7460,2103031.Ferramentas
-107637,2103032.Azulejo e piso
-107638,2103039.Cimento
-107639,2103040.Tijolo
-107640,2103041.Material hidráulico
-107641,2103042.Mão de obra
-107642,2103048.Areia
-107643,2103049.Pedras
-7461,2104.Artigos de limpeza
-7462,2104002.Vassoura
-7464,2104005.Água sanitária
-7465,2104008.Detergente
-7466,2104009.Sabão em pó
-7467,2104012.Desinfetante
-7468,2104013.Inseticida
-7469,2104014.Cera para assoalho
-7470,2104015.Sabão em barra
-7471,2104016.Esponja de limpeza
-7473,2104020.Limpador com amoníaco
-7475,"2104032.Amaciante, alvejante"
-7479,22.Combustíveis e energia
-7480,2201.Combustíveis (domésticos)
-7481,2201003.Carvão vegetal
-7482,2201004.Gás de botijão
-7483,2201005.Gás encanado
-7484,2202.Energia elétrica residencial
-7485,2202003.Energia elétrica residencial
-7486,3.Artigos de residência
-7487,31.Móveis e utensílios
-7488,3101.Mobiliário
-7489,3101002.Móvel para sala
-7490,3101003.Móvel para quarto
-7492,3101015.Móvel para copa e cozinha
-7493,3101017.Colchão
-7495,3102.Utensílios e enfeites
-7497,3102005.Tapete
-7498,3102006.Cortina
-7499,3102007.Utensílios para copa e cozinha de metal
-107644,3102009.Utensílios para copa e cozinha de vidro e louça
-107645,3102010.Utensílios de plástico
-7508,3102035.Flores naturais
-107646,3102040.Utensílios diversos
-7517,"3103.Cama, mesa e banho"
-7518,3103001.Roupa de cama
-7520,3103003.Roupa de banho
-7521,32.Aparelhos eletroeletrônicos
-7522,3201.Eletrodomésticos e equipamentos
-7523,3201001.Refrigerador
-7524,3201002.Condicionador de ar
-7525,3201003.Máquina de costura
-7526,3201006.Máquina de lavar roupa
-7529,3201012.Liquidificador
-7530,3201013.Ventilador
-7531,3201021.Fogão
-7532,3201027.Lâmpada
-7540,3201065.Forno de micro-ondas
-7541,"3202.Tv, som e informática"
-7542,3202001.Televisor
-7543,3202003.Aparelho de som
-107647,3202005.Aparelho de DVD
-7547,3202028.Microcomputador
-7548,33.Consertos e manutenção
-7549,3301.Consertos e manutenção
-7550,3301002.Conserto de refrigerador e freezer
-107648,3301006.Conserto de televisor
-7551,3301009.Conserto de aparelho de som
-7553,3301015.Conserto de máquina de lavar/secar roupa
-7555,3301022.Reforma de estofado
-7556,3301023.Conserto de bomba d'água
-7558,4.Vestuário
-7559,41.Roupas
-7560,4101.Roupa masculina
-7561,4101002.Calça comprida masculina
-7562,4101004.Terno
-7563,4101005.Agasalho masculino
-7564,4101006.Short e bermuda masculina
-7565,4101008.Cueca
-107649,4101009.Camisa/camiseta masculina
-7572,4102.Roupa feminina
-7573,4102002.Calça comprida feminina
-7574,4102003.Agasalho feminino
-7575,4102004.Saia
-7576,4102005.Vestido
-7577,4102008.Blusa
-7579,4102010.Lingerie
-7581,4102012.Roupa de banho feminina
-7582,4102013.Bermuda e short feminino
-7587,4103.Roupa infantil
-7588,4103001.Uniforme
-7589,4103002.Calça comprida infantil
-7590,4103005.Agasalho infantil
-7591,4103007.Vestido infantil
-7592,4103008.Bermuda e short infantil
-107650,4103011.Camisa/camiseta infantil
-7597,4103017.Fralda
-12409,4103031.Conjunto infantil
-7604,42.Calçados e acessórios
-7605,4201.Calçados e acessórios
-7606,4201002.Sapato masculino
-7607,4201003.Sapato feminino
-7608,4201004.Sapato infantil
-7609,4201006.Sandália / chinelo masculino
-7610,4201007.Sandália / chinelo feminino
-7611,4201008.Sandália / chinelo infantil
-107652,4201015.Bolsa
-7614,4201063.Tênis
-7615,43.Joias e bijuterias
-7616,4301.Joias e bijuterias
-7617,4301001.Bijuteria
-7618,4301002.Joia
-7619,4301004.Relógio de pulso
-7620,44.Tecidos e armarinho
-7621,4401.Tecidos e armarinho
-7622,4401001.Tecido
-7623,4401002.Artigos de armarinho
-7625,5.Transportes
-7626,51.Transportes
-7627,5101.Transporte público
-7628,5101001.Ônibus urbano
-7629,5101002.Táxi
-7630,5101004.Trem
-7631,5101006.Ônibus intermunicipal
-7632,5101007.Ônibus interestadual
-7633,5101009.Ferry-boat
-7634,5101010.Passagem aérea
-7635,5101011.Metrô
-7638,5101022.Barco
-7639,5101026.Transporte escolar
-7640,5102.Veículo próprio
-7641,5102001.Automóvel novo
-7642,5102004.Emplacamento e licença
-7643,5102005.Seguro voluntário de veículo
-107653,5102006.Multa
-7644,5102007.Óleo lubrificante
-7645,5102009.Acessórios e peças
-7646,5102010.Pneu e câmara-de-ar
-7647,5102011.Conserto de automóvel
-7648,5102013.Estacionamento
-7649,5102015.Pedágio
-7650,5102019.Lubrificação e lavagem
-107654,5102020.Automóvel usado
-107655,5102033.Reboque
-7653,5102037.Pintura de veículo
-107656,5102051.Aluguel de veículo
-7654,5102053.Motocicleta
-7656,5104.Combustíveis (veículos)
-7657,5104001.Gasolina
-7658,5104002.Etanol
-7659,5104003.Óleo diesel
-107657,5104005.Gás veicular
-7660,6.Saúde e cuidados pessoais
-7661,61.Produtos farmacêuticos e óticos
-7662,6101.Produtos farmacêuticos
-7663,6101001.Anti-infeccioso e antibiótico
-7664,6101002.Analgésico e antitérmico
-7665,6101003.Anti-inflamatório e antirreumático
-7666,6101004.Antigripal e antitussígeno
-7668,6101006.Antimicótico e parasiticida
-7669,6101007.Antialérgico e broncodilatador
-7670,6101009.Gastroprotetor
-7671,6101010.Vitamina e fortificante
-107658,6101011.Hormônio
-7673,6101013.Psicotrópico e anorexígeno
-7674,6101014.Hipotensor e hipocolesterolêmico
-107659,6101051.Oftalmológico
-109464,6102.Produtos óticos
-7679,6102001.Lente de grau
-7680,6102002.Armação de óculos
-7681,6102003.Óculos sem grau
-7682,6102008.Lente de contato
-7683,62.Serviços de saúde
-7684,6201.Serviços médicos e dentários
-7685,6201002.Médico
-7686,6201003.Dentista
-7687,6201005.Aparelho dentário
-7688,6201006.Artigos ortopédicos
-7689,6201008.Tratamento psicológico e fisioterápico
-7690,6202.Serviços laboratoriais e hospitalares
-7691,6202003.Exame de laboratório
-7692,6202004.Hospitalização e cirurgia
-7693,6202006.Eletrodiagnóstico
-107660,6202008.Asilo
-7694,6202013.Radiografia
-7695,6203.Plano de saúde
-7696,6203001.Plano de saúde
-7697,63.Cuidados pessoais
-7698,6301.Higiene pessoal
-7699,6301001.Produto para cabelo
-101644,6301006.Produto para pele
-107661,6301007.Produto para higiene bucal
-7703,6301010.Produto para unha
-7704,6301011.Perfume
-7707,6301014.Desodorante
-7708,6301015.Absorvente higiênico
-7709,6301016.Sabonete
-7710,6301017.Papel higiênico
-7711,6301020.Artigos de maquiagem
-7712,7.Despesas pessoais
-7713,71.Serviços pessoais
-7714,7101.Serviços pessoais
-7715,7101001.Costureira
-7717,7101005.Manicure e pedicure
-7718,7101008.Barbeiro
-7719,7101009.Cabeleireiro
-7720,7101010.Empregado doméstico
-7721,7101014.Depilação
-7723,7101034.Cartório
-7724,7101036.Despachante
-7727,7101076.Serviço bancário
-7728,7101090.Conselho de classe
-7729,"72.Recreação, fumo e filmes"
-7730,7201.Recreação
-7731,7201001.Cinema
-7732,7201003.Ingresso para jogo
-7733,7201006.Clube
-107664,7201008.Disco laser
-7735,7201010.Instrumento musical
-107665,7201018.Compra e tratamento de animais
-7736,7201019.Bicicleta
-107666,7201020.Alimento para animais
-7738,7201023.Brinquedo
-107667,7201052.Aluguel de DVD e fita de videocassete
-7742,"7201054.Boate, danceteria e discoteca"
-107668,7201063.Jogos de azar
-7747,7201068.Motel
-7749,7201083.Material esportivo
-7753,7201090.Hotel
-7756,7201095.Excursão
-7758,7202.Fumo
-7759,7202041.Cigarro
-7760,7203.Fotografia e filmagem
-7761,7203001.Máquina fotográfica
-7762,7203002.Filme e flash descartável
-7763,7203003.Revelação e cópia
-7766,8.Educação
-7767,"81.Cursos, leitura e papelaria"
-7768,8101.Cursos
-7769,8101001.Creche
-107670,8101002.Educação infantil
-107671,8101003.Ensino fundamental
-107672,8101004.Ensino médio
-107673,8101005.Ensino superior
-107674,8101006.Pós-graduação
-107675,8101008.Curso supletivo
-7777,8102.Leitura
-7778,8102001.Jornal diário
-7779,8102002.Assinatura de jornal
-107676,8102004.Revista
-107677,8102005.Livro
-7782,8103.Papelaria
-7783,8103001.Caderno
-7784,8103002.Fotocópia
-7785,8103014.Artigos de papelaria
-107678,8104.Cursos diversos
-107679,8104001.Curso preparatório
-107680,8104002.Curso técnico
-107681,8104003.Curso de idioma
-107682,8104004.Curso de informática
-107683,8104005.Autoescola
-107684,8104006.Ginástica
-107685,8104007.Natação
-107686,8104008.Balé
-107687,8104009.Escolinha de esporte
-7786,9.Comunicação
-7787,91.Comunicação
-7788,9101.Comunicação
-7789,9101001.Correio
-7790,9101002.Telefone fixo
-7791,9101003.Telefone público
-7792,9101008.Telefone celular
-7793,9101010.TV a cabo
-107688,9101018.Acesso à internet
-7794,9101019.Aparelho telefônico
+CodItem,DescItem,Ano
+7169,Índice geral,2006
+7170,1.Alimentação e bebidas,2006
+7171,11.Alimentação no domicílio,2006
+7172,"1101.Cereais, leguminosas e oleaginosas",2006
+7173,1101002.Arroz,2006
+7175,1101051.Feijão - mulatinho,2006
+7176,1101052.Feijão - preto,2006
+7177,1101053.Feijão - macassar (fradinho),2006
+7180,1101073.Feijão - carioca (rajado)),2006
+107607,1101084.Fava,2006
+7184,"1102.Farinhas, féculas e massas",2006
+7185,1102001.Farinha de arroz,2006
+7187,1102006.Macarrão,2006
+7188,1102008.Fubá de milho,2006
+7191,1102012.Farinha de trigo,2006
+7192,1102013.Farinha vitaminada,2006
+7195,1102023.Farinha de mandioca,2006
+107608,1102029.Massa semipreparada,2006
+7200,"1103.Tubérculos, raízes e legumes",2006
+7202,1103003.Batata-inglesa,2006
+7203,1103004.Inhame,2006
+7204,1103005.Mandioca (aipim),2006
+7205,1103017.Abóbora,2006
+7207,1103021.Chuchu,2006
+7210,1103026.Pimentão,2006
+7211,1103027.Quiabo,2006
+7212,1103028.Tomate,2006
+7215,1103043.Cebola,2006
+7216,1103044.Cenoura,2006
+7219,1104.Açúcares e derivados,2006
+7220,1104003.Açúcar refinado,2006
+7221,1104004.Açúcar cristal,2006
+107609,1104023.Chocolate em barra e bombom,2006
+107610,1104028.Gelatina,2006
+7230,1104032.Sorvete,2006
+107611,1104052.Chocolate e achocolatado em pó,2006
+7233,1104060.Doce de frutas em pasta,2006
+7235,1104066.Doce de leite,2006
+7241,1105.Hortaliças e verduras,2006
+7242,1105001.Alface,2006
+7244,1105004.Coentro,2006
+7245,1105005.Couve,2006
+7246,1105006.Couve-flor,2006
+7248,1105010.Repolho,2006
+7249,1105012.Cheiro-verde,2006
+7253,1105019.Brócolis,2006
+7254,1106.Frutas,2006
+7255,1106001.Banana-da-terra,2006
+7256,1106003.Abacaxi,2006
+7258,1106005.Banana - d'água,2006
+7259,1106006.Banana - maçã,2006
+7260,1106008.Banana - prata,2006
+7265,1106015.Limão,2006
+7266,1106017.Maçã,2006
+7267,1106018.Mamão,2006
+7268,1106019.Manga,2006
+7269,1106020.Maracujá,2006
+7270,1106021.Melancia,2006
+7271,1106022.Melão,2006
+7272,1106023.Pera,2006
+7275,1106027.Tangerina,2006
+7276,1106028.Uva,2006
+7278,1106034.Ameixa,2006
+7279,1106039.Laranja - pera,2006
+7281,1106084.Goiaba,2006
+7283,1107.Carnes,2006
+7285,1107009.Fígado,2006
+107612,1107010.Outras vísceras,2006
+7287,1107018.Carne de porco,2006
+7291,1107084.Contrafilé,2006
+7292,1107085.Filé-mignon,2006
+7293,1107087.Chã de dentro,2006
+7294,1107088.Alcatra,2006
+7295,1107089.Patinho,2006
+7296,1107090.Lagarto redondo,2006
+7297,1107091.Lagarto plano,2006
+7298,1107093.Músculo,2006
+7299,1107094.Pá,2006
+7300,1107095.Acém,2006
+7301,1107096.Peito,2006
+101448,1107097.Capa de filé,2006
+7302,1107099.Costela,2006
+7303,1108.Pescados,2006
+7305,1108002.Peixe - anchova,2006
+7306,1108004.Peixe - corvina,2006
+107613,1108006.Peixe,2006
+7308,1108009.Peixe - pescadinha,2006
+7309,1108011.Peixe - tainha,2006
+7310,1108012.Peixe - sardinha,2006
+7311,1108013.Camarão,2006
+7312,1108015.Peixe - vermelho,2006
+7313,1108019.Peixe - cavala,2006
+107614,1108025.Peixe - linguado,2006
+107615,1108029.Peixe - cação,2006
+107616,1108031.Peixe - merluza,2006
+7317,1108032.Peixe - serra,2006
+7318,1108033.Peixe - pargo,2006
+7320,1108038.Peixe - pescada,2006
+7323,1108045.Caranguejo,2006
+7327,1108053.Peixe - piramutaba,2006
+7332,1108076.Peixe - acará,2006
+7333,1108088.Peixe - dourada,2006
+7335,1109.Carnes e peixes industrializados,2006
+7336,1109002.Presunto,2006
+7338,1109007.Salsicha e salsichão,2006
+7339,1109008.Linguiça,2006
+7341,1109010.Mortadela,2006
+7343,1109023.Bacalhau,2006
+7346,1109056.Carne seca,2006
+7348,1109088.Carne de hambúrguer,2006
+7349,1110.Aves e ovos,2006
+107617,1110009.Frango inteiro,2006
+107618,1110010.Frango em pedaços,2006
+7355,1110044.Ovo de galinha,2006
+7356,1111.Leites e derivados,2006
+7357,1111004.Leite pasteurizado,2006
+7358,1111008.Leite condensado,2006
+7359,1111009.Leite em pó,2006
+107619,1111011.Queijo,2006
+7360,1111012.Creme de leite,2006
+7361,1111019.Iogurte,2006
+7367,1111031.Manteiga,2006
+7368,1111038.Leite fermentado,2006
+7371,1111051.Leite com sabor,2006
+7372,1112.Panificados,2006
+7373,1112003.Biscoito,2006
+7375,1112015.Pão francês,2006
+7376,1112017.Pão doce,2006
+7377,1112018.Pão de forma,2006
+7378,1112019.Bolo,2006
+7380,1112025.Pão de queijo,2006
+7384,1113.Óleos e gorduras,2006
+7385,1113013.Óleo de soja,2006
+7386,1113014.Azeite de oliva,2006
+7387,1113040.Margarina vegetal,2006
+7389,1114.Bebidas e infusões,2006
+7390,1114001.Suco de frutas,2006
+7391,1114004.Polpa de açaí,2006
+7392,1114022.Café moído,2006
+7393,1114023.Café solúvel,2006
+107620,1114029.Chá,2006
+107621,1114083.Refrigerante e água mineral,2006
+7396,1114084.Cerveja,2006
+7397,1114085.Outras bebidas alcoólicas,2006
+7401,1115.Enlatados e conservas,2006
+107622,1115006.Ervilha em conserva,2006
+107623,1115008.Feijoada em conserva,2006
+7406,1115016.Palmito em conserva,2006
+107624,1115039.Sardinha em conserva,2006
+107625,1115050.Salsicha em conserva,2006
+107626,1115051.Carne em conserva,2006
+107627,1115053.Patê,2006
+7411,1115056.Sopa desidratada,2006
+7412,1115057.Azeitona,2006
+107628,1115058.Milho-verde em conserva,2006
+107629,1115059.Cogumelo em conserva,2006
+107630,1115075.Atum em conserva,2006
+7415,1116.Sal e condimentos,2006
+7416,1116001.Leite de coco,2006
+109463,1116005.Atomatado,2006
+7418,1116010.Alho,2006
+7419,1116013.Sal refinado,2006
+7420,1116022.Colorau,2006
+7422,1116026.Fermento,2006
+7423,1116033.Maionese,2006
+7424,1116041.Vinagre,2006
+7425,1116048.Caldo concentrado,2006
+7428,1116071.Tempero misto,2006
+107632,1116095.Molho de soja,2006
+7432,12.Alimentação fora do domicílio,2006
+7433,1201.Alimentação fora do domicílio,2006
+7434,1201001.Refeição,2006
+7435,1201003.Lanche,2006
+7436,1201005.Café da manhã,2006
+107633,1201007.Refrigerante e água mineral,2006
+7438,1201009.Cafezinho,2006
+7440,1201048.Cerveja,2006
+7441,1201049.Chopp,2006
+7443,1201051.Outras bebidas alcoólicas,2006
+7444,1201061.Doces,2006
+7445,2.Habitação,2006
+7446,21.Encargos e manutenção,2006
+7447,2101.Aluguel e taxas,2006
+7448,2101001.Aluguel residencial,2006
+7449,2101002.Condomínio,2006
+7451,2101004.Taxa de água e esgoto,2006
+7453,2101012.Mudança,2006
+7454,2103.Reparos,2006
+7455,2103005.Ferragens,2006
+7456,2103008.Material de eletricidade,2006
+7457,2103009.Material de pintura,2006
+7459,2103014.Tinta,2006
+7460,2103031.Ferramentas,2006
+107637,2103032.Azulejo e piso,2006
+107638,2103039.Cimento,2006
+107639,2103040.Tijolo,2006
+107640,2103041.Material hidráulico,2006
+107641,2103042.Mão de obra,2006
+107642,2103048.Areia,2006
+107643,2103049.Pedras,2006
+7461,2104.Artigos de limpeza,2006
+7462,2104002.Vassoura,2006
+7464,2104005.Água sanitária,2006
+7465,2104008.Detergente,2006
+7466,2104009.Sabão em pó,2006
+7467,2104012.Desinfetante,2006
+7468,2104013.Inseticida,2006
+7469,2104014.Cera para assoalho,2006
+7470,2104015.Sabão em barra,2006
+7471,2104016.Esponja de limpeza,2006
+7473,2104020.Limpador com amoníaco,2006
+7475,"2104032.Amaciante, alvejante",2006
+7479,22.Combustíveis e energia,2006
+7480,2201.Combustíveis (domésticos),2006
+7481,2201003.Carvão vegetal,2006
+7482,2201004.Gás de botijão,2006
+7483,2201005.Gás encanado,2006
+7484,2202.Energia elétrica residencial,2006
+7485,2202003.Energia elétrica residencial,2006
+7486,3.Artigos de residência,2006
+7487,31.Móveis e utensílios,2006
+7488,3101.Mobiliário,2006
+7489,3101002.Móvel para sala,2006
+7490,3101003.Móvel para quarto,2006
+7492,3101015.Móvel para copa e cozinha,2006
+7493,3101017.Colchão,2006
+7495,3102.Utensílios e enfeites,2006
+7497,3102005.Tapete,2006
+7498,3102006.Cortina,2006
+7499,3102007.Utensílios para copa e cozinha de metal,2006
+107644,3102009.Utensílios para copa e cozinha de vidro e louça,2006
+107645,3102010.Utensílios de plástico,2006
+7508,3102035.Flores naturais,2006
+107646,3102040.Utensílios diversos,2006
+7517,"3103.Cama, mesa e banho",2006
+7518,3103001.Roupa de cama,2006
+7520,3103003.Roupa de banho,2006
+7521,32.Aparelhos eletroeletrônicos,2006
+7522,3201.Eletrodomésticos e equipamentos,2006
+7523,3201001.Refrigerador,2006
+7524,3201002.Condicionador de ar,2006
+7525,3201003.Máquina de costura,2006
+7526,3201006.Máquina de lavar roupa,2006
+7529,3201012.Liquidificador,2006
+7530,3201013.Ventilador,2006
+7531,3201021.Fogão,2006
+7532,3201027.Lâmpada,2006
+7540,3201065.Forno de micro-ondas,2006
+7541,"3202.Tv, som e informática",2006
+7542,3202001.Televisor,2006
+7543,3202003.Aparelho de som,2006
+107647,3202005.Aparelho de DVD,2006
+7547,3202028.Microcomputador,2006
+7548,33.Consertos e manutenção,2006
+7549,3301.Consertos e manutenção,2006
+7550,3301002.Conserto de refrigerador e freezer,2006
+107648,3301006.Conserto de televisor,2006
+7551,3301009.Conserto de aparelho de som,2006
+7553,3301015.Conserto de máquina de lavar/secar roupa,2006
+7555,3301022.Reforma de estofado,2006
+7556,3301023.Conserto de bomba d'água,2006
+7558,4.Vestuário,2006
+7559,41.Roupas,2006
+7560,4101.Roupa masculina,2006
+7561,4101002.Calça comprida masculina,2006
+7562,4101004.Terno,2006
+7563,4101005.Agasalho masculino,2006
+7564,4101006.Short e bermuda masculina,2006
+7565,4101008.Cueca,2006
+107649,4101009.Camisa/camiseta masculina,2006
+7572,4102.Roupa feminina,2006
+7573,4102002.Calça comprida feminina,2006
+7574,4102003.Agasalho feminino,2006
+7575,4102004.Saia,2006
+7576,4102005.Vestido,2006
+7577,4102008.Blusa,2006
+7579,4102010.Lingerie,2006
+7581,4102012.Roupa de banho feminina,2006
+7582,4102013.Bermuda e short feminino,2006
+7587,4103.Roupa infantil,2006
+7588,4103001.Uniforme,2006
+7589,4103002.Calça comprida infantil,2006
+7590,4103005.Agasalho infantil,2006
+7591,4103007.Vestido infantil,2006
+7592,4103008.Bermuda e short infantil,2006
+107650,4103011.Camisa/camiseta infantil,2006
+7597,4103017.Fralda,2006
+12409,4103031.Conjunto infantil,2006
+7604,42.Calçados e acessórios,2006
+7605,4201.Calçados e acessórios,2006
+7606,4201002.Sapato masculino,2006
+7607,4201003.Sapato feminino,2006
+7608,4201004.Sapato infantil,2006
+7609,4201006.Sandália / chinelo masculino,2006
+7610,4201007.Sandália / chinelo feminino,2006
+7611,4201008.Sandália / chinelo infantil,2006
+107652,4201015.Bolsa,2006
+7614,4201063.Tênis,2006
+7615,43.Joias e bijuterias,2006
+7616,4301.Joias e bijuterias,2006
+7617,4301001.Bijuteria,2006
+7618,4301002.Joia,2006
+7619,4301004.Relógio de pulso,2006
+7620,44.Tecidos e armarinho,2006
+7621,4401.Tecidos e armarinho,2006
+7622,4401001.Tecido,2006
+7623,4401002.Artigos de armarinho,2006
+7625,5.Transportes,2006
+7626,51.Transportes,2006
+7627,5101.Transporte público,2006
+7628,5101001.Ônibus urbano,2006
+7629,5101002.Táxi,2006
+7630,5101004.Trem,2006
+7631,5101006.Ônibus intermunicipal,2006
+7632,5101007.Ônibus interestadual,2006
+7633,5101009.Ferry-boat,2006
+7634,5101010.Passagem aérea,2006
+7635,5101011.Metrô,2006
+7638,5101022.Barco,2006
+7639,5101026.Transporte escolar,2006
+7640,5102.Veículo próprio,2006
+7641,5102001.Automóvel novo,2006
+7642,5102004.Emplacamento e licença,2006
+7643,5102005.Seguro voluntário de veículo,2006
+107653,5102006.Multa,2006
+7644,5102007.Óleo lubrificante,2006
+7645,5102009.Acessórios e peças,2006
+7646,5102010.Pneu e câmara-de-ar,2006
+7647,5102011.Conserto de automóvel,2006
+7648,5102013.Estacionamento,2006
+7649,5102015.Pedágio,2006
+7650,5102019.Lubrificação e lavagem,2006
+107654,5102020.Automóvel usado,2006
+107655,5102033.Reboque,2006
+7653,5102037.Pintura de veículo,2006
+107656,5102051.Aluguel de veículo,2006
+7654,5102053.Motocicleta,2006
+7656,5104.Combustíveis (veículos),2006
+7657,5104001.Gasolina,2006
+7658,5104002.Etanol,2006
+7659,5104003.Óleo diesel,2006
+107657,5104005.Gás veicular,2006
+7660,6.Saúde e cuidados pessoais,2006
+7661,61.Produtos farmacêuticos e óticos,2006
+7662,6101.Produtos farmacêuticos,2006
+7663,6101001.Anti-infeccioso e antibiótico,2006
+7664,6101002.Analgésico e antitérmico,2006
+7665,6101003.Anti-inflamatório e antirreumático,2006
+7666,6101004.Antigripal e antitussígeno,2006
+7668,6101006.Antimicótico e parasiticida,2006
+7669,6101007.Antialérgico e broncodilatador,2006
+7670,6101009.Gastroprotetor,2006
+7671,6101010.Vitamina e fortificante,2006
+107658,6101011.Hormônio,2006
+7673,6101013.Psicotrópico e anorexígeno,2006
+7674,6101014.Hipotensor e hipocolesterolêmico,2006
+107659,6101051.Oftalmológico,2006
+109464,6102.Produtos óticos,2006
+7679,6102001.Lente de grau,2006
+7680,6102002.Armação de óculos,2006
+7681,6102003.Óculos sem grau,2006
+7682,6102008.Lente de contato,2006
+7683,62.Serviços de saúde,2006
+7684,6201.Serviços médicos e dentários,2006
+7685,6201002.Médico,2006
+7686,6201003.Dentista,2006
+7687,6201005.Aparelho dentário,2006
+7688,6201006.Artigos ortopédicos,2006
+7689,6201008.Tratamento psicológico e fisioterápico,2006
+7690,6202.Serviços laboratoriais e hospitalares,2006
+7691,6202003.Exame de laboratório,2006
+7692,6202004.Hospitalização e cirurgia,2006
+7693,6202006.Eletrodiagnóstico,2006
+107660,6202008.Asilo,2006
+7694,6202013.Radiografia,2006
+7695,6203.Plano de saúde,2006
+7696,6203001.Plano de saúde,2006
+7697,63.Cuidados pessoais,2006
+7698,6301.Higiene pessoal,2006
+7699,6301001.Produto para cabelo,2006
+101644,6301006.Produto para pele,2006
+107661,6301007.Produto para higiene bucal,2006
+7703,6301010.Produto para unha,2006
+7704,6301011.Perfume,2006
+7707,6301014.Desodorante,2006
+7708,6301015.Absorvente higiênico,2006
+7709,6301016.Sabonete,2006
+7710,6301017.Papel higiênico,2006
+7711,6301020.Artigos de maquiagem,2006
+7712,7.Despesas pessoais,2006
+7713,71.Serviços pessoais,2006
+7714,7101.Serviços pessoais,2006
+7715,7101001.Costureira,2006
+7717,7101005.Manicure e pedicure,2006
+7718,7101008.Barbeiro,2006
+7719,7101009.Cabeleireiro,2006
+7720,7101010.Empregado doméstico,2006
+7721,7101014.Depilação,2006
+7723,7101034.Cartório,2006
+7724,7101036.Despachante,2006
+7727,7101076.Serviço bancário,2006
+7728,7101090.Conselho de classe,2006
+7729,"72.Recreação, fumo e filmes",2006
+7730,7201.Recreação,2006
+7731,7201001.Cinema,2006
+7732,7201003.Ingresso para jogo,2006
+7733,7201006.Clube,2006
+107664,7201008.Disco laser,2006
+7735,7201010.Instrumento musical,2006
+107665,7201018.Compra e tratamento de animais,2006
+7736,7201019.Bicicleta,2006
+107666,7201020.Alimento para animais,2006
+7738,7201023.Brinquedo,2006
+107667,7201052.Aluguel de DVD e fita de videocassete,2006
+7742,"7201054.Boate, danceteria e discoteca",2006
+107668,7201063.Jogos de azar,2006
+7747,7201068.Motel,2006
+7749,7201083.Material esportivo,2006
+7753,7201090.Hotel,2006
+7756,7201095.Excursão,2006
+7758,7202.Fumo,2006
+7759,7202041.Cigarro,2006
+7760,7203.Fotografia e filmagem,2006
+7761,7203001.Máquina fotográfica,2006
+7762,7203002.Filme e flash descartável,2006
+7763,7203003.Revelação e cópia,2006
+7766,8.Educação,2006
+7767,"81.Cursos, leitura e papelaria",2006
+7768,8101.Cursos,2006
+7769,8101001.Creche,2006
+107670,8101002.Educação infantil,2006
+107671,8101003.Ensino fundamental,2006
+107672,8101004.Ensino médio,2006
+107673,8101005.Ensino superior,2006
+107674,8101006.Pós-graduação,2006
+107675,8101008.Curso supletivo,2006
+7777,8102.Leitura,2006
+7778,8102001.Jornal diário,2006
+7779,8102002.Assinatura de jornal,2006
+107676,8102004.Revista,2006
+107677,8102005.Livro,2006
+7782,8103.Papelaria,2006
+7783,8103001.Caderno,2006
+7784,8103002.Fotocópia,2006
+7785,8103014.Artigos de papelaria,2006
+107678,8104.Cursos diversos,2006
+107679,8104001.Curso preparatório,2006
+107680,8104002.Curso técnico,2006
+107681,8104003.Curso de idioma,2006
+107682,8104004.Curso de informática,2006
+107683,8104005.Autoescola,2006
+107684,8104006.Ginástica,2006
+107685,8104007.Natação,2006
+107686,8104008.Balé,2006
+107687,8104009.Escolinha de esporte,2006
+7786,9.Comunicação,2006
+7787,91.Comunicação,2006
+7788,9101.Comunicação,2006
+7789,9101001.Correio,2006
+7790,9101002.Telefone fixo,2006
+7791,9101003.Telefone público,2006
+7792,9101008.Telefone celular,2006
+7793,9101010.TV a cabo,2006
+107688,9101018.Acesso à internet,2006
+7794,9101019.Aparelho telefônico,2006

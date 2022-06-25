@@ -1,9 +1,9 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './IBGEComponentStyle.css'
-import useMediaQuery from '@material-ui/core/useMediaQuery';
-import { List, ListItem, Checkbox, Radio, ListItemText, Button } from '@material-ui/core'
+import useMediaQuery from '@mui/material/useMediaQuery';
+import { List, ListItem, Checkbox, Radio, ListItemText, Button } from '@mui/material'
+import DeselectIcon from '@mui/icons-material/Deselect';
 import categories from '../Util/categories.js'
-import ResultsImg from '../Util/results.png'
 import FileSaver from 'file-saver'
 import PulseLoader from 'react-spinners/PulseLoader'
 
@@ -23,8 +23,7 @@ function IBGEComponent(props) {
 
   const isMobile = useMediaQuery('(max-width:600px)');
 
-  
-  const [img, setImg] = useState(ResultsImg);
+  const [img, setImg] = useState(null);
   const [checked, setChecked] = useState({0: true});
   const [cut, setCut] = useState('08/1999');
 
@@ -34,7 +33,11 @@ function IBGEComponent(props) {
     })
     const yearMo = cut.slice(3,7)+cut.slice(0,2)
 
-    const res = await fetch('/'+type+'?items='+items.join(',')+'&cut='+yearMo+'&type=real', { mode: 'cors' });
+    const size = isMobile ? 'mobile' : 'desktop'
+    const res = await fetch('/'+type+'?items='+items.join(',')+'&cut='+yearMo+'&type=real&size='+size, { mode: 'cors' });
+    if (res.staus === 204) {
+      alert('Nenhum dado para a seleção escolhida')
+    }
     if (type === 'graph') {
       const imageBlob = await res.blob();
       const imageObjectURL = URL.createObjectURL(imageBlob);
@@ -44,6 +47,10 @@ function IBGEComponent(props) {
       FileSaver.saveAs(csvBlob, "dados.csv");
     }
   };
+
+  useEffect(() => {
+    fetchImage('graph');
+  }, []);
 
   const handleItemChange = (event, index) => {
     let updated = {...checked}
@@ -56,12 +63,13 @@ function IBGEComponent(props) {
   };
 
   const renderItem = (index) => {
+    const text = categories[index][2] ? ' - até '+categories[index][2] : ''
     return (
       <ListItem key={index}>
         <Checkbox 
           checked={index in checked}
           onChange={(e) => handleItemChange(e, index) } />
-        <ListItemText primary={categories[index][1]} />
+        <ListItemText primary={categories[index][1]+text} />
       </ListItem>
     )
   }
@@ -98,19 +106,18 @@ function IBGEComponent(props) {
             ))}
         </List>
       </div>
-      <Button className="clearButton" onClick={() => setChecked({})} >
+      <Button className="clearButton" color="error" startIcon={<DeselectIcon />} onClick={() => setChecked({})} >
         Limpar seleção
       </Button>
       <div className="buttonsContainer">
-        <Button variant="contained" className="button" disabled={Object.keys(checked).length > 0 ? false : true} onClick={() => fetchImage('graph')} >
+        <Button sx={{ marginRight: 1 }} color="custom" variant="contained" className="button" disabled={Object.keys(checked).length > 0 ? false : true} onClick={() => fetchImage('graph')} >
           Gerar gráfico
         </Button>
-        <Button variant="contained" className="button" disabled={Object.keys(checked).length > 0 ? false : true} onClick={() => fetchImage('csv')} >
+        <Button sx={{ marginRight: 1 }} color="custom" variant="contained" className="button" disabled={Object.keys(checked).length > 0 ? false : true} onClick={() => fetchImage('csv')} >
           Exportar CSV
         </Button>
       </div>
-      
-      { img ? <img src={img} className="imgResults" alt="IBGE chart" width={isMobile ? "300px" : "800px"}/> : <PulseLoader /> }
+      { img ? <img src={img} className="imgResults" alt="IBGE chart" width={isMobile ? "350px" : "800px"}/> : <PulseLoader /> }
     </div>
   );
 }
