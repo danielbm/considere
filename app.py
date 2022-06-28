@@ -50,7 +50,14 @@ def generate_graph():
     ax = data.plot(figsize=(15,12), grid=True, fontsize=fontsize)
     ax.set_xlabel(xlabel="Ano", fontsize=fontsize)
     ax.set_ylabel(ylabel="Variação (%)", fontsize=fontsize)
-    ax.legend(fontsize=int(fontsize*0.75), loc="best")
+    ax.legend(fontsize=int(fontsize*0.6), loc="best")
+    # for line, name in zip(ax.lines, data.columns):
+    #     y = line.get_ydata()[-1]
+    #     ax.annotate(name, xy=(1, y), xytext=(6, 0),
+    #                 color=line.get_color(), xycoords=ax.get_yaxis_transform(),
+    #                 textcoords="offset points", size=10, va="center")
+    # ax.get_legend().remove()
+    ax.figure.autofmt_xdate(ha='center')
     bytes = io.BytesIO()
     plt.savefig(bytes, format='png')
     bytes.seek(0)

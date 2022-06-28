@@ -4,8 +4,21 @@ import sidrapy
 import pandas as pd
 import sys
 import matplotlib.pyplot as plt
-# pd.set_option('display.max_columns', 1000)
-# pd.set_option('display.width', 1000)
+pd.set_option('display.max_columns', 1000)
+pd.set_option('display.width', 1000)
+
+def get_pivot_table_weight(table_code, classification):
+    data = sidrapy.get_table(
+            table_code=table_code, 
+            territorial_level="1", 
+            variable="63,66",
+            classifications={classification: classification},
+            ibge_territorial_code="all", 
+            period="all",
+            header="n",
+            verify_ssl=False)
+
+    
 
 def get_pivot_table(table_code, classification):
     data = sidrapy.get_table(
@@ -46,6 +59,42 @@ def main():
         data.to_csv('ipca2020.csv')
         print("Done.")
 
+    elif sys.argv[1] == 'weight':
+        print("Fetching data from IBGE...")
+        # mapping = {'2006': ('2938', '315'), 
+        #            '2012': ('1419', '315'),
+        #            '2020': ('7060', '315')}
+        mapping = { '2020': '7060' }
+
+        for code in mapping:
+            print("Fetching "+code+"...")
+            data = sidrapy.get_table(
+                table_code=mapping[code], 
+                territorial_level="1", 
+                variable="63,66",
+                classifications={"315": "7170,7445,7486,7558,7625,7660,7712,7766,7786"},
+                ibge_territorial_code="all", 
+                period="all",
+                header="n",
+                verify_ssl=False)
+
+            weight_data = data[data['D3C'] == '66']
+            inf_data = data[data['D3C'] == '63']
+            weight_data = weight_data.rename(columns={"D2C": "YearMo", "D4C": "CodItem", "D4N": "DescItem", "V": "PesoMensal"})
+            inf_data = inf_data.rename(columns={"D2C": "YearMo", "D4C": "CodItem", "D4N": "DescItem", "V": "InflacaoMensal"})
+            weight_data = weight_data[['YearMo', 'DescItem', 'PesoMensal']].reset_index()
+            inf_data = inf_data[['InflacaoMensal']].reset_index()
+            data = weight_data.join(inf_data, lsuffix='_l', rsuffix='_r')[['YearMo', 'DescItem', 'PesoMensal', 'InflacaoMensal']]
+            data['InflacaoPonderada'] = data.apply(lambda row : float(row['PesoMensal'])/100*float(row['InflacaoMensal']), axis=1)
+            ptable = data.pivot(values=['InflacaoPonderada'], index=['YearMo'], columns=['DescItem'])
+
+            ax = ptable.plot(kind='bar', stacked=True)
+            ax.legend(bbox_to_anchor=(1.04,1), loc="upper left")
+            fig = ax.get_figure()
+            fig.savefig("results.png", bbox_inches="tight")
+            # ptable = data[['PesoMensal', 'InflacaoMensal','YearMo', 'CodItem']].pivot(values=['PesoMensal', 'InflacaoMensal'], index=['YearMo'], columns=['CodItem'])
+            # print(ptable)
+            # ptable = pd.DataFrame()
 
     elif sys.argv[1] == 'categories':
         mapping = {'1999': ('655', '315'), 

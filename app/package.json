@@ -22,7 +22,8 @@
     "react-scripts": "3.4.1",
     "react-scrollable-anchor": "^0.6.1",
     "react-share": "^4.1.0",
-    "react-spinners": "^0.8.3"
+    "react-spinners": "^0.8.3",
+    "react-window": "^1.8.7"
   },
   "scripts": {
     "start": "react-scripts start",

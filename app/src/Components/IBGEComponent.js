@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import './IBGEComponentStyle.css'
 import useMediaQuery from '@mui/material/useMediaQuery';
-import { List, ListItem, Checkbox, Radio, ListItemText, Button } from '@mui/material'
+import { ListItem, Checkbox, Radio, ListItemText, Button } from '@mui/material'
 import DeselectIcon from '@mui/icons-material/Deselect';
 import categories from '../Util/categories.js'
 import FileSaver from 'file-saver'
 import PulseLoader from 'react-spinners/PulseLoader'
+import { FixedSizeList, VariableSizeList } from 'react-window';
 
 let yearMo = ['08/1999','09/1999','10/1999','11/1999','12/1999']
 const months = ['01','02','03','04','05','06','07','08','09','10','11','12']
@@ -21,7 +22,7 @@ for (let i = 2000; i <= currYear; i++) {
 
 function IBGEComponent(props) {
 
-  const isMobile = useMediaQuery('(max-width:600px)');
+  const isMobile = useMediaQuery('(max-width:600px)', { noSsr: true });
 
   const [img, setImg] = useState(null);
   const [checked, setChecked] = useState({0: true});
@@ -62,10 +63,11 @@ function IBGEComponent(props) {
     setChecked(updated)
   };
 
-  const renderItem = (index) => {
+  const renderItem = (props) => {
+    const index = props.index
     const text = categories[index][2] ? ' - até '+categories[index][2] : ''
     return (
-      <ListItem key={index}>
+      <ListItem key={index} style={props.style}>
         <Checkbox 
           checked={index in checked}
           onChange={(e) => handleItemChange(e, index) } />
@@ -78,9 +80,10 @@ function IBGEComponent(props) {
     setCut(yearMo[index])
   };
 
-  const renderYearMo = (index) => {
+  const renderYearMo = (props) => {
+    const index = props.index
     return (
-      <ListItem key={index}>
+      <ListItem key={index} style={props.style}>
         <Radio 
           checked={cut === yearMo[index]}
           onChange={(e) => handleYearMoChange(e, index) } />
@@ -89,22 +92,31 @@ function IBGEComponent(props) {
     )
   }
 
+  const getItemSize = (index) => {
+    if (!isMobile)
+      return 46
+    const text = categories[index][1] + (categories[index][2] ? ' - até '+categories[index][2] : '')
+    console.log(text.length)
+    return 46 + (text.length)/42*54
+  }
   return (
     <div className="container">
       <h2> Pesquisa por componente da inflação </h2>
       <div className="pickerContainer">
-        <List dense={true} className="picker" 
-          subheader={<ListItem> Componentes </ListItem>}>
-          {categories.map((item, index) => (
-              renderItem(index)
-            ))}
-        </List>
-        <List dense={true} className="picker"
-          subheader={<ListItem> Data de corte </ListItem>}>
-          {yearMo.map((item, index) => (
-              renderYearMo(index)
-            ))}
-        </List>
+        <VariableSizeList className="picker"
+          height={200}
+          itemSize={getItemSize}
+          itemCount={categories.length}
+          overscanCount={20}>
+              {renderItem}
+        </VariableSizeList>
+        <FixedSizeList className="picker"
+          height={200}
+          itemSize={40}
+          itemCount={yearMo.length}
+          overscanCount={10}>
+              {renderYearMo}
+        </FixedSizeList>
       </div>
       <Button className="clearButton" color="error" startIcon={<DeselectIcon />} onClick={() => setChecked({})} >
         Limpar seleção
