@@ -24,17 +24,31 @@
   flex: 1;
 }
 
-.pickerContainer {
-  display: flex;
-  max-height: 200px;
-  margin-bottom: 10px;
-}
-
 .picker {
-  flex: 1;
+  max-height: 200px;
+  text-align: left;
   overflow: auto;
 }
 
 .imgResults {
   align-self: center;
+}
+
+.cutContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.cutLabel {
+  flex: 1;
+}
+
+.cutInput {
+  flex: 2;
+}
+
+.Mui-selected {
+  color: #088af6;
 }

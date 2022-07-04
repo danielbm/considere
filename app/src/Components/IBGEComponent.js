@@ -1,23 +1,19 @@
 import React, { useEffect, useState } from 'react'
 import './IBGEComponentStyle.css'
 import useMediaQuery from '@mui/material/useMediaQuery';
-import { ListItem, Checkbox, Radio, ListItemText, Button } from '@mui/material'
+import { InputLabel, Button, Select } from '@mui/material'
 import DeselectIcon from '@mui/icons-material/Deselect';
-import categories from '../Util/categories.js'
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import ChevronRightIcon from '@mui/icons-material/ChevronRight';
+import categoriesTree from '../Util/categoriesTree.js'
 import FileSaver from 'file-saver'
 import PulseLoader from 'react-spinners/PulseLoader'
-import { FixedSizeList, VariableSizeList } from 'react-window';
+import { TreeView, TreeItem} from '@mui/lab';
 
-let yearMo = ['08/1999','09/1999','10/1999','11/1999','12/1999']
-const months = ['01','02','03','04','05','06','07','08','09','10','11','12']
+let yearMo = []
 const currYear = new Date().getFullYear()
-const currMonth = new Date().getMonth() - 1
 for (let i = 2000; i <= currYear; i++) {
-  for (const j of months) {
-    if (i !== currYear || parseInt(j) <= currMonth ) {
-      yearMo.push(j+'/'+i);
-    }  
-  }
+  yearMo.push(i.toString());
 }
 
 function IBGEComponent(props) {
@@ -25,14 +21,14 @@ function IBGEComponent(props) {
   const isMobile = useMediaQuery('(max-width:600px)', { noSsr: true });
 
   const [img, setImg] = useState(null);
-  const [checked, setChecked] = useState({0: true});
-  const [cut, setCut] = useState('08/1999');
+  const [expanded, setExpanded] = useState(['7170']);
+  const [selected, setSelected] = useState(['7170']);
+  const [selectedCut, setSelectedCut] = useState('2000');
+
 
   const fetchImage = async (type) => {
-    let items = Object.keys(checked).map((index) => {
-      return categories[index][0]
-    })
-    const yearMo = cut.slice(3,7)+cut.slice(0,2)
+    let items = selected;
+    const yearMo = selectedCut+"01"
 
     const size = isMobile ? 'mobile' : 'desktop'
     const res = await fetch('/'+type+'?items='+items.join(',')+'&cut='+yearMo+'&type=real&size='+size, { mode: 'cors' });
@@ -53,79 +49,88 @@ function IBGEComponent(props) {
     fetchImage('graph');
   }, []);
 
-  const handleItemChange = (event, index) => {
-    let updated = {...checked}
-    if (index in updated) {
-      delete updated[index]
-    } else {
-      updated[index] = true
+
+  const handleYearMoChange = (event) => {
+    const {
+      target: { value },
+    } = event;
+    setSelectedCut(value);
+  };
+  
+  const handleToggle = (event, nodeIds) => {
+    if (event.target.nodeName !== "svg") {
+      return;
     }
-    setChecked(updated)
+    setExpanded(nodeIds);
   };
 
-  const renderItem = (props) => {
-    const index = props.index
-    const text = categories[index][2] ? ' - até '+categories[index][2] : ''
-    return (
-      <ListItem key={index} style={props.style}>
-        <Checkbox 
-          checked={index in checked}
-          onChange={(e) => handleItemChange(e, index) } />
-        <ListItemText primary={categories[index][1]+text} />
-      </ListItem>
-    )
-  }
-
-  const handleYearMoChange = (event, index) => {
-    setCut(yearMo[index])
+  const handleSelect = (event, nodeIds) => {
+    if (event.target.nodeName === "svg") {
+      return;
+    }
+    const first = nodeIds[0];
+    if (selected.includes(first)) {
+      setSelected(selected.filter(id => id !== first));
+    } else {
+      setSelected([first, ...selected]);
+    }
   };
 
-  const renderYearMo = (props) => {
-    const index = props.index
+  const generateTree = (nodes) => {
+    if ( nodes.CodItem === "0" ) {
+      return (nodes.children.map((node) => generateTree(node)))
+    }
+      
     return (
-      <ListItem key={index} style={props.style}>
-        <Radio 
-          checked={cut === yearMo[index]}
-          onChange={(e) => handleYearMoChange(e, index) } />
-        <ListItemText primary={yearMo[index]} />
-      </ListItem>
+      <TreeItem 
+        label={nodes.year ? nodes.label+' - até '+nodes.year : nodes.label} 
+        nodeId={nodes.CodItem} 
+        key={nodes.CodItem}
+        className="treeItem">
+        {Array.isArray(nodes.children)
+          ? nodes.children.map((node) => generateTree(node))
+          : null}
+      </TreeItem>
     )
-  }
+}
 
-  const getItemSize = (index) => {
-    if (!isMobile)
-      return 46
-    const text = categories[index][1] + (categories[index][2] ? ' - até '+categories[index][2] : '')
-    console.log(text.length)
-    return 46 + (text.length)/42*54
-  }
+
   return (
     <div className="container">
       <h2> Pesquisa por componente da inflação </h2>
-      <div className="pickerContainer">
-        <VariableSizeList className="picker"
-          height={200}
-          itemSize={getItemSize}
-          itemCount={categories.length}
-          overscanCount={20}>
-              {renderItem}
-        </VariableSizeList>
-        <FixedSizeList className="picker"
-          height={200}
-          itemSize={40}
-          itemCount={yearMo.length}
-          overscanCount={10}>
-              {renderYearMo}
-        </FixedSizeList>
+      <TreeView
+        defaultCollapseIcon={<ExpandMoreIcon />}
+        defaultExpandIcon={<ChevronRightIcon />}
+        selected={selected}
+        expanded={expanded}
+        onNodeSelect={handleSelect}
+        onNodeToggle={handleToggle}
+        multiSelect
+        className="picker">
+          {generateTree(categoriesTree)}
+      </TreeView>
+      <div className="cutContainer">
+        <InputLabel className="cutLabel">Data de corte: </InputLabel>
+        <Select
+          native
+          value={selectedCut}
+          onChange={handleYearMoChange}
+          className="cutInput"
+        >
+          {yearMo.map((year) => (
+            <option key={year} value={year}>{year}</option>
+          ))}
+        </Select>
       </div>
-      <Button className="clearButton" color="error" startIcon={<DeselectIcon />} onClick={() => setChecked({})} >
+      <Button className="clearButton" color="error" startIcon={<DeselectIcon />} onClick={() => { setSelected([]);setExpanded([]); return}} >
         Limpar seleção
       </Button>
+      
       <div className="buttonsContainer">
-        <Button sx={{ marginRight: 1 }} color="custom" variant="contained" className="button" disabled={Object.keys(checked).length > 0 ? false : true} onClick={() => fetchImage('graph')} >
+        <Button sx={{ marginRight: 1 }} color="custom" variant="contained" className="button" disabled={selected.length > 0 ? false : true} onClick={() => fetchImage('graph')} >
           Gerar gráfico
         </Button>
-        <Button sx={{ marginRight: 1 }} color="custom" variant="contained" className="button" disabled={Object.keys(checked).length > 0 ? false : true} onClick={() => fetchImage('csv')} >
+        <Button sx={{ marginRight: 1 }} color="custom" variant="contained" className="button" disabled={selected.length > 0 ? false : true} onClick={() => fetchImage('csv')} >
           Exportar CSV
         </Button>
       </div>

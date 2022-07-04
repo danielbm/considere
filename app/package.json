@@ -10,6 +10,7 @@
     "@emotion/react": "^11.9.3",
     "@emotion/styled": "^11.9.3",
     "@mui/icons-material": "^5.8.4",
+    "@mui/lab": "^5.0.0-alpha.88",
     "@mui/material": "^5.8.5",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -22,8 +23,7 @@
     "react-scripts": "3.4.1",
     "react-scrollable-anchor": "^0.6.1",
     "react-share": "^4.1.0",
-    "react-spinners": "^0.8.3",
-    "react-window": "^1.8.7"
+    "react-spinners": "^0.8.3"
   },
   "scripts": {
     "start": "react-scripts start",
