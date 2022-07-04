@@ -9,6 +9,7 @@ import categoriesTree from '../Util/categoriesTree.js'
 import FileSaver from 'file-saver'
 import PulseLoader from 'react-spinners/PulseLoader'
 import { TreeView, TreeItem} from '@mui/lab';
+import { StyledEngineProvider } from '@mui/material/styles';
 
 let yearMo = []
 const currYear = new Date().getFullYear()
@@ -58,14 +59,15 @@ function IBGEComponent(props) {
   };
   
   const handleToggle = (event, nodeIds) => {
-    if (event.target.nodeName !== "svg") {
+    console.log(event.target.nodeName)
+    if (event.target.nodeName !== "svg" && event.target.nodeName !== "path") {
       return;
     }
     setExpanded(nodeIds);
   };
 
   const handleSelect = (event, nodeIds) => {
-    if (event.target.nodeName === "svg") {
+    if (event.target.nodeName === "svg" || event.target.nodeName === "path") {
       return;
     }
     const first = nodeIds[0];
@@ -82,15 +84,23 @@ function IBGEComponent(props) {
     }
       
     return (
+      <StyledEngineProvider injectFirst>
       <TreeItem 
         label={nodes.year ? nodes.label+' - até '+nodes.year : nodes.label} 
         nodeId={nodes.CodItem} 
         key={nodes.CodItem}
-        className="treeItem">
+        className="treeItem"
+        sx={{
+          '& .MuiTreeItem-iconContainer svg': {
+            fontSize: '30px !important',
+          },
+        }}>
         {Array.isArray(nodes.children)
           ? nodes.children.map((node) => generateTree(node))
           : null}
       </TreeItem>
+      </StyledEngineProvider>
+
     )
 }
 
