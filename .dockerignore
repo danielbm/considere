@@ -1,0 +1,64 @@
+# flyctl launch added from .gitignore
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+**\.DS_Store
+**\.env
+**\.flaskenv
+**\*.pyc
+**\*.pyo
+**\env
+**\venv
+**\.venv
+**\env*
+**\dist
+**\*.egg
+**\*.egg-info
+**\.tox
+**\.cache
+**\.pytest_cache
+**\.idea
+**\docs\_build
+**\.vscode
+
+# Coverage reports
+**\htmlcov
+**\.coverage
+**\.coverage.*
+**\*,cover
+
+# flyctl launch added from app\.gitignore
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+app\node_modules
+app\.pnp
+app\**\.pnp.js
+
+# testing
+app\coverage
+
+# production
+
+# misc
+app\**\.DS_Store
+app\**\.env.local
+app\**\.env.development.local
+app\**\.env.test.local
+app\**\.env.production.local
+
+app\**\npm-debug.log*
+app\**\yarn-debug.log*
+app\**\yarn-error.log*
+
+# flyctl launch added from app\node_modules\apexcharts\.gitignore
+app\node_modules\apexcharts\**\coverage
+app\node_modules\apexcharts\**\issues
+app\node_modules\apexcharts\**\node_modules
+app\node_modules\apexcharts\**\samples\e2e
+app\node_modules\apexcharts\**\tests\e2e\diffs
+app\node_modules\apexcharts\**\.DS_Store
+app\node_modules\apexcharts\**\.idea
+app\node_modules\apexcharts\**\.nyc_output
+app\node_modules\apexcharts\**\.vscode
+app\node_modules\apexcharts\**\bundle-analysis.html
+app\node_modules\apexcharts\**\package-lock.json
