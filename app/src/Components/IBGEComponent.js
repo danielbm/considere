@@ -16,6 +16,7 @@ const currYear = new Date().getFullYear()
 for (let i = 2000; i <= currYear; i++) {
   yearMo.push(i.toString());
 }
+const apiUrl = process.env.NODE_ENV === 'production' ? '' : 'http://localhost:5000';
 
 function IBGEComponent(props) {
 
@@ -32,7 +33,7 @@ function IBGEComponent(props) {
     const yearMo = selectedCut+"01"
 
     const size = isMobile ? 'mobile' : 'desktop'
-    const res = await fetch('/'+type+'?items='+items.join(',')+'&cut='+yearMo+'&type=real&size='+size, { mode: 'cors' });
+    const res = await fetch(apiUrl+'/'+type+'?items='+items.join(',')+'&cut='+yearMo+'&type=real&size='+size, { mode: 'cors' });
     if (res.staus === 204) {
       alert('Nenhum dado para a seleção escolhida')
     }

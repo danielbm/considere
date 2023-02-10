@@ -4,6 +4,7 @@ import sidrapy
 import pandas as pd
 import sys
 import matplotlib.pyplot as plt
+
 pd.set_option('display.max_columns', 1000)
 pd.set_option('display.width', 1000)
 
@@ -12,12 +13,24 @@ def get_pivot_table_weight(table_code, classification):
             table_code=table_code, 
             territorial_level="1", 
             variable="63,66",
-            classifications={classification: classification},
+            classifications={classification: "all"},
             ibge_territorial_code="all", 
             period="all",
             header="n",
             verify_ssl=False)
+    
+    weight_data = data[data['D3C'] == '66']
+    inf_data = data[data['D3C'] == '63']
+    weight_data = weight_data.rename(columns={"D2C": "YearMo", "D4C": "CodItem", "D4N": "DescItem", "V": "PesoMensal"})
+    inf_data = inf_data.rename(columns={"D2C": "YearMo", "D4C": "CodItem", "D4N": "DescItem", "V": "InflacaoMensal"})
+    weight_data = weight_data[['YearMo', 'CodItem', 'PesoMensal']].reset_index()
+    inf_data = inf_data[['InflacaoMensal']].reset_index()
+    data = weight_data.join(inf_data, lsuffix='_l', rsuffix='_r')[['YearMo', 'CodItem', 'PesoMensal', 'InflacaoMensal']]
+    data['InflacaoPonderada'] = data.apply(lambda row : float(row['PesoMensal'] if row['PesoMensal'] != '...' else 0)/100*float(row['InflacaoMensal'] if row['InflacaoMensal'] != '...' else 0), axis=1)
+    ptable = data.pivot(values=['InflacaoPonderada'], index=['YearMo'], columns=['CodItem'])
+    ptable = ptable.droplevel(level=0, axis=1)
 
+    return ptable
     
 
 def get_pivot_table(table_code, classification):
@@ -49,6 +62,12 @@ def main():
             data = get_pivot_table(mapping[code][0], mapping[code][1])
             data.to_csv('ipca'+code+'.csv')
         
+        print("Fetching weight data from IBGE...")
+        mapping = { '2012': ('1419', '315') }
+        for code in mapping:
+            print("Fetching "+code+"...")
+            data = get_pivot_table_weight(mapping[code][0], mapping[code][1])
+            data.to_csv('weight'+code+'.csv')
 
     elif sys.argv[1] == 'fetch':
 
@@ -57,44 +76,45 @@ def main():
         
         print("Writing to csv...")
         data.to_csv('ipca2020.csv')
+
+        print("Fetching current weight from IBGE...")
+        data = get_pivot_table_weight('7060', '315')
+        
+        print("Writing to csv...")
+        data.to_csv('weight2020.csv')
         print("Done.")
 
     elif sys.argv[1] == 'weight':
-        print("Fetching data from IBGE...")
-        # mapping = {'2006': ('2938', '315'), 
-        #            '2012': ('1419', '315'),
-        #            '2020': ('7060', '315')}
-        mapping = { '2020': '7060' }
+        data2012 = pd.read_csv('weight2012.csv', index_col='YearMo')
+        data2020 = pd.read_csv('weight2020.csv', index_col='YearMo')
 
-        for code in mapping:
-            print("Fetching "+code+"...")
-            data = sidrapy.get_table(
-                table_code=mapping[code], 
-                territorial_level="1", 
-                variable="63,66",
-                classifications={"315": "7170,7445,7486,7558,7625,7660,7712,7766,7786"},
-                ibge_territorial_code="all", 
-                period="all",
-                header="n",
-                verify_ssl=False)
+        data = pd.concat((data2012, data2020), axis=0)
+        data = data.sort_index()
 
-            weight_data = data[data['D3C'] == '66']
-            inf_data = data[data['D3C'] == '63']
-            weight_data = weight_data.rename(columns={"D2C": "YearMo", "D4C": "CodItem", "D4N": "DescItem", "V": "PesoMensal"})
-            inf_data = inf_data.rename(columns={"D2C": "YearMo", "D4C": "CodItem", "D4N": "DescItem", "V": "InflacaoMensal"})
-            weight_data = weight_data[['YearMo', 'DescItem', 'PesoMensal']].reset_index()
-            inf_data = inf_data[['InflacaoMensal']].reset_index()
-            data = weight_data.join(inf_data, lsuffix='_l', rsuffix='_r')[['YearMo', 'DescItem', 'PesoMensal', 'InflacaoMensal']]
-            data['InflacaoPonderada'] = data.apply(lambda row : float(row['PesoMensal'])/100*float(row['InflacaoMensal']), axis=1)
-            ptable = data.pivot(values=['InflacaoPonderada'], index=['YearMo'], columns=['DescItem'])
+        for column in data.columns:
+            acc = []
+            cnt = 0
+            for row in data[column]:
+                prev = 1.0 if (cnt == 0 or not acc[-1]) else acc[-1]
+                if (row == '...' or pd.isna(row)):
+                    value = None
+                else:
+                    value = prev*(1+float(row)/100)
+                acc.append(value)
+                cnt +=1
+            data = pd.concat((data, pd.DataFrame({column+'_acc': acc}, index=data.index)), axis=1)
 
-            ax = ptable.plot(kind='bar', stacked=True)
-            ax.legend(bbox_to_anchor=(1.04,1), loc="upper left")
-            fig = ax.get_figure()
-            fig.savefig("results.png", bbox_inches="tight")
-            # ptable = data[['PesoMensal', 'InflacaoMensal','YearMo', 'CodItem']].pivot(values=['PesoMensal', 'InflacaoMensal'], index=['YearMo'], columns=['CodItem'])
-            # print(ptable)
-            # ptable = pd.DataFrame()
+        curr_inf = data['7169_acc'].iat[-1]
+        
+        for column in data:
+            if not column.endswith('_acc'):
+                data[column+'_real'] = data.apply(lambda row : curr_inf/row['7169_acc']*row[column+'_acc'], axis=1)
+
+        data.to_csv('weight.csv', sep=';', float_format='%.3f', decimal=',')
+        # ax = table.plot(kind='bar', stacked=True)
+        # ax.legend(bbox_to_anchor=(1.04,1), loc="upper left")
+        # fig = ax.get_figure()
+        # fig.savefig("results.png", bbox_inches="tight")
 
     elif sys.argv[1] == 'categories':
         mapping = {'1999': ('655', '315'), 
@@ -166,7 +186,32 @@ def main():
             if not column.endswith('_acc'):
                 data[column+'_real'] = data.apply(lambda row : curr_inf/row['7169_acc']*row[column+'_acc'], axis=1)
 
-        data.to_csv('ipca.csv', sep=';', float_format='%.3f', decimal=',')
+        data.to_csv('ipca.csv', sep=';', float_format='%.8f', decimal=',')
+    
+    elif sys.argv[1] == 'generateWeight':
+        data2012 = pd.read_csv('weight2012.csv', index_col='YearMo')
+        data2020 = pd.read_csv('weight2020.csv', index_col='YearMo')
+
+        data = pd.concat((data2012, data2020), axis=0)
+        data = data.sort_index()
+        data = data[['7169','7786','7766','7712','7660','7625','7558','7486','7445','7170']]
+
+        for column in data.columns:
+            acc = []
+            cnt = 0
+            for row in data[column]:
+                prev = 1.0 if (cnt == 0 or not acc[-1]) else acc[-1]
+                if (row == '...' or pd.isna(row)):
+                    value = None
+                else:
+                    value = prev*(1+float(row)/100)
+                acc.append(value)
+                cnt +=1
+            data = pd.concat((data, pd.DataFrame({column+'_weight_acc': acc}, index=data.index)), axis=1)
+
+        curr_inf = data['7169_weight_acc'].iat[-1]
+        
+        data.to_csv('weight.csv', sep=';', float_format='%.12f', decimal=',')
 
     else:
         try:

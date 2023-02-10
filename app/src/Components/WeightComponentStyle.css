@@ -1,0 +1,54 @@
+.container {
+  /* -webkit-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75); */
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  text-align: center;
+  position: relative;
+  padding-left: 5px;
+  padding-right: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.buttonsContainer {
+  display: flex;
+}
+
+.clearButton {
+  align-self: flex-start;
+}
+
+.button {
+  flex: 1;
+}
+
+.picker {
+  max-height: 200px;
+  text-align: left;
+  overflow: auto;
+}
+
+.imgResults {
+  align-self: center;
+}
+
+.cutContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.cutLabel {
+  flex: 1;
+}
+
+.cutInput {
+  flex: 2;
+}
+
+.Mui-selected {
+  color: #088af6;
+}
