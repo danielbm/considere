@@ -3,6 +3,7 @@ import ScrollableAnchor from 'react-scrollable-anchor'
 import './App.css'
 import PanelComponent from './Components/PanelComponent.js'
 import IBGEComponent from './Components/IBGEComponent.js'
+import WeightComponent from './Components/WeightComponent.js'
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 const generatePanel = (type, format, title, src, obs) => {
@@ -42,11 +43,14 @@ function App() {
       <ThemeProvider theme={theme}>
         <IBGEComponent />
       </ThemeProvider>
+      {/* <ThemeProvider theme={theme}>
+        <WeightComponent />
+      </ThemeProvider> */}
       {generatePanel("dolar", "currency", "Cotação do Dólar", "http://ipeadata.gov.br/exibeserie.aspx?serid=38389 e https://fred.stlouisfed.org/series/CPIAUCSL", "Ajustado pela inflação brasileira e americana")}
       {generatePanel("ibov", "number", "IBOVESPA", "B3")}
       {generatePanel("minimo", "currency", "Salário Mínimo", "http://www.ipeadata.gov.br/ExibeSerie.aspx?stub=1&serid1739471028=1739471028")}
       {generatePanel("onibus", "currency", "Passagem de ônibus em São Paulo", "http://www.sptrans.com.br/sptrans/tarifas/")}
-      {generatePanel("gasolina", "currency", "Preço do litro de gasolina", "https://preco.anp.gov.br/include/Resumo_Mensal_Index.asp")}
+      {generatePanel("gasolina", "currency", "Preço do litro de gasolina", "https://www.gov.br/anp/pt-br/assuntos/precos-e-defesa-da-concorrencia/precos/levantamento-de-precos-de-combustiveis-ultimas-semanas-pesquisadas")}
       {generatePanel("energia", "currency", "Tarifa média de energia elétrica residencial (R$/MWh)", "https://portalrelatorios.aneel.gov.br/mercado/cativo#!")}
       {generatePanel("cesta", "currency", "Custo da cesta básica", "https://www.dieese.org.br/cesta/")}      
       {generatePanel("fipezap", "number", "Imóveis em São Paulo (FIPEZAP)", "https://www.fipe.org.br/pt-br/indices/fipezap/#fipezap-historico")}

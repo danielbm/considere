@@ -34,7 +34,7 @@ function IBGEComponent(props) {
 
     const size = isMobile ? 'mobile' : 'desktop'
     const res = await fetch(apiUrl+'/'+type+'?items='+items.join(',')+'&cut='+yearMo+'&type=real&size='+size, { mode: 'cors' });
-    if (res.staus === 204) {
+    if (res.status === 204) {
       alert('Nenhum dado para a seleção escolhida')
     }
     if (type === 'graph') {

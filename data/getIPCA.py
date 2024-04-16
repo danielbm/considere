@@ -26,7 +26,7 @@ def get_pivot_table_weight(table_code, classification):
     weight_data = weight_data[['YearMo', 'CodItem', 'PesoMensal']].reset_index()
     inf_data = inf_data[['InflacaoMensal']].reset_index()
     data = weight_data.join(inf_data, lsuffix='_l', rsuffix='_r')[['YearMo', 'CodItem', 'PesoMensal', 'InflacaoMensal']]
-    data['InflacaoPonderada'] = data.apply(lambda row : float(row['PesoMensal'] if row['PesoMensal'] != '...' else 0)/100*float(row['InflacaoMensal'] if row['InflacaoMensal'] != '...' else 0), axis=1)
+    data['InflacaoPonderada'] = data.apply(lambda row : float(row['PesoMensal'] if row['PesoMensal'] != '...' else 0)/100.0*float(row['InflacaoMensal'] if row['InflacaoMensal'] != '...' else 0), axis=1)
     ptable = data.pivot(values=['InflacaoPonderada'], index=['YearMo'], columns=['CodItem'])
     ptable = ptable.droplevel(level=0, axis=1)
 
@@ -77,40 +77,40 @@ def main():
         print("Writing to csv...")
         data.to_csv('ipca2020.csv')
 
-        print("Fetching current weight from IBGE...")
-        data = get_pivot_table_weight('7060', '315')
+        # print("Fetching current weight from IBGE...")
+        # data = get_pivot_table_weight('7060', '315')
         
-        print("Writing to csv...")
-        data.to_csv('weight2020.csv')
-        print("Done.")
+        # print("Writing to csv...")
+        # data.to_csv('weight2020.csv')
+        # print("Done.")
 
-    elif sys.argv[1] == 'weight':
-        data2012 = pd.read_csv('weight2012.csv', index_col='YearMo')
-        data2020 = pd.read_csv('weight2020.csv', index_col='YearMo')
+    # elif sys.argv[1] == 'weight':
+    #     data2012 = pd.read_csv('weight2012.csv', index_col='YearMo')
+    #     data2020 = pd.read_csv('weight2020.csv', index_col='YearMo')
 
-        data = pd.concat((data2012, data2020), axis=0)
-        data = data.sort_index()
+    #     data = pd.concat((data2012, data2020), axis=0)
+    #     data = data.sort_index()
 
-        for column in data.columns:
-            acc = []
-            cnt = 0
-            for row in data[column]:
-                prev = 1.0 if (cnt == 0 or not acc[-1]) else acc[-1]
-                if (row == '...' or pd.isna(row)):
-                    value = None
-                else:
-                    value = prev*(1+float(row)/100)
-                acc.append(value)
-                cnt +=1
-            data = pd.concat((data, pd.DataFrame({column+'_acc': acc}, index=data.index)), axis=1)
+    #     for column in data.columns:
+    #         acc = []
+    #         cnt = 0
+    #         for row in data[column]:
+    #             prev = 1.0 if (cnt == 0 or not acc[-1]) else acc[-1]
+    #             if (row == '...' or pd.isna(row)):
+    #                 value = None
+    #             else:
+    #                 value = prev*(1+float(row)/100)
+    #             acc.append(value)
+    #             cnt +=1
+    #         data = pd.concat((data, pd.DataFrame({column+'_acc': acc}, index=data.index)), axis=1)
 
-        curr_inf = data['7169_acc'].iat[-1]
+    #     curr_inf = data['7169_acc'].iat[-1]
         
-        for column in data:
-            if not column.endswith('_acc'):
-                data[column+'_real'] = data.apply(lambda row : curr_inf/row['7169_acc']*row[column+'_acc'], axis=1)
+    #     for column in data:
+    #         if not column.endswith('_acc'):
+    #             data[column+'_real'] = data.apply(lambda row : curr_inf/row['7169_acc']*row[column+'_acc'], axis=1)
 
-        data.to_csv('weight.csv', sep=';', float_format='%.3f', decimal=',')
+    #     data.to_csv('weight.csv', sep=';', float_format='%.3f', decimal=',')
         # ax = table.plot(kind='bar', stacked=True)
         # ax.legend(bbox_to_anchor=(1.04,1), loc="upper left")
         # fig = ax.get_figure()
@@ -208,8 +208,6 @@ def main():
                 acc.append(value)
                 cnt +=1
             data = pd.concat((data, pd.DataFrame({column+'_weight_acc': acc}, index=data.index)), axis=1)
-
-        curr_inf = data['7169_weight_acc'].iat[-1]
         
         data.to_csv('weight.csv', sep=';', float_format='%.12f', decimal=',')
 
