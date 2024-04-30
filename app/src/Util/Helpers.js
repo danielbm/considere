@@ -27,6 +27,9 @@ export const getMonthYear = (timestamp) => {
   return ("0"+String(Number(new Date(timestamp).getMonth())+1)).slice(-2)+"/"+new Date(timestamp).getFullYear()
 }
 
+export const formatPercentage = (num) => {
+  return num.toFixed(2)+'%'
+}
 export const formatNumber = (text, style) => {
   if (style === 'currency') {
     return new Intl.NumberFormat('pt-BR', { style: style, currency: 'BRL'}).format(text)

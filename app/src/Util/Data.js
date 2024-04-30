@@ -1,7 +1,12 @@
 
 import dadosHist from './dadosHist.js'
+import last12 from './last12.js'
 
 // let host="localhost:5000"
+
+export const getLast12 = () => {
+  return last12
+}
 
 export const getCurrent = (type) => {
   if (type in dadosHist) {

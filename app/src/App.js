@@ -3,7 +3,8 @@ import ScrollableAnchor from 'react-scrollable-anchor'
 import './App.css'
 import PanelComponent from './Components/PanelComponent.js'
 import IBGEComponent from './Components/IBGEComponent.js'
-import WeightComponent from './Components/WeightComponent.js'
+// import WeightComponent from './Components/WeightComponent.js'
+import MyInflationComponent from './Components/MyInflationComponent.js'
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 const generatePanel = (type, format, title, src, obs) => {
@@ -40,6 +41,9 @@ function App() {
         <h1> CONSIDERE A INFLAÇÃO </h1>
         <p> Todos os valores abaixo estão corrigidos pelo IPCA. </p>
       </div>
+      <ThemeProvider theme={theme}>
+        <MyInflationComponent />
+      </ThemeProvider>
       <ThemeProvider theme={theme}>
         <IBGEComponent />
       </ThemeProvider>

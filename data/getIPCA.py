@@ -7,6 +7,7 @@ import matplotlib.pyplot as plt
 
 pd.set_option('display.max_columns', 1000)
 pd.set_option('display.width', 1000)
+# subitems ['7171','7432','7446','7479','7487','7521','7548','7559','7604','7615','7620','7626','7661','7683','7697','7713','47656','7767','7787']
 
 def get_pivot_table_weight(table_code, classification):
     data = sidrapy.get_table(
@@ -77,12 +78,12 @@ def main():
         print("Writing to csv...")
         data.to_csv('ipca2020.csv')
 
-        # print("Fetching current weight from IBGE...")
-        # data = get_pivot_table_weight('7060', '315')
+        print("Fetching current weight from IBGE...")
+        data = get_pivot_table_weight('7060', '315')
         
-        # print("Writing to csv...")
-        # data.to_csv('weight2020.csv')
-        # print("Done.")
+        print("Writing to csv...")
+        data.to_csv('weight2020.csv')
+        print("Done.")
 
     # elif sys.argv[1] == 'weight':
     #     data2012 = pd.read_csv('weight2012.csv', index_col='YearMo')
