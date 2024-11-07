@@ -78,12 +78,12 @@ def main():
         print("Writing to csv...")
         data.to_csv('ipca2020.csv')
 
-        print("Fetching current weight from IBGE...")
-        data = get_pivot_table_weight('7060', '315')
+        # print("Fetching current weight from IBGE...")
+        # data = get_pivot_table_weight('7060', '315')
         
-        print("Writing to csv...")
-        data.to_csv('weight2020.csv')
-        print("Done.")
+        # print("Writing to csv...")
+        # data.to_csv('weight2020.csv')
+        # print("Done.")
 
     # elif sys.argv[1] == 'weight':
     #     data2012 = pd.read_csv('weight2012.csv', index_col='YearMo')

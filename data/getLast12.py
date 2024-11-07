@@ -17,14 +17,19 @@ def get_table_calculator(table_code, classification):
             variable="2265,66",
             classifications={classification: "all"},
             ibge_territorial_code="all", 
-            period=(pd.to_datetime('today')-pd.DateOffset(months=1)).strftime("%Y%m"),
+            period=(pd.to_datetime('today')-pd.DateOffset(months=2)).strftime("%Y%m"),
             header="n",
             verify_ssl=False)
     
+    # print(data.head(10))
     weight_data = data[data['D3C'] == '66']
     inf_data = data[data['D3C'] == '2265']
     weight_data = weight_data.rename(columns={"D2C": "YearMo", "D4C": "CodItem", "D4N": "DescItem", "V": "PesoMensal"})
-    inf_data = inf_data.rename(columns={"D2C": "YearMo", "D4C": "CodItem", "D4N": "DescItem", "V": "Inflacao12Meses"})
+    inf_data = inf_data.rename(columns=
+                               
+                               
+                               
+                               {"D2C": "YearMo", "D4C": "CodItem", "D4N": "DescItem", "V": "Inflacao12Meses"})
     weight_data = weight_data[['YearMo', 'CodItem', 'PesoMensal']].reset_index()
     inf_data = inf_data[['Inflacao12Meses']].reset_index()
     data = weight_data.join(inf_data, lsuffix='_l', rsuffix='_r')[['CodItem', 'PesoMensal', 'Inflacao12Meses']]
