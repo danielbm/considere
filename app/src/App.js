@@ -59,7 +59,7 @@ function App() {
       {generatePanel("passagem", "currency", "Preço médio da passagem aérea doméstica", "https://sistemas.anac.gov.br/sas/downloads/view/frmDownload.aspx")}
       {generatePanel("plano", "currency", "Preço médio do plano de saúde", "https://sidra.ibge.gov.br/pesquisa/snipc")}
       {generatePanel("stf", "currency", "Salário dos ministros do STF", "http://qualidade.ieprev.com.br/UserFiles/File/tabela%20do%20subsidios%20dos%20ministros%202015(2).pdf")}
-      {generatePanel("bigmac", "currency", "Preço do Big Mac", "https://www.quandl.com/data/ECONOMIST/BIGMAC_BRA-Big-Mac-Index-Brazil")}
+      {generatePanel("bigmac", "currency", "Preço do Big Mac", "https://truflation.com/marketplace/big-mac-index-brazil")}
       {generatePanel("gold", "currency", "Preço do ouro (oz)", "https://pt.bullion-rates.com/gold/BRL-history.htm")}
       {generatePanel("ipca", "percentage", "IPCA mensal", "http://www.ipeadata.gov.br/ExibeSerie.aspx?serid=36482&module=M", "IPCA não está ajustado, por ser a própria inflação")}
       {generatePanel("ipca12", "percentage", "IPCA acumulado (12 meses)", "http://www.ipeadata.gov.br/ExibeSerie.aspx?serid=36482&module=M", "IPCA não está ajustado, por ser a própria inflação")}
