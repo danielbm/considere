@@ -26,14 +26,16 @@ function IBGEComponent(props) {
   const [expanded, setExpanded] = useState(['7170']);
   const [selected, setSelected] = useState(['7170']);
   const [selectedCut, setSelectedCut] = useState('2000');
-
+  const [loading, setLoading] = useState(false)
 
   const fetchImage = async (type) => {
     let items = selected;
     const yearMo = selectedCut+"01"
 
     const size = isMobile ? 'mobile' : 'desktop'
+    setLoading(true)
     const res = await fetch(apiUrl+'/'+type+'?items='+items.join(',')+'&cut='+yearMo+'&type=real&size='+size, { mode: 'cors' });
+    setLoading(false)
     if (res.status === 204) {
       alert('Nenhum dado para a seleção escolhida')
     }
@@ -145,7 +147,7 @@ function IBGEComponent(props) {
           Exportar CSV
         </Button>
       </div>
-      { img ? <img src={img} className="imgResults" alt="IBGE chart" width={isMobile ? "350px" : "800px"}/> : <PulseLoader /> }
+      { (!loading && img) ? <img src={img} className="imgResults" alt="IBGE chart" width={isMobile ? "350px" : "800px"}/> : <PulseLoader /> }
     </div>
   );
 }
