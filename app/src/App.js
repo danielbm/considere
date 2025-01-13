@@ -51,12 +51,13 @@ function App() {
       {generatePanel("ibov", "number", "IBOVESPA", "B3")}
       {generatePanel("minimo", "currency", "Salário Mínimo", "http://www.ipeadata.gov.br/ExibeSerie.aspx?stub=1&serid1739471028=1739471028")}
       {generatePanel("onibus", "currency", "Passagem de ônibus em São Paulo", "http://www.sptrans.com.br/sptrans/tarifas/")}
-      {generatePanel("gasolina", "currency", "Preço do litro de gasolina", "https://www.gov.br/anp/pt-br/assuntos/precos-e-defesa-da-concorrencia/precos/levantamento-de-precos-de-combustiveis-ultimas-semanas-pesquisadas")}
+      {generatePanel("gasolina", "currency", "Preço do litro de gasolina", "https://www.gov.br/anp/pt-br/assuntos/precos-e-defesa-da-concorrencia/precos/precos-revenda-e-de-distribuicao-combustiveis/serie-historica-do-levantamento-de-precos")}
+      {generatePanel("gas", "currency", "Preço do botijão de gás", "https://www.gov.br/anp/pt-br/assuntos/precos-e-defesa-da-concorrencia/precos/precos-revenda-e-de-distribuicao-combustiveis/serie-historica-do-levantamento-de-precos")}
       {generatePanel("energia", "currency", "Tarifa média de energia elétrica residencial (R$/MWh)", "https://portalrelatorios.aneel.gov.br/mercado/cativo#!")}
       {generatePanel("cesta", "currency", "Custo da cesta básica", "https://www.dieese.org.br/cesta/")}      
       {generatePanel("fipezap", "number", "Imóveis em São Paulo (FIPEZAP)", "https://www.fipe.org.br/pt-br/indices/fipezap/#fipezap-historico")}
       {generatePanel("aluguelsp", "number", "Aluguéis em São Paulo (FIPEZAP)", "https://www.fipe.org.br/pt-br/indices/fipezap/#fipezap-historico")}
-      {generatePanel("passagem", "currency", "Preço médio da passagem aérea doméstica", "https://sistemas.anac.gov.br/sas/downloads/view/frmDownload.aspx")}
+      {/* {generatePanel("passagem", "currency", "Preço médio da passagem aérea doméstica", "https://sistemas.anac.gov.br/sas/downloads/view/frmDownload.aspx")} */}
       {generatePanel("plano", "currency", "Preço médio do plano de saúde", "https://sidra.ibge.gov.br/pesquisa/snipc")}
       {generatePanel("stf", "currency", "Salário dos ministros do STF", "http://qualidade.ieprev.com.br/UserFiles/File/tabela%20do%20subsidios%20dos%20ministros%202015(2).pdf")}
       {generatePanel("bigmac", "currency", "Preço do Big Mac", "https://truflation.com/marketplace/big-mac-index-brazil")}
