@@ -62,7 +62,7 @@ function IBGEComponent(props) {
   };
   
   const handleToggle = (event, nodeIds) => {
-    console.log(event.target.nodeName)
+    // console.log(event.target.nodeName)
     if (event.target.nodeName !== "svg" && event.target.nodeName !== "path") {
       return;
     }
