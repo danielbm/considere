@@ -10,6 +10,7 @@ import FileSaver from 'file-saver'
 import PulseLoader from 'react-spinners/PulseLoader'
 import { TreeView, TreeItem} from '@mui/lab';
 import { StyledEngineProvider } from '@mui/material/styles';
+import MultiChartComponent from './MultiChartComponent.js';
 
 let yearMo = []
 const currYear = new Date().getFullYear()
@@ -22,11 +23,13 @@ function IBGEComponent(props) {
 
   const isMobile = useMediaQuery('(max-width:600px)', { noSsr: true });
 
-  const [img, setImg] = useState(null);
+  const [, setImg] = useState(null);
   const [expanded, setExpanded] = useState(['7170']);
-  const [selected, setSelected] = useState(['7170']);
+  // const [selected, setSelected] = useState(['7170']);
+  const [selected, setSelected] = useState(['7170','7445','7486','7558','7625','7660','7712','7766','7786']);
   const [selectedCut, setSelectedCut] = useState('2000');
   const [loading, setLoading] = useState(false)
+  const [graphData, setGraphData] = useState(null)
 
   const fetchImage = async (type) => {
     let items = selected;
@@ -46,11 +49,14 @@ function IBGEComponent(props) {
     } else if (type === 'csv') {
       const csvBlob = await res.blob();
       FileSaver.saveAs(csvBlob, "dados.csv");
+    } else if (type === 'graph_data') {
+      const data = await res.json()
+      setGraphData(data)
     }
   };
 
   useEffect(() => {
-    fetchImage('graph');
+    fetchImage('graph_data');
   }, []);
 
 
@@ -87,26 +93,47 @@ function IBGEComponent(props) {
     }
       
     return (
-      <StyledEngineProvider injectFirst>
-      <TreeItem 
-        label={nodes.year ? nodes.label+' - até '+nodes.year : nodes.label} 
-        nodeId={nodes.CodItem} 
-        key={nodes.CodItem}
-        className="treeItem"
-        sx={{
-          '& .MuiTreeItem-iconContainer svg': {
-            fontSize: '30px !important',
-          },
-        }}>
-        {Array.isArray(nodes.children)
-          ? nodes.children.map((node) => generateTree(node))
-          : null}
-      </TreeItem>
+      <StyledEngineProvider injectFirst key={nodes.CodItem}>
+        <TreeItem 
+          label={nodes.year ? nodes.label+' - até '+nodes.year : nodes.label} 
+          nodeId={nodes.CodItem} 
+          key={nodes.CodItem}
+          className="treeItem"
+          sx={{
+            '& .MuiTreeItem-iconContainer svg': {
+              fontSize: '30px !important',
+            },
+          }}>
+          {Array.isArray(nodes.children)
+            ? nodes.children.map((node) => generateTree(node))
+            : null}
+        </TreeItem>
       </StyledEngineProvider>
 
     )
-}
+  }
 
+  const makeXSeries = (series) => {
+    let result = []
+    for (const item in series) {
+      result.push(new Date(series[item]).getTime())
+    }
+    return result
+  }
+
+  const makeYSeries = (series) => {
+    let result = []
+    for (const [key,value] of Object.entries(series)) {
+      if (key !== 'YearMo') {
+        // console.log(key, value)
+        result.push({
+          name: key,
+          data: value
+        })
+      }
+    }
+    return result
+  }
 
   return (
     <div className="container">
@@ -140,14 +167,23 @@ function IBGEComponent(props) {
       </Button>
       
       <div className="buttonsContainer">
-        <Button sx={{ marginRight: 1 }} color="custom" variant="contained" className="button" disabled={selected.length > 0 ? false : true} onClick={() => fetchImage('graph')} >
+        <Button sx={{ marginRight: 1 }} color="custom" variant="contained" className="button" disabled={selected.length > 0 ? false : true} onClick={() => fetchImage('graph_data')} >
           Gerar gráfico
         </Button>
         <Button sx={{ marginRight: 1 }} color="custom" variant="contained" className="button" disabled={selected.length > 0 ? false : true} onClick={() => fetchImage('csv')} >
           Exportar CSV
         </Button>
       </div>
-      { (!loading && img) ? <img src={img} className="imgResults" alt="IBGE chart" width={isMobile ? "350px" : "800px"}/> : <PulseLoader /> }
+      {!loading && graphData ? <MultiChartComponent
+        title=""
+        xTitle=""
+        yTitle={"Variação (%)"}
+        lineTitle="Valor no mês"
+        ySeries={makeYSeries(graphData)}
+        xSeries={makeXSeries(graphData['YearMo'])}
+        format={'percentage'}
+      /> : <PulseLoader />}
+      <div className="obs"> Fonte: https://servicodados.ibge.gov.br/api/docs/agregados?versao=3 </div>
     </div>
   );
 }

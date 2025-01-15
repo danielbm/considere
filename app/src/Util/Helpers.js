@@ -31,10 +31,12 @@ export const formatPercentage = (num) => {
   return num.toFixed(2)+'%'
 }
 export const formatNumber = (text, style) => {
+  if (text === null)
+    return null
   if (style === 'currency') {
     return new Intl.NumberFormat('pt-BR', { style: style, currency: 'BRL'}).format(text)
   } else if (style === 'percentage') {
-    return text+'%'
+    return formatPercentage(text)
   } else {
     return text
   }
