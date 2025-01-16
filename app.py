@@ -1,24 +1,24 @@
-from flask import Flask, send_from_directory, after_this_request
-from flask import request, send_file, Response, make_response
-import pandas as pd
+from flask import Flask, send_from_directory
+from flask import request, Response
+from pandas import read_csv, to_datetime
 from flask_cors import CORS
-import matplotlib.pyplot as plt
-import io
-import seaborn as sns
-import numpy as np
+# import matplotlib.pyplot as plt
+from io import BytesIO
+# import seaborn as sns
+from numpy import isnan
 
-# import os
-# import psutil
-# process = psutil.Process(os.getpid())
+# from os import getpid
+# from psutil import Process
+# process = Process(getpid())
 # print(f'memory: {process.memory_info().rss}')
 
 app = Flask(__name__, static_folder='app/build', static_url_path='')
 CORS(app)
-sns.set_theme()
+# sns.set_theme()
 
 def get_data(items, cut, graphType):
-    data = pd.read_csv('data/ipca.csv', sep=';', decimal=',', index_col='YearMo')
-    categories = pd.read_csv('data/categories.csv', sep=';', encoding='iso-8859-1', index_col='CodItem')
+    data = read_csv('data/ipca.csv', sep=';', decimal=',', index_col='YearMo')
+    categories = read_csv('data/categories.csv', sep=';', encoding='iso-8859-1', index_col='CodItem')
     items = list(map(lambda x: x+'_'+graphType, items))
     data = data[items]
     data['YearMo'] = data.index
@@ -34,7 +34,7 @@ def get_data(items, cut, graphType):
     names = {}
     for column in data.columns:
         if column != 'YearMo':
-            if (not first_row[column] or np.isnan(first_row[column])):
+            if (not first_row[column] or isnan(first_row[column])):
                 first_value = 1.0
             else:
                 first_value = float(first_row[column])
@@ -42,7 +42,8 @@ def get_data(items, cut, graphType):
             data[column] = data.apply(lambda row : (row[column]/first_value-1)*100, axis=1)
 
     data = data.rename(columns=names)
-    data['YearMo'] = data.apply(lambda row : pd.to_datetime(str(row['YearMo'])[:4]+'-'+str(row['YearMo'])[4:6]), axis=1)
+    data['YearMo'] = data.apply(lambda row : to_datetime(str(row['YearMo'])[:4]+'-'+str(row['YearMo'])[4:6]), axis=1)
+    # print(f'memory: {process.memory_info().rss}')
     return data
 
 @app.route("/")
@@ -75,7 +76,7 @@ def serve():
 #     #                 textcoords="offset points", size=10, va="center")
 #     # ax.get_legend().remove()
 #     ax.figure.autofmt_xdate(ha='center')
-#     bytes = io.BytesIO()
+#     bytes = BytesIO()
 #     plt.savefig(bytes, format='png')
 #     bytes.seek(0)
 #     # print(f'Get graph memory: {process.memory_info().rss}')
@@ -103,8 +104,8 @@ def get_weighted():
     cut = int(request.args.get('cut')) if 'cut' in request.args else 199908
     size = request.args.get('size') if 'size' in request.args else 'mobile'
 
-    data = pd.read_csv('data/weight.csv', sep=';', decimal=',', index_col='YearMo')
-    categories = pd.read_csv('data/categories.csv', sep=';', encoding='iso-8859-1', index_col='CodItem')
+    data = read_csv('data/weight.csv', sep=';', decimal=',', index_col='YearMo')
+    categories = read_csv('data/categories.csv', sep=';', encoding='iso-8859-1', index_col='CodItem')
 
     items = list(map(lambda x: x+'_weight_acc', "7169,7786,7766,7712,7660,7625,7558,7486,7445,7170".split(",")))
     data = data[items]
@@ -137,7 +138,7 @@ def export_csv():
 
     data = get_data(items, cut, graphType)
 
-    bytes = io.BytesIO()
+    bytes = BytesIO()
 
     data.to_csv(bytes, sep=';', float_format='%.3f', decimal=',', encoding='iso-8859-1', index=False )
     bytes.seek(0)
